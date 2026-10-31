@@ -1,0 +1,67 @@
+[
+  {
+    "file": "build_candidate.py",
+    "sha256": "74807b8e980665dd1a9c12b578b6d0e283d59fea270385f19a5ae7a9e4a37af2",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "add_parents.py",
+    "sha256": "0b0ea994e3dfd88da0b941dd81dbc3566b0f87f54ce49e77d173f5b69a7f6e85",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "add_line5.py",
+    "sha256": "19b32ec0c1d2334018b1746e91d929318ce5567dc236fe8698921fbf52865eae",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "candidate_boundary_audit.py",
+    "sha256": "03d37e5330dc46803a96c70d1329631eae086968a89aeed9ab236b3e62a4a090",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "final_audit.py",
+    "sha256": "ea966fe79c4f7a6a9de281dd746a28cee3ef9d7b8db43b1ee42d4284eeb6b6ea",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "final_verify.py",
+    "sha256": "56d58ecac9982655d0ae63a6a0656b0b052952d312f539e8a30d4dda40aee9df",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "review_and_repair_transit.py",
+    "sha256": "d585daa1439767c5c88302fa70b26589acd22184e11304431be12ad3ae8a365c",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "check_building_assembly.py",
+    "sha256": "a8a8a565bb2b0fdf7a53d4298dec7937d45ed6201805862e36dd95ccda134e8b",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "unclosed_areas.py",
+    "sha256": "e20a6831ee0f26dcd76865d632ee8d671396965b02c288174a2f85a8bf19689d",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "check_release_integrity.py",
+    "sha256": "0de2634efef56723cb1ab25cd0841e130c7bedf885dc9c47aeb8e6e23789fbe3",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "freeze_release.py",
+    "sha256": "1e88912b2fbf65a167445ab62c90adb08b95d914dfa1b549f83405e7595c260e",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "enrich_v11.py",
+    "sha256": "ba923d28d40549e1a5ef27eedcfcd4e467416080119e61fac23ab616875f6479",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  },
+  {
+    "file": "finalize_v11.py",
+    "sha256": "e235a059bc659cc1985537c3961b02d7154dfb57431b41d3f7f09f68cbd071e3",
+    "role": "exact original workspace source; path-dependent historical implementation"
+  }
+]

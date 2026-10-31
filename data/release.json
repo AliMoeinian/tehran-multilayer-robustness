@@ -1,0 +1,118 @@
+{
+  "dataset_id": "tehran-osm-20261029T212126Z-v1.1-public",
+  "archive": "tehran-osm-v1.1-public.zip",
+  "bytes": 67017846,
+  "sha256": "aed6ffea980feaa563f00e2f42771947beb3a1258b9e6268715eb16b5013996c",
+  "parts": [
+    {
+      "file": "tehran-osm-v1.1-public.zip.part001",
+      "bytes": 3145728,
+      "sha256": "8104ea6572498bc2160e24862c1a01fb7b09ee90db89a4509c071884da1fb61d"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part002",
+      "bytes": 3145728,
+      "sha256": "324a5802c4372ede31b13e22ef5cb673979fa3431cd8cadd2700e65b1c59a763"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part003",
+      "bytes": 3145728,
+      "sha256": "5ceb937b10638395e9975f0f2a71e073a7faae672cd6e330f1d3533599c3c3c9"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part004",
+      "bytes": 3145728,
+      "sha256": "23fd01d1edce72f3154e6eb89cf33e84893b71dea366b944b36a9f77fa2d8588"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part005",
+      "bytes": 3145728,
+      "sha256": "656ddac968163e7bfcb9060bdf072e10f761f2446ff210c0ce9c9d3ac6069524"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part006",
+      "bytes": 3145728,
+      "sha256": "77e72e6ee5af0b0c2fd007d6ee92ee1cd901475869819ad90f0bfd34e512c84c"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part007",
+      "bytes": 3145728,
+      "sha256": "136e29cf77ac3a724b583c5ac1cd732e49927c00a643d9dd5f1f2a558d24ed4c"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part008",
+      "bytes": 3145728,
+      "sha256": "1d3ebeed69cf868e4840803e74c8a8ba7739d76d78196beee3dcb0e19ac17789"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part009",
+      "bytes": 3145728,
+      "sha256": "7849315aaf872e2ba4647de613632d8ee389ba0cc12dec86e85c88fb81d8dc4a"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part010",
+      "bytes": 3145728,
+      "sha256": "2f9a0a1774a26489f18045c4fa2f96db07d441a5a839b72b72dfdb6362f39a4e"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part011",
+      "bytes": 3145728,
+      "sha256": "946e9aba86d8645a40aa312210f2c5b39eccf8c79d92da4d7a2c4908ce4091f5"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part012",
+      "bytes": 3145728,
+      "sha256": "f2fe9b06d55eccb232ba837021d2adccbd55026e5ac7dd1211c7792128e36f75"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part013",
+      "bytes": 3145728,
+      "sha256": "6e97ccd9c9880da5448557191b52403575e0e17741c3c0d3549d30d2e05e8bf5"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part014",
+      "bytes": 3145728,
+      "sha256": "b707c7f33727dfd2d8c95812425f1a2593ab70d9452ccc16702ac9c533b0743e"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part015",
+      "bytes": 3145728,
+      "sha256": "dfb5be7dafc432fd70a0cfdf0782973827e00e204c419df48a71c2d9f4fcc882"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part016",
+      "bytes": 3145728,
+      "sha256": "336fde5b5873afe92b0d787048cc3f36f6c9a8d0b79d1b2391c91a99ccc04241"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part017",
+      "bytes": 3145728,
+      "sha256": "3ed24d7598983f063bcee4a27c02e3a89b0822100b7774a3fb0a2619f3e50dd6"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part018",
+      "bytes": 3145728,
+      "sha256": "4ecf3d93dea68d14322733a5f572c7eda31a06b3cd0765d1ac8ec5e8e733b563"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part019",
+      "bytes": 3145728,
+      "sha256": "e0fddf1db879b07e9b47d5a7a97f26855daba1830c2a1d3abf1363689b38f8e0"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part020",
+      "bytes": 3145728,
+      "sha256": "ca0bf376f74eaa5280925b50cee4edc458882620780a5384d0c52b7e91a5b49b"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part021",
+      "bytes": 3145728,
+      "sha256": "c735e64889a8d4664c962bf9a24d2acb262af8614d83d01f3076a297621b8da5"
+    },
+    {
+      "file": "tehran-osm-v1.1-public.zip.part022",
+      "bytes": 957558,
+      "sha256": "d864a2203b19fe7a973117743985467df58a622cb7c127c9aa7ea7c5da728fde"
+    }
+  ]
+}

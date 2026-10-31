@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this research repository when using its code or dataset preparation. No conference paper has been published yet."
+type: software
+title: "Tehran Multilayer Robustness"
+authors:
+  - family-names: Moeinian
+    given-names: Ali
+repository-code: "https://github.com/AliMoeinian/tehran-multilayer-robustness"
+url: "https://github.com/AliMoeinian/tehran-multilayer-robustness"
+license: MIT

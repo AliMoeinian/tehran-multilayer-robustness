@@ -1,0 +1,255 @@
+{
+  "audit_time_utc": "2026-10-31T10:49:15.437815+00:00",
+  "dataset": "original local tehran_dataset_v1_1 (mixed-source; not bundled)",
+  "checks": [
+    {
+      "name": "manifest_files",
+      "pass": true,
+      "detail": {
+        "files": 56,
+        "bad": []
+      }
+    },
+    {
+      "name": "zip_release_identity",
+      "pass": true,
+      "detail": "bfc58e4e6372d15da7c007afba46dbd1bedc30745b1dccc340ecc62920a1ed75"
+    },
+    {
+      "name": "zip_crc_and_directory_equality",
+      "pass": true,
+      "detail": {
+        "crc_bad": null,
+        "members": 58,
+        "different_names": [],
+        "different_bytes": []
+      }
+    },
+    {
+      "name": "csv_parse",
+      "pass": true,
+      "detail": {
+        "buildings_city.csv": 65677,
+        "building_exceptions.csv": 34,
+        "bus_reference_candidates_2024.csv": 681,
+        "bus_reference_comparison_2024.csv": 341,
+        "bus_reference_crosswalk_2024.csv": 341,
+        "bus_road_dependencies.csv": 18004,
+        "historical_bus_route_quality_2024.csv": 474,
+        "historical_bus_route_stations_2024.csv": 9511,
+        "historical_bus_stations_2024.csv": 4759,
+        "historical_stop_to_osm_route_diagnostics.csv": 7052,
+        "hospital_candidates.csv": 321,
+        "hospital_screening_registry.csv": 321,
+        "road_inventory.csv": 218322,
+        "transit_derived_ordered_paths.csv": 2596,
+        "transit_gap_diagnostics.csv": 427,
+        "transit_paths.csv": 2596,
+        "transit_reviewed_inventory.csv": 363,
+        "transit_routes.csv": 363,
+        "turn_restrictions.csv": 1567,
+        "turn_restrictions_via_node_screened.csv": 1264,
+        "turn_restriction_semantic_audit.csv": 1567
+      }
+    },
+    {
+      "name": "pbf_complete_references_and_ids",
+      "pass": true,
+      "detail": {
+        "counts": {
+          "n": 2081117,
+          "w": 365896,
+          "highway_ways": 218322,
+          "r": 4016
+        },
+        "duplicate_ids": 0,
+        "ordering_errors": 0,
+        "missing_way_node_references": 0,
+        "missing_relation_members": 0
+      }
+    },
+    {
+      "name": "pbf_counts_match_manifest",
+      "pass": true,
+      "detail": {
+        "n": 2081117,
+        "w": 365896,
+        "highway_ways": 218322,
+        "r": 4016
+      }
+    },
+    {
+      "name": "derived_paths_endpoint_sequence_direction",
+      "pass": true,
+      "detail": {
+        "path_relations": 75,
+        "strict_screened": {
+          "metro": 14,
+          "bus": 39
+        },
+        "issues": []
+      }
+    },
+    {
+      "name": "bus_dependency_foreign_keys",
+      "pass": true,
+      "detail": {
+        "rows": 18004,
+        "bad_rows": 0
+      }
+    },
+    {
+      "name": "gpkg_sqlite_integrity",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "all_gpkg_geometries_and_headers",
+      "pass": true,
+      "detail": {
+        "city_boundary": {
+          "count": 1,
+          "invalid": 0,
+          "binary_errors": 0,
+          "coordinate_errors": 0
+        },
+        "municipal_districts": {
+          "count": 22,
+          "invalid": 0,
+          "binary_errors": 0,
+          "coordinate_errors": 0
+        },
+        "roads_context": {
+          "count": 218322,
+          "invalid": 0,
+          "binary_errors": 0,
+          "coordinate_errors": 0
+        },
+        "buildings_city": {
+          "count": 65677,
+          "invalid": 0,
+          "binary_errors": 0,
+          "coordinate_errors": 0
+        },
+        "hospital_candidates": {
+          "count": 321,
+          "invalid": 0,
+          "binary_errors": 0,
+          "coordinate_errors": 0
+        },
+        "transit_active_member_geometry": {
+          "count": 361,
+          "invalid": 0,
+          "binary_errors": 0,
+          "coordinate_errors": 0
+        },
+        "bus_reference_shapes_2024": {
+          "count": 474,
+          "invalid": 0,
+          "binary_errors": 0,
+          "coordinate_errors": 0
+        },
+        "transit_gap_diagnostics": {
+          "count": 427,
+          "invalid": 0,
+          "binary_errors": 0,
+          "coordinate_errors": 0
+        },
+        "historical_bus_stops_2024": {
+          "count": 4759,
+          "invalid": 0,
+          "binary_errors": 0,
+          "coordinate_errors": 0
+        },
+        "historical_route_stops_2024": {
+          "count": 9511,
+          "invalid": 0,
+          "binary_errors": 0,
+          "coordinate_errors": 0
+        },
+        "hospital_screened_candidates": {
+          "count": 321,
+          "invalid": 0,
+          "binary_errors": 0,
+          "coordinate_errors": 0
+        }
+      }
+    },
+    {
+      "name": "layer_counts_match_release",
+      "pass": true,
+      "detail": {
+        "layers": 11
+      }
+    },
+    {
+      "name": "city_and_district_geometry",
+      "pass": true,
+      "detail": {
+        "area_km2_utm": 630.2493541791364,
+        "district_gap_km2": 0.06368764563470058,
+        "district_outside_km2": 0.0
+      }
+    },
+    {
+      "name": "building_keys_ranges_and_counts",
+      "pass": true,
+      "detail": {
+        "buildings": 65677,
+        "bad_fraction": [],
+        "bad_distance": [],
+        "unassigned_district": 24
+      }
+    },
+    {
+      "name": "hospital_registry_keys_and_counts",
+      "pass": true,
+      "detail": {
+        "screen_counts": {
+          "facility_type_needs_review": 69,
+          "human_hospital_candidate": 249,
+          "excluded_nonhuman": 3
+        },
+        "human_features": 249,
+        "human_candidate_groups": 244,
+        "primary_features": 38,
+        "primary_groups": 37
+      }
+    },
+    {
+      "name": "historical_sqlite_integrity",
+      "pass": true,
+      "detail": {
+        "route_records": 474,
+        "stations": 4759
+      }
+    },
+    {
+      "name": "historical_csv_keys_and_joins",
+      "pass": true,
+      "detail": {
+        "stations": 4759,
+        "links": 9511,
+        "routes": 474
+      }
+    },
+    {
+      "name": "crosswalk_candidate_integrity",
+      "pass": true,
+      "detail": {
+        "candidate_pairs": 681,
+        "crosswalk_relations": 341,
+        "bad": 0
+      }
+    }
+  ],
+  "notes": [
+    "No external data fetched; frozen release opened read-only.",
+    "Strict path screen is not certification of stop sequence, boarding access or current operation.",
+    "Known unresolved source topology, historical age, hospital status and geometric connectors remain documented.",
+    "Minor floating-point fractions above 1 are accepted within 1e-10; district gap is retained.",
+    "Full final walking/transit model and its coverage have not yet been constructed."
+  ],
+  "passed": 17,
+  "failed": []
+}

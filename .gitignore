@@ -1,0 +1,28 @@
+# Reproducible extracted data and generated model/experiment output
+data/extracted/
+data/*.zip
+data/*.assembling
+research/model/
+research/runs/
+research/results/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.log
+.DS_Store
+Thumbs.db
+# Do not accidentally publish full local mixed-source datasets or national PBFs
+work/
+outputs/
+*irantracking*.sqlite*
+*ECF2405141154*
+iran-latest.osm.pbf
+iran-source.osm.pbf

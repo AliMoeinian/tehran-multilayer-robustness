@@ -1,0 +1,143 @@
+{
+  "dataset_id": "tehran-osm-20261029T212126Z-v1.1-public",
+  "parent_dataset_id": "tehran-osm-20261029T212126Z-v1.1",
+  "parent_manifest_sha256": "076240abe57b1cc505e34b9c4f01ef56102feb8f97297f0962363b6843156cb1",
+  "public_distribution": "OSM-only; historical reference excluded",
+  "data_timestamp_utc": "2026-10-29T21:21:26Z",
+  "source": "OpenStreetMap contributors via Geofabrik Iran",
+  "license": "ODbL-1.0",
+  "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "(c) OpenStreetMap contributors",
+  "source_archive_sha256": "9cac1960b89a1ac1f464412aa0d6ef6f0c02a1b745cb218ba23d37d8dcbc9f01",
+  "pbf_sha256": "f49737cb2ba86b783fc2b58ceda1534ae9e19bb24b678426d537dea3f742d7f5",
+  "layers": {
+    "buildings_city": 65677,
+    "city_boundary": 1,
+    "hospital_candidates": 321,
+    "hospital_screened_candidates": 321,
+    "municipal_districts": 22,
+    "roads_context": 218322,
+    "transit_active_member_geometry": 361,
+    "transit_gap_diagnostics": 427
+  },
+  "removed_layers": [
+    "bus_reference_shapes_2024",
+    "historical_bus_stops_2024",
+    "historical_route_stops_2024"
+  ],
+  "removed_hospital_fields": [
+    "external_evidence",
+    "external_page_date",
+    "external_source_url"
+  ],
+  "files": {
+    "boundary_audit.json": {
+      "bytes": 15792,
+      "sha256": "a70fb097cbcc4a4433909a140457ccf8704d2e56750b8b691a08c5cc934d1f79"
+    },
+    "building_assembly_audit.json": {
+      "bytes": 643,
+      "sha256": "e81bcb3d2595f4d50a8a006e3d6698f0639c07fc783b69ae8df0db84281996fb"
+    },
+    "building_exceptions.csv": {
+      "bytes": 1845,
+      "sha256": "09a3b12a55c4dd36756c98127a34663bfaee9b381924620bf2e9c7a8ab97edb9"
+    },
+    "buildings_city.csv": {
+      "bytes": 8830162,
+      "sha256": "5c8122d30d7830cc366768b7aef805fd37939585dccf5c0f6bb0f8d48147dbc6"
+    },
+    "bus_road_dependencies.csv": {
+      "bytes": 2523710,
+      "sha256": "bdd28308ea7ec884dfdcd013392f5732339ad3d462e8aac69b1c7e3035fc9ff7"
+    },
+    "city_district_gap.geojson": {
+      "bytes": 9511,
+      "sha256": "54dabd710a8f0244c28ee740091d4c754eaa414d7b7c234e0a516e9b10dab4dc"
+    },
+    "extraction_receipt.json": {
+      "bytes": 228948,
+      "sha256": "148bb67b7a060edf7e5afe89b3ff0b70ffc2add9f5688e259c5588dda2aaf331"
+    },
+    "geometry_and_hospital_exceptions.json": {
+      "bytes": 70,
+      "sha256": "31f41d979fa72e9212484e408be27baa16476e443fde8c57214f5cdc4482a4d4"
+    },
+    "hospital_candidates.csv": {
+      "bytes": 39420,
+      "sha256": "c7b1161378c7c3c8a9714a0acee12416b461b8a4c4c9caf9a22689f27a1d3dcb"
+    },
+    "hospital_screening_registry.csv": {
+      "bytes": 47733,
+      "sha256": "21c82ff64fd2cd701405050c8ad2831d0839448475ed84936082b045ca78fe01"
+    },
+    "line5_addition.json": {
+      "bytes": 2171,
+      "sha256": "e0d2f8cc4dbed8ab54e00d42de31c8f6e1e518d6aafba8efca5c274ef4e08bcd"
+    },
+    "nonpolygon_building_relations.json": {
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "README.md": {
+      "bytes": 1197,
+      "sha256": "4db6f0d02429c481e9f6057123e2a8ea46a5fba25f3487460cf953fa7c2a2e8b"
+    },
+    "reference_integrity.json": {
+      "bytes": 377,
+      "sha256": "a892a73ee59e880e614e6dc4f75e3a203a25abf53736b4d579db9fdccdd5de97"
+    },
+    "road_inventory.csv": {
+      "bytes": 10813931,
+      "sha256": "615383da7c87383ec306b87520a2387c41bc8cceaf64308fd48a342b96cfe113"
+    },
+    "tehran_22_districts_osm.geojson": {
+      "bytes": 191842,
+      "sha256": "c4e6528f89912bbde8f7cffa1a83953bb046d22c0183b343c5eecf329227f858"
+    },
+    "tehran_audited_layers.gpkg": {
+      "bytes": 156778496,
+      "sha256": "77fd0961a8eb10f2dbe2d6b19878138a489d4e69f45fc6fce2ae366e99a64ed4"
+    },
+    "tehran_city_osm_boundary.geojson": {
+      "bytes": 101860,
+      "sha256": "d9d9f9369c4e1c2cbdd98023e6c3213a8fc97f14403f64bf3703c2694786380c"
+    },
+    "tehran_context.osm.pbf": {
+      "bytes": 23435359,
+      "sha256": "f49737cb2ba86b783fc2b58ceda1534ae9e19bb24b678426d537dea3f742d7f5"
+    },
+    "transit_gap_diagnostics.csv": {
+      "bytes": 15993,
+      "sha256": "ab2e211590ca57a71da2aaeac8631f18e08227f5166ca05f0f029bc495701895"
+    },
+    "transit_paths.csv": {
+      "bytes": 260811,
+      "sha256": "190cdbea45ae5188f817635a191d01983fd6cc978e3561a98126d7b1e374b54f"
+    },
+    "transit_reordering_log.json": {
+      "bytes": 22363,
+      "sha256": "7280a13ec214baf7348eb97b537546f1c4c548366fbfecdb14634f5a2b66a2a3"
+    },
+    "transit_review_summary.json": {
+      "bytes": 607,
+      "sha256": "54c00d045ab7f01f67e7edb2bfd07e7fd526e50c03ebb4382092ec8777c42dc9"
+    },
+    "transit_routes.csv": {
+      "bytes": 51890,
+      "sha256": "dab1290b280d9eb2408f030bd20a3e82c2ef7e36e628ce6f24cd084899f23a30"
+    },
+    "turn_restrictions.csv": {
+      "bytes": 331884,
+      "sha256": "139a12dad03f86aa1066716a9a3daa7f6998fb1beac9156fc26783f66d2a8120"
+    },
+    "turn_restrictions_via_node_screened.csv": {
+      "bytes": 65915,
+      "sha256": "490414fcec1937ea652961b5116663241e16c47a655b089f1236554a8f8ef908"
+    },
+    "unclosed_area_tags.json": {
+      "bytes": 375,
+      "sha256": "fdc6a2363f5c630aab1e3e7ffcd2d7bf6269065976574378afdad805860a2b5d"
+    }
+  }
+}

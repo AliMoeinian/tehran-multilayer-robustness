@@ -1,0 +1,58 @@
+{
+  "dataset_id": "tehran-osm-20261029T212126Z-v1.1-public",
+  "audit_utc": "2026-10-31T11:25:09.709873+00:00",
+  "layers": {
+    "buildings_city": {
+      "count": 65677,
+      "geometry_unchanged": true,
+      "valid_nonempty": true,
+      "attributes_unchanged_except_declared_removals": true
+    },
+    "city_boundary": {
+      "count": 1,
+      "geometry_unchanged": true,
+      "valid_nonempty": true,
+      "attributes_unchanged_except_declared_removals": true
+    },
+    "hospital_candidates": {
+      "count": 321,
+      "geometry_unchanged": true,
+      "valid_nonempty": true,
+      "attributes_unchanged_except_declared_removals": true
+    },
+    "hospital_screened_candidates": {
+      "count": 321,
+      "geometry_unchanged": true,
+      "valid_nonempty": true,
+      "attributes_unchanged_except_declared_removals": true
+    },
+    "municipal_districts": {
+      "count": 22,
+      "geometry_unchanged": true,
+      "valid_nonempty": true,
+      "attributes_unchanged_except_declared_removals": true
+    },
+    "roads_context": {
+      "count": 218322,
+      "geometry_unchanged": true,
+      "valid_nonempty": true,
+      "attributes_unchanged_except_declared_removals": true
+    },
+    "transit_active_member_geometry": {
+      "count": 361,
+      "geometry_unchanged": true,
+      "valid_nonempty": true,
+      "attributes_unchanged_except_declared_removals": true
+    },
+    "transit_gap_diagnostics": {
+      "count": 427,
+      "geometry_unchanged": true,
+      "valid_nonempty": true,
+      "attributes_unchanged_except_declared_removals": true
+    }
+  },
+  "excluded_reference_tables_absent": true,
+  "pbf_unchanged": true,
+  "freelist_pages": 0,
+  "status": "pass"
+}
