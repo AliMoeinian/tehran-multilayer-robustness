@@ -35,8 +35,8 @@ Compact, dated evidence in `research/reports/` is version-controlled separately.
 - Opposite and mixed orders are distinguished. Neither proves an OSM error:
   route-member ordering or the earlier orientation selection may be responsible.
 
-Remaining work includes stop-area reconciliation, review of direction conflicts,
-the stateful accessibility solver and simulation. Current candidates are not a final model.
+Remaining work includes stop-area reconciliation and review of direction conflicts.
+M2/M3 below build and solve the screened subset; current candidates are not a final model.
 No transit operation, population demand or travel-time certification is inferred.
 
 ## M2: walking graph and dependencies
@@ -50,7 +50,7 @@ python -m research.src.build_connections --connector-limit-m 100
 `research/model/m2-v2/network.sqlite` contains undirected walking edges, geometric
 connectors, directed consecutive-stop connections and bus dependency intervals.
 All are derived from the same public OSM snapshot. Output refuses overwrite.
-Walking graph and street slicing are implemented by M2; the accessibility solver is not.
+Walking graph and street slicing are implemented by M2; M3 adds the accessibility solver.
 
 Connectors project to walking-way geometry and split its source segments at
 the projected positions. Original OSM node identity is retained; crossings
@@ -61,7 +61,7 @@ An equal-distance nearest-way tie currently selects one STRtree result; connecto
 sensitivity is required before interpreting results.
 
 Stop entry-only/exit-only roles are stored as boarding/alighting permissions.
-The next travel solver must respect these fields; passing through a stop while
+The M3 solver respects these fields; passing through a stop while
 riding does not require alighting. Bus dependencies use the positive overlap
 between the stop-to-stop trace interval and each original adjacent-node segment.
 Endpoint touching alone does not create a dependency. The stored street key
@@ -85,5 +85,32 @@ does not establish global disconnection. Buildings outside the connector contrac
 remain in the full denominator with no eligible model path. All parameter-grid
 results and input hashes are saved, together with per-building costs in ignored runs.
 
-The initial baseline is in `reports/m3-2026-11-01.md`. Closure experiments are next;
-existing M1/M2 reports describe the implementation state at their own milestones.
+The initial baseline is in `reports/m3-2026-11-01.md`.
+Existing M1/M2 reports describe the implementation state at their own milestones.
+
+## M3: exhaustive observed single closures
+
+```bash
+python -m research.src.single_closures --output research/runs/<new-closure-run>
+```
+
+For every observed source street segment supporting accepted bus connections,
+remove all dependent consecutive-stop bus arcs. Walking and metro remain fixed;
+no rerouting is introduced. This isolates the street-to-bus dependency mechanism.
+It does not simulate a pedestrian blockage or an entire street corridor closure.
+Street keys retain OSM way ID and adjacent node IDs; distinct carriageways remain
+distinct. Segments outside accepted bus dependencies are outside this experiment.
+
+Equal sets of failed connection IDs yield identical graphs and are computed once.
+The street-to-signature mapping preserves every street unit, and all 9 W/K pairs
+are evaluated both with and without metro. Results include absolute building losses
+and shares with the full 65,677-building denominator. The difference in metro
+benefit is `bus_loss - bus_metro_loss` and can have either sign.
+
+The command verifies matching network/config hashes, reproduces the published M3
+baseline, and checks nodewise monotonicity under deletion, added metro and larger
+boarding budgets. It publishes no global disconnection or operational claims.
+`effects.csv` has one row per signature and parameter pair; join `streets.csv` on
+signature to recover per-street effects. `groups.json` lists failed connection IDs.
+Generated output directories refuse overwrite. Published result copies and hashes
+are in `reports/m3-single-closures-2026-11-01*`.

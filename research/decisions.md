@@ -53,3 +53,22 @@ The finite cutoff is the largest configured W (2000 m). An infinite output there
 means no eligible path within that search budget, not no path of any length. Publish
 the whole parameter grid; the K=1 report table is only a readability slice. No claim
 about the entire city's operating transit network follows from this screened subset.
+
+## 2026-11-01: exhaustive single closures
+
+Close a source segment by deleting its dependent consecutive-stop bus arcs only.
+Keep walking, targets, connectors and metro identical to baseline. Segments are
+the observed way-ID/adjacent-node units, not aggregated corridors or hazards.
+No inference about unobserved bus dependencies or all city streets is warranted.
+
+Group streets only by exact equality of failed connection-ID sets. Save the full
+mapping and use street multiplicities in aggregate summaries. Evaluate every
+configured W/K pair and both mode sets; do not select parameters by observed loss.
+Loss is a building count difference; I as a share divides by all 65,677 buildings.
+Metro's incremental benefit change can be negative when a bus connection feeds
+metro. Added-mode reachability monotonicity does not establish loss attenuation.
+
+The implementation reuses the baseline loader and solver, and checks against the
+published baseline before closures. Independent forward-state toy checks validate
+failure filtering and grouped versus individual scenarios. Nodewise invariants
+on all scenarios are implementation checks, not external data validation.

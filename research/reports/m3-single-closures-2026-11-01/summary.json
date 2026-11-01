@@ -1,0 +1,176 @@
+{
+  "stage": "m3-single-closures-v1",
+  "network_sha256": "465b10f73cc00d655fffe1fbfca50a177296c74820a397a93baad0732e278e06",
+  "config_sha256": "7b8caa982d84ec9b53acd1d80beb64d7fc5bc1f5accb661ea9608050c48b7fe1",
+  "observed_streets": 1684,
+  "distinct_dependency_signatures": 238,
+  "all_buildings": 65677,
+  "connected_buildings": 64166,
+  "closure_policy": "remove dependent consecutive-stop bus arcs; walking and metro fixed; no rerouting",
+  "grouping": "exact equality of failed connection ID sets, no approximation",
+  "domain": "all street segments supporting the 11 accepted bus relations; not all Tehran streets",
+  "loss_definition": "baseline accessible building count minus closure accessible count; shares divide by all buildings",
+  "delta_metro_definition": "M(F)-M(empty) = bus_loss - bus_metro_loss; may have either sign",
+  "invariants": "published baseline reproduced; nodewise deletion, boarding-budget and added-metro monotonicity passed",
+  "results": [
+    {
+      "max_line_changes": 0,
+      "walking_budget_m": 500,
+      "bus": {
+        "baseline_accessible": 8566,
+        "streets_with_positive_loss": 879,
+        "maximum_loss_buildings": 232,
+        "mean_loss_buildings_over_observed_streets": 14.639548693586699
+      },
+      "bus_metro": {
+        "baseline_accessible": 9213,
+        "streets_with_positive_loss": 879,
+        "maximum_loss_buildings": 230,
+        "mean_loss_buildings_over_observed_streets": 14.162114014251781
+      },
+      "streets_with_negative_delta_metro_benefit": 0
+    },
+    {
+      "max_line_changes": 0,
+      "walking_budget_m": 1000,
+      "bus": {
+        "baseline_accessible": 26356,
+        "streets_with_positive_loss": 735,
+        "maximum_loss_buildings": 224,
+        "mean_loss_buildings_over_observed_streets": 22.11935866983373
+      },
+      "bus_metro": {
+        "baseline_accessible": 28886,
+        "streets_with_positive_loss": 604,
+        "maximum_loss_buildings": 219,
+        "mean_loss_buildings_over_observed_streets": 15.944774346793348
+      },
+      "streets_with_negative_delta_metro_benefit": 0
+    },
+    {
+      "max_line_changes": 0,
+      "walking_budget_m": 2000,
+      "bus": {
+        "baseline_accessible": 45921,
+        "streets_with_positive_loss": 301,
+        "maximum_loss_buildings": 153,
+        "mean_loss_buildings_over_observed_streets": 4.891923990498812
+      },
+      "bus_metro": {
+        "baseline_accessible": 50296,
+        "streets_with_positive_loss": 201,
+        "maximum_loss_buildings": 153,
+        "mean_loss_buildings_over_observed_streets": 2.991686460807601
+      },
+      "streets_with_negative_delta_metro_benefit": 0
+    },
+    {
+      "max_line_changes": 1,
+      "walking_budget_m": 500,
+      "bus": {
+        "baseline_accessible": 8595,
+        "streets_with_positive_loss": 929,
+        "maximum_loss_buildings": 251,
+        "mean_loss_buildings_over_observed_streets": 15.681710213776721
+      },
+      "bus_metro": {
+        "baseline_accessible": 9321,
+        "streets_with_positive_loss": 924,
+        "maximum_loss_buildings": 249,
+        "mean_loss_buildings_over_observed_streets": 16.089073634204276
+      },
+      "streets_with_negative_delta_metro_benefit": 98
+    },
+    {
+      "max_line_changes": 1,
+      "walking_budget_m": 1000,
+      "bus": {
+        "baseline_accessible": 26360,
+        "streets_with_positive_loss": 757,
+        "maximum_loss_buildings": 224,
+        "mean_loss_buildings_over_observed_streets": 20.7583135391924
+      },
+      "bus_metro": {
+        "baseline_accessible": 29105,
+        "streets_with_positive_loss": 667,
+        "maximum_loss_buildings": 219,
+        "mean_loss_buildings_over_observed_streets": 15.308788598574822
+      },
+      "streets_with_negative_delta_metro_benefit": 98
+    },
+    {
+      "max_line_changes": 1,
+      "walking_budget_m": 2000,
+      "bus": {
+        "baseline_accessible": 45921,
+        "streets_with_positive_loss": 301,
+        "maximum_loss_buildings": 153,
+        "mean_loss_buildings_over_observed_streets": 3.521377672209026
+      },
+      "bus_metro": {
+        "baseline_accessible": 50539,
+        "streets_with_positive_loss": 299,
+        "maximum_loss_buildings": 153,
+        "mean_loss_buildings_over_observed_streets": 2.736935866983373
+      },
+      "streets_with_negative_delta_metro_benefit": 98
+    },
+    {
+      "max_line_changes": 2,
+      "walking_budget_m": 500,
+      "bus": {
+        "baseline_accessible": 8595,
+        "streets_with_positive_loss": 929,
+        "maximum_loss_buildings": 251,
+        "mean_loss_buildings_over_observed_streets": 15.680522565320665
+      },
+      "bus_metro": {
+        "baseline_accessible": 9323,
+        "streets_with_positive_loss": 924,
+        "maximum_loss_buildings": 249,
+        "mean_loss_buildings_over_observed_streets": 16.08788598574822
+      },
+      "streets_with_negative_delta_metro_benefit": 98
+    },
+    {
+      "max_line_changes": 2,
+      "walking_budget_m": 1000,
+      "bus": {
+        "baseline_accessible": 26360,
+        "streets_with_positive_loss": 757,
+        "maximum_loss_buildings": 224,
+        "mean_loss_buildings_over_observed_streets": 20.741092636579573
+      },
+      "bus_metro": {
+        "baseline_accessible": 29115,
+        "streets_with_positive_loss": 667,
+        "maximum_loss_buildings": 219,
+        "mean_loss_buildings_over_observed_streets": 15.294536817102138
+      },
+      "streets_with_negative_delta_metro_benefit": 98
+    },
+    {
+      "max_line_changes": 2,
+      "walking_budget_m": 2000,
+      "bus": {
+        "baseline_accessible": 45921,
+        "streets_with_positive_loss": 301,
+        "maximum_loss_buildings": 153,
+        "mean_loss_buildings_over_observed_streets": 3.517814726840855
+      },
+      "bus_metro": {
+        "baseline_accessible": 50539,
+        "streets_with_positive_loss": 299,
+        "maximum_loss_buildings": 153,
+        "mean_loss_buildings_over_observed_streets": 2.736935866983373
+      },
+      "streets_with_negative_delta_metro_benefit": 98
+    }
+  ],
+  "artifact_sha256": {
+    "effects.csv": "f6b627440317f3dfc5697abde59792a68b149f47afff398254be770b14544ad2",
+    "groups.json": "cdcddc59bd8cd8e518bdfb562700e649ebf85f7503778a4305f364f5a8bbb730",
+    "streets.csv": "8be4288f5b9f13dde91b23ed102530069af4b26eab6b8a88b16730ecf4321ad3"
+  },
+  "elapsed_seconds": 258.34945300000254
+}

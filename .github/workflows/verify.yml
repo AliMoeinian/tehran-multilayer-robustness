@@ -11,7 +11,7 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -31,3 +31,7 @@ jobs:
         run: python -m research.src.audit_connections
       - name: Compute the structural accessibility baseline
         run: python -m research.src.accessibility
+      - name: Test all observed single street closures
+        run: python -m research.src.single_closures --baseline research/runs/m3-baseline-v1/summary.json
+      - name: Reconcile saved closure artifacts with source dependencies
+        run: python -m research.src.audit_closures --directory research/runs/m3-single-closures-v1

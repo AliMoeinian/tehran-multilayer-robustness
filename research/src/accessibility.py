@@ -11,6 +11,7 @@ import hashlib
 import heapq
 import json
 import math
+from types import SimpleNamespace
 from pathlib import Path
 import sqlite3
 
@@ -90,12 +91,8 @@ def solve(adjacency,stops,rides,targets,max_boardings,cutoff,walking=None):
     return layers
 
 
-def run(network,output,config):
+def load_model(network,config):
     cfg=json.loads(config.read_text())
-    output=output.resolve()
-    if not output.is_relative_to(ROOT/'research/runs'):
-        raise ValueError('Output must stay in research/runs')
-    if output.exists():raise FileExistsError(output)
     db=sqlite3.connect(network.resolve().as_uri()+'?mode=ro',uri=True)
     config_hash=hashlib.sha256(config.read_bytes()).hexdigest()
     model_config=db.execute("select value from metadata where key='config_sha256'").fetchone()
@@ -114,7 +111,8 @@ def run(network,output,config):
     connectors={r[0]:r for r in db.execute('select entity,kind,group_id,anchor,length_m,status,board_allowed,alight_allowed from connectors')}
     targets=[(node_ids[r[3]],r[4]) for r in connectors.values() if r[1]=='hospital' and r[5]=='geometric_candidate']
     if not targets:raise ValueError('No connected target candidates')
-    rides=list(db.execute('select from_stop,to_stop,mode from transit_connections'))
+    ride_rows=list(db.execute('select connection_id,from_stop,to_stop,mode from transit_connections'))
+    rides=[(a,b,mode) for _,a,b,mode in ride_rows]
     stop_modes={s:mode for a,b,mode in rides for s in (a,b)}
     # Keep onboard occurrences even when walking access is rejected: a train or
     # bus may pass through without a boarding/alighting connector.
@@ -123,6 +121,29 @@ def run(network,output,config):
     stops=[Stop(node_ids.get(connectors[k][3],-1),connectors[k][4],
                 bool(connectors[k][6]) and connectors[k][5]=='geometric_candidate',
                 bool(connectors[k][7]) and connectors[k][5]=='geometric_candidate') for k in stop_keys]
+    db.close()
+    return SimpleNamespace(cfg=cfg,config_hash=config_hash,network_hash=network_hash,node_ids=node_ids,adjacency=adjacency,connectors=connectors,targets=targets,rides=rides,ride_rows=ride_rows,stop_modes=stop_modes,stop_keys=stop_keys,stop_ids=stop_ids,stops=stops)
+
+
+def run(network,output,config):
+    cfg=json.loads(config.read_text())
+    output=output.resolve()
+    if not output.is_relative_to(ROOT/'research/runs'):
+        raise ValueError('Output must stay in research/runs')
+    if output.exists():raise FileExistsError(output)
+    model=load_model(network,config)
+    cfg=model.cfg
+    config_hash=model.config_hash
+    network_hash=model.network_hash
+    node_ids=model.node_ids
+    adjacency=model.adjacency
+    connectors=model.connectors
+    targets=model.targets
+    rides=model.rides
+    stop_modes=model.stop_modes
+    stop_keys=model.stop_keys
+    stop_ids=model.stop_ids
+    stops=model.stops
     cutoff=max(cfg['walking_budgets_m']);boardings=max(cfg['max_line_changes'])+1
     print('Loaded',len(adjacency),'walking nodes;',len(stops),'stop occurrences',flush=True)
     walking=solve(adjacency,[],[],targets,0,cutoff)[0]
@@ -171,7 +192,7 @@ def run(network,output,config):
         writer.writerow(['building','connector_status']+[f'{m}_boardings_{b}' for m,b in keys])
         for i,r in enumerate(buildings):
             writer.writerow([r[0],r[5]]+[float(values[key][i]) if np.isfinite(values[key][i]) and values[key][i]<=cutoff else '' for key in keys])
-    db.close();print(json.dumps(report,indent=2),flush=True)
+    print(json.dumps(report,indent=2),flush=True)
     return report
 
 
