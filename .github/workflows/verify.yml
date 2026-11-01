@@ -25,3 +25,7 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Reproduce the initial route audit
         run: python -m research.src.extract_routes
+      - name: Build walking connectors and street dependencies
+        run: python -m research.src.build_connections
+      - name: Audit stored graph and dependency lengths
+        run: python -m research.src.audit_connections

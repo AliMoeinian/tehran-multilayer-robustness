@@ -1,0 +1,114 @@
+{
+  "status": "pass",
+  "scope": "full stored graph integrity, anchors, bus interval length consistency, permissions; 20 sampled source way lengths",
+  "dangling_accepted_anchors": 0,
+  "dependency_length_discrepancies": 0,
+  "sampled_source_way_lengths": [
+    {
+      "way_id": 4292665,
+      "source_length_m": 130.12405897498942,
+      "graph_length_m": 130.12405897498942
+    },
+    {
+      "way_id": 4292748,
+      "source_length_m": 728.9386711245048,
+      "graph_length_m": 728.9386711245048
+    },
+    {
+      "way_id": 4292765,
+      "source_length_m": 459.2148943746919,
+      "graph_length_m": 459.2148943746919
+    },
+    {
+      "way_id": 4292778,
+      "source_length_m": 21.26740359248908,
+      "graph_length_m": 21.26740359248908
+    },
+    {
+      "way_id": 4292779,
+      "source_length_m": 106.82796224314964,
+      "graph_length_m": 106.82796224314964
+    },
+    {
+      "way_id": 4292787,
+      "source_length_m": 218.06528836800248,
+      "graph_length_m": 218.06528836800248
+    },
+    {
+      "way_id": 4292788,
+      "source_length_m": 34.92350955674453,
+      "graph_length_m": 34.92350955674453
+    },
+    {
+      "way_id": 4292854,
+      "source_length_m": 707.643595553665,
+      "graph_length_m": 707.643595553665
+    },
+    {
+      "way_id": 4292857,
+      "source_length_m": 124.00682915301132,
+      "graph_length_m": 124.00682915301132
+    },
+    {
+      "way_id": 4292858,
+      "source_length_m": 446.379001035568,
+      "graph_length_m": 446.379001035568
+    },
+    {
+      "way_id": 4292880,
+      "source_length_m": 153.96051598894627,
+      "graph_length_m": 153.96051598894627
+    },
+    {
+      "way_id": 4293070,
+      "source_length_m": 504.18213515316717,
+      "graph_length_m": 504.18213515316717
+    },
+    {
+      "way_id": 4294716,
+      "source_length_m": 35.74047206214844,
+      "graph_length_m": 35.74047206214844
+    },
+    {
+      "way_id": 4294733,
+      "source_length_m": 213.25367280562597,
+      "graph_length_m": 213.25367280562597
+    },
+    {
+      "way_id": 4294735,
+      "source_length_m": 372.0732409439522,
+      "graph_length_m": 372.0732409439522
+    },
+    {
+      "way_id": 4294833,
+      "source_length_m": 381.31757646851224,
+      "graph_length_m": 381.31757646851224
+    },
+    {
+      "way_id": 4294986,
+      "source_length_m": 378.3271983813035,
+      "graph_length_m": 378.3271983813035
+    },
+    {
+      "way_id": 4294987,
+      "source_length_m": 170.65058004844926,
+      "graph_length_m": 170.65058004844926
+    },
+    {
+      "way_id": 4294989,
+      "source_length_m": 154.61506770406373,
+      "graph_length_m": 154.61506770406373
+    },
+    {
+      "way_id": 4295222,
+      "source_length_m": 130.25439111788043,
+      "graph_length_m": 130.25439111788043
+    }
+  ],
+  "not_certified": [
+    "entrances",
+    "barriers",
+    "current service",
+    "accessibility solver"
+  ]
+}

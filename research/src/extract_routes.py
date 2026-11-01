@@ -117,9 +117,10 @@ def run(config):
     geometry = Geometry()
     geometry.apply_file(str(pbf), locations=True, idx="flex_mem")
     transform = Transformer.from_crs(4326, cfg["metric_crs"], always_xy=True)
-    stop_rows, route_rows, connection_rows = [], [], []
+    stop_rows, route_rows, connection_rows, traces = [], [], [], {}
     for rid, row in sorted(inventory.items()):
         flags, node_ids, coords = [], [], []
+        way_for_edge = []
         seq = sorted(paths[rid], key=lambda r: int(r["sequence"]))
         for part in seq:
             nodes, points, _ = geometry.ways[int(part["way_id"])]
@@ -129,11 +130,14 @@ def run(config):
                 flags.append("trace_endpoint_gap")
             node_ids.extend(nodes if not node_ids else nodes[1:])
             coords.extend(points if not coords else points[1:])
+            way_for_edge.extend([int(part["way_id"])] * (len(nodes)-1))
         if len(coords) < 2:
             flags.append("missing_trace")
             metric = None
         else:
             metric = np.column_stack(transform.transform(*np.array(coords).T))
+            traces[str(rid)] = {"node_ids": node_ids, "xy_m": metric.tolist(),
+                                "edge_way_ids": way_for_edge}
         candidates = {"stop": [], "platform": []}
         for member_index, (typ, ident, role) in enumerate(relations.members.get(rid, [])):
             if "inactive" in role:
@@ -206,6 +210,7 @@ def run(config):
     write_csv(out / "routes.csv", route_rows)
     write_csv(out / "stops.csv", stop_rows)
     write_csv(out / "connections.csv", connection_rows)
+    (out / "traces.json").write_text(json.dumps(traces), encoding="utf-8")
     summary = {"config_version": cfg["config_version"], "config_sha256": hashlib.sha256(config.read_bytes()).hexdigest(),
         "dataset_id": cfg["dataset_id"], "input_routes": len(inventory),
         "route_status_by_mode": {mode: dict(collections.Counter(x["status"] for x in route_rows if x["mode"] == mode)) for mode in ["bus", "metro"]},

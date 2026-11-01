@@ -36,6 +36,33 @@ Compact, dated evidence in `research/reports/` is version-controlled separately.
   route-member ordering or the earlier orientation selection may be responsible.
 
 Remaining work includes stop-area reconciliation, review of direction conflicts,
-walking connectors, exact street dependency slices between stops, the stateful
-accessibility solver and simulation. Current candidates are not a final model.
+the stateful accessibility solver and simulation. Current candidates are not a final model.
 No transit operation, population demand or travel-time certification is inferred.
+
+## M2: walking graph and dependencies
+
+After the M1 module, run once per clean output directory:
+
+```bash
+python -m research.src.build_connections --connector-limit-m 100
+```
+
+`research/model/m2-v2/network.sqlite` contains undirected walking edges, geometric
+connectors, directed consecutive-stop connections and bus dependency intervals.
+All are derived from the same public OSM snapshot. Output refuses overwrite.
+Walking graph and street slicing are implemented by M2; the accessibility solver is not.
+
+Connectors project to walking-way geometry and split its source segments at
+the projected positions. Original OSM node identity is retained; crossings
+without shared nodes do not become links. A source segment with distinct node
+IDs and coincident coordinates is retained as a zero-length topological edge.
+The straight geometric connector is a study convention, not verified access.
+An equal-distance nearest-way tie currently selects one STRtree result; connector
+sensitivity is required before interpreting results.
+
+Stop entry-only/exit-only roles are stored as boarding/alighting permissions.
+The next travel solver must respect these fields; passing through a stop while
+riding does not require alighting. Bus dependencies use the positive overlap
+between the stop-to-stop trace interval and each original adjacent-node segment.
+Endpoint touching alone does not create a dependency. The stored street key
+combines OSM way ID and unordered node pair; distinct carriageways are not merged.

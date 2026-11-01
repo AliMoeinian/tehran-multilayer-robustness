@@ -1,0 +1,258 @@
+{
+  "reviewed_relations": 28,
+  "rows": [
+    {
+      "relation_id": "10886988",
+      "ref": "106",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 5,
+      "stop_count": 19,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "11376799",
+      "ref": "303",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 2,
+      "stop_count": 28,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "12019749",
+      "ref": "106",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 4,
+      "stop_count": 18,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "12107038",
+      "ref": "105;905",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed;stop_far_from_trace",
+      "backward_steps_over_1m": 2,
+      "stop_count": 10,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "12118059",
+      "ref": "363",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 20,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "12200536",
+      "ref": "108;908",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 6,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "12254606",
+      "ref": "105;905",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 10,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "12432467",
+      "ref": "108;908",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 5,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "14090500",
+      "ref": "293",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 2,
+      "stop_count": 15,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "14092648",
+      "ref": "293",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 19,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "16270727",
+      "ref": "343",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 9,
+      "stop_count": 45,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "16752345",
+      "ref": "343",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 41,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "17557041",
+      "ref": "379",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 25,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "17638519",
+      "ref": "171",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 6,
+      "stop_count": 17,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "17657731",
+      "ref": "255",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 3,
+      "stop_count": 27,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "17690566",
+      "ref": "271",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 2,
+      "stop_count": 13,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "17744909",
+      "ref": "294",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 15,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "20260222",
+      "ref": "263",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 22,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "21077286",
+      "ref": "279",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 22,
+      "stop_count": 25,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "21090580",
+      "ref": "451",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 3,
+      "stop_count": 9,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "21118929",
+      "ref": "307",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 8,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "21133419",
+      "ref": "314",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 10,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "21147088",
+      "ref": "403",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 16,
+      "stop_count": 18,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "21152060",
+      "ref": "201",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_opposes_trace",
+      "backward_steps_over_1m": 4,
+      "stop_count": 5,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "21169459",
+      "ref": "212",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 13,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "21179275",
+      "ref": "236",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 2,
+      "stop_count": 14,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "21192056",
+      "ref": "263",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 18,
+      "policy": "retain source order; no automatic repair"
+    },
+    {
+      "relation_id": "21214364",
+      "ref": "413",
+      "stop_kind": "platform",
+      "flags": "recorded_stop_order_mixed",
+      "backward_steps_over_1m": 1,
+      "stop_count": 30,
+      "policy": "retain source order; no automatic repair"
+    }
+  ],
+  "interpretation": "Order conflicts are diagnostics, not proof of an OSM error; stop-area and direction evidence are still needed."
+}
