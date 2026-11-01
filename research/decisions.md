@@ -72,3 +72,24 @@ The implementation reuses the baseline loader and solver, and checks against the
 published baseline before closures. Independent forward-state toy checks validate
 failure filtering and grouped versus individual scenarios. Nodewise invariants
 on all scenarios are implementation checks, not external data validation.
+
+## 2026-11-01: paired-closure protocol and fixed sample
+
+Enumerate physical unordered distinct source-segment pairs, preserving different
+streets with the same single signature. There are 1,417,086 physical pairs,
+28,337 signature-pair blocks and 27,849 distinct failed-connection unions.
+Group scenario evaluation by unions, but compute interaction using each pair's
+two constituent single losses and preserve physical-pair multiplicity.
+
+Before summarizing interaction, register a 128-union runtime benchmark and a
+900-second projected exhaustive-run limit. Above this limit, use a uniform sample
+without replacement of 512 physical-pair ranks with seed 20261101. The initial
+compact-solver projection was about 1,331 seconds, so the archived result is the
+sample, not a census. Preserve ranks, actual street IDs and the initial decision.
+Reproduction accepts the fixed selection so faster hardware does not change it.
+
+Contract only the fixed walking metric. Compare the compact algorithm with
+independent small-graph search and the original solver; require exact agreement
+of threshold counts for baseline and all 238 published single signatures. Do not
+infer geographic causes or full-domain interaction extrema from sampled values.
+Path tracing and sensitivity remain next steps.

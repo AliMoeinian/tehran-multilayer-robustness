@@ -13,6 +13,26 @@ results. It writes SVGs, source rows and hashes under `research/figures/` and
 ignored PNG review previews under `research/runs/progress-figure-preview/`.
 It does not rerun or modify the underlying experiments.
 
+## Paired closures
+
+The [paired-closure report](reports/paired-closures.en.md) records the initial
+timing-based scope decision and the fixed sample. After preparing the matching
+frozen model, reproduce that sample using:
+
+```bash
+python -m research.src.pair_closures --output research/runs/<new-pair-run> --selection research/reports/m4-pairs-2026-11-01/selection.json
+python -m research.src.audit_pairs --directory research/runs/<new-pair-run>
+python -m research.src.make_pair_figures
+```
+
+The compact solver precomputes exact bounded walking metrics and preserves
+boarding semantics. It reproduces all published single-signature counts before
+running pairs. Omitting `--selection` makes a fresh runtime-based scope decision
+under `research/config/pair-protocol.json`; the option above preserves the
+published sample regardless of hardware. Frozen gzip CSVs use canonical UTF-8
+text and fixed gzip metadata. The CI checks their saved identities and arithmetic;
+it does not claim to rerun all paired simulations on every commit.
+
 This directory implements the research roadmap incrementally. The first module
 audits the stop order on already structurally screened OSM route traces.
 

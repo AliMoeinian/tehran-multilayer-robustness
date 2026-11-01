@@ -4,5 +4,6 @@
 *.png binary
 *.pbf binary
 *.gpkg binary
+*.gz binary
 # Preserve original archival bytes so their SHA-256 inventory survives checkout.
 provenance/source-scripts/*.py -text whitespace=cr-at-eol

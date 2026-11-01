@@ -1,10 +1,10 @@
 # Street–route dependencies and structural healthcare accessibility in Tehran
 
-## Methods and results completed through the single-closure stage
+## Methods and results through single closures and a fixed paired-closure sample
 
 **Evidence cutoff:** 1 November 2026. **Map snapshot:** 29 October 2026, 21:21:26 UTC.  
 **Primary dataset:** `tehran-osm-20261029T212126Z-v1.1-public`.  
-**Status:** a cumulative technical report and a basis for manuscript writing. Pair interactions, sensitivity analyses, and a literature-based novelty assessment are not completed results.
+**Status:** a cumulative technical report and a basis for manuscript writing. A fixed paired-closure sample is now completed and linked in Section 13. Sensitivity analyses and a literature-based novelty assessment remain pending.
 
 ## Abstract
 
@@ -247,7 +247,7 @@ We separate file integrity, model implementation checks, and real-world validity
 | Baseline regression | Shared loader reproduces published M3 counts with matching network/configuration hashes |
 | Saved closure outputs | All 1,684 source segments, 238 groups, 2,142 effect rows, memberships, hashes, losses, shares and weighted summaries reconciled against SQLite |
 
-The current suite contains **27 passing unit tests**. The independent closure examples add 27 forward-search comparisons beyond the 720 baseline comparisons. The stored graph-length comparison is a sample of 20 source ways, not a full geometric survey. Nodewise invariants are necessary implementation checks; they would not detect every possible modeling or data error.
+At the single-closure milestone, the suite contained **27 passing unit tests**; the paired-closure extension now contains 36, as detailed in Section 13. The independent closure examples add 27 forward-search comparisons beyond the 720 baseline comparisons. The stored graph-length comparison is a sample of 20 source ways, not a full geometric survey. Nodewise invariants are necessary implementation checks; they would not detect every possible modeling or data error.
 
 The figure generator reads saved evidence directly, emits editable-text vector SVGs, and records source/output SHA-256 values in a figure manifest. Canonical LF line endings keep published artifact hashes stable across checkouts. All five figure layouts were reviewed through rendered PNG previews, and a legend/annotation collision was corrected. SVG structure was checked for editable text and the absence of embedded raster images. Report links and output hashes were also checked. These presentation checks are separate from arithmetic validation.
 
@@ -327,24 +327,20 @@ The following issues remain material:
 
 Sensitivity and interpretation are still required before using these numbers as the final evidence of a conference paper. The current implementation checks justify proceeding to the next analysis stage within the stated model; they do not guarantee a perfect dataset.
 
-## 13. Next step: paired closures and interaction
+## 13. Completed extension: sampled paired closures
 
-The immediate next question is whether two street closures together produce more or less loss than the sum of their separate losses. With A defined as the full-denominator accessibility share, the planned interaction is:
+The [paired-closure methods and results supplement](paired-closures.en.md) records the next completed stage. It retains the same origin/target sets, source snapshot and failure mechanism. It adds an exact contraction of walking paths onto relevant stops, validated against the original solver and independent small-graph search.
 
-```math
-C(e,f)=L_A(\{e,f\})-L_A(\{e\})-L_A(\{f\}),
-\quad L_A(F)=A(\varnothing)-A(F).
-```
+The physical pair domain contains 1,417,086 unordered distinct street pairs and 27,849 distinct failed-connection unions. A protocol recorded before interaction analysis selected a fixed uniform sample of 512 physical pairs when the initial benchmark projected more than 900 seconds for an exhaustive run. The initial projection was approximately 1,331 seconds. This sample contains 482 union scenarios. Ranks, actual source-street identifiers, multiplicities and union membership are public; it is not an exhaustive paired-closure census.
 
-Positive C denotes a joint loss larger than the sum of single losses; negative C denotes overlap or subadditivity. It is not, by itself, evidence of a dynamic feedback cascade. The two-mode comparison must use the same street pair, origin/target sets and W/K values.
+For a pair, count-based interaction is joint loss minus the sum of its two single losses. At W=1,000 m and K=1, the bus model has 15 negative, 489 zero and 8 positive sampled interactions; the full model has 12 negative, 492 zero and 8 positive interactions. In both models, the observed interaction range is from -127 to +32 building locations. These are sample extrema. The largest sampled joint losses are 344 without metro and 339 with metro.
 
-Before executing that stage, we will record a pair-selection protocol and compute its exact domain size. There are 1,417,086 unordered distinct street pairs. Different pairs can have the same union of failed bus-connection IDs; those unions can again be evaluated once. Their interaction still uses the corresponding two single losses, so union grouping must not erase pair identity or multiplicity. Distinct street segments with the same single-failure signature are valid pairs and should not disappear from the analysis.
+A traceable positive example has single losses 0 and 106 but joint loss 138, producing +32 interaction. This establishes that a zero-single-loss segment can participate in a nonadditive pair within the sample. It does not establish that this is typical across the whole domain. Both the new heatmap and arithmetic examples are linked in the supplement as Figures 6 and 7, with reproducible SVGs and source data.
 
-The next deliverable should contain:
+The suite now has 36 passing tests, including 1,440 compact/full/independent forward-search comparisons on small origin-budget-scenario cases. Baseline and all 238 single-signature count grids were reproduced. Nine real-network scenarios were also checked against the original solver at all connected origins and budgets. An independent audit reconstructed physical sample identities and all saved interaction statistics; it passed.
 
-- A declared exhaustive or sampled pair domain, its rationale, and a fixed seed if sampling is needed. Compute the number of distinct failed-connection unions and benchmark runtime before choosing scope; do not choose pairs after looking for large interaction scores.
-- Tests for union-based failure propagation, grouped-versus-individual equivalence, and positive/zero/negative interaction on small independently solvable examples.
-- Matched two-mode interaction results over the declared W/K grid, with complete pair multiplicities and clear denominators.
-- A first geographic/path-level explanation of selected interaction cases and of the seven single-closure signatures with negative DeltaM.
+## 14. Next step: path-level explanations and sensitivity
 
-After paired closures, the necessary validation work is connector/budget sensitivity, alternative failure-policy checks, context and target-set checks where supported by the same dataset, and ranking stability. Only then should we fix the manuscript's strongest claims and select final figures. This report records completed work separately from that plan.
+The next work is to trace specific origins and eligible paths for positive/negative pair cases and for the seven earlier single-failure signatures with negative DeltaM. Arithmetic is established; geographic and operational explanations have not yet been validated.
+
+Then evaluate sensitivity to geometric connection choices, walking/boarding budgets, failure policy, context and supported target sets using the same data. Ranking stability and final conference claims remain pending. A larger or exhaustive pair run can use the contracted solver under a recorded scope amendment; it should remain clearly separate from this fixed sample. No new external records are required for these stages.
