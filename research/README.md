@@ -13,25 +13,23 @@ results. It writes SVGs, source rows and hashes under `research/figures/` and
 ignored PNG review previews under `research/runs/progress-figure-preview/`.
 It does not rerun or modify the underlying experiments.
 
-## Paired closures
+## Exhaustive paired closures
 
-The [paired-closure report](reports/paired-closures.en.md) records the initial
-timing-based scope decision and the fixed sample. After preparing the matching
-frozen model, reproduce that sample using:
+The [paired-closure report](reports/paired-closures.en.md) covers every one of
+1,417,086 physical street pairs, all nine W/K settings, and both mode sets.
+After preparing the frozen model, reproduce it with:
 
 ```bash
-python -m research.src.pair_closures --output research/runs/<new-pair-run> --selection research/reports/m4-pairs-2026-11-01/selection.json
-python -m research.src.audit_pairs --directory research/runs/<new-pair-run>
+python -m research.src.pair_closures --protocol research/config/pair-protocol.json --output research/runs/<new-complete-run> --workers 4
+python -m research.src.audit_pairs --directory research/runs/<new-complete-run>
 python -m research.src.make_pair_figures
 ```
 
-The compact solver precomputes exact bounded walking metrics and preserves
-boarding semantics. It reproduces all published single-signature counts before
-running pairs. Omitting `--selection` makes a fresh runtime-based scope decision
-under `research/config/pair-protocol.json`; the option above preserves the
-published sample regardless of hardware. Frozen gzip CSVs use canonical UTF-8
-text and fixed gzip metadata. The CI checks their saved identities and arithmetic;
-it does not claim to rerun all paired simulations on every commit.
+The protocol requires exhaustive computation regardless of runtime. Exact
+union grouping avoids repeated graph calculations and retains every physical
+pair and signature-pair identity. The independent audit streams through every
+physical pair and reconciles the full effect grid. CI audits the frozen complete
+output and unit tests; it does not rerun the entire simulation on every commit.
 
 This directory implements the research roadmap incrementally. The first module
 audits the stop order on already structurally screened OSM route traces.

@@ -4,7 +4,7 @@ Open research on street–route dependencies and structural healthcare accessibi
 
 We study how street closures affect connections from mapped buildings to hospital candidates through walking, bus and metro layers. The project is being developed for a conference paper in complex networks.
 
-**Status:** route/stop diagnostics, the walking graph, geometric connectors, street dependencies and tested structural accessibility solvers are implemented. The intact baseline, exhaustive observed single closures, and a fixed 512-pair closure sample have been computed on the screened subset. Sensitivity analyses, path-level interpretation and the conference paper remain in progress; results are not citywide operational estimates.
+**Status:** route/stop diagnostics, the walking graph, geometric connectors, street dependencies and tested structural accessibility solvers are implemented. The intact baseline, exhaustive observed single closures, and the complete 1,417,086-pair closure census have been computed on the screened subset. Sensitivity analyses, path-level interpretation and the conference paper remain in progress; results are not citywide operational estimates.
 
 ## Start here
 
@@ -15,7 +15,7 @@ We study how street closures affect connections from mapped buildings to hospita
 - [Code and reproducibility](scripts/README.md)
 - [Research implementation and commands](research/README.md)
 - [Cumulative methods and results report — English, with SVG figures](research/reports/research-progress.en.md)
-- [Paired-closure protocol and sampled results — English](research/reports/paired-closures.en.md)
+- [Exhaustive paired-closure protocol and results — English](research/reports/paired-closures.en.md)
 
 ```bash
 git clone https://github.com/AliMoeinian/tehran-multilayer-robustness.git

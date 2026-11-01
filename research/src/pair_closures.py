@@ -1,6 +1,7 @@
 """Protocol-driven paired street closures using exact stop-metric contraction."""
 import argparse
 import collections
+from concurrent.futures import ProcessPoolExecutor
 import csv
 import gzip
 import hashlib
@@ -16,6 +17,31 @@ import numpy as np
 from .accessibility import ROOT,Stop,load_model,solve
 from .compact_accessibility import CompactModel
 from .single_closures import retained_rides
+
+
+_WORKER=None
+
+
+def initialize_worker(compact,ride_rows,stop_ids,modes,active,boardings,grid):
+    global _WORKER
+    _WORKER=(compact,ride_rows,stop_ids,modes,active,boardings,grid)
+
+
+def evaluate_batch(unions):
+    """Same deterministic equations/checks as the serial compact evaluation."""
+    compact,ride_rows,stop_ids,modes,active,boardings,grid=_WORKER
+    result=[]
+    for failed in unions:
+        counts={};layers={}
+        for name,allowed in modes.items():
+            rides=retained_rides(ride_rows,stop_ids,allowed,set(failed))
+            costs=compact.costs(rides,boardings,active[name]);layers[name]=costs
+            if any(not np.all(b<=a) for a,b in zip(costs,costs[1:])):raise AssertionError('Boarding monotonicity')
+            counts[name]=[int(np.count_nonzero(costs[k+1]<=w)) for k,w in grid]
+        if any(not np.all(a<=b) for a,b in zip(layers['bus_metro'],layers['bus'])):
+            raise AssertionError('Metro monotonicity')
+        result.append((failed,counts))
+    return result
 
 
 def pair_domain(groups):
@@ -52,10 +78,11 @@ def write_gzip_csv(path,fields,rows):
                 writer=csv.writer(stream,lineterminator='\n');writer.writerow(fields);writer.writerows(rows)
 
 
-def run(network,output,config,protocol_path,selection_reference=None):
+def run(network,output,config,protocol_path,selection_reference=None,workers=1):
     output=output.resolve()
     if not output.is_relative_to(ROOT/'research/runs'):raise ValueError('Output must stay in research/runs')
     if output.exists():raise FileExistsError(output)
+    if workers<1:raise ValueError('workers must be positive')
     started=time.perf_counter();protocol=json.loads(protocol_path.read_text())
     source=ROOT/'research/reports/m3-single-closures-2026-11-01'
     groups=json.loads((source/'groups.json').read_text())
@@ -123,13 +150,16 @@ def run(network,output,config,protocol_path,selection_reference=None):
     for u in probe:cache[u]=evaluate(u)
     per_union=(time.perf_counter()-bench)/len(probe)
     projected=per_union*len(new)
-    exhaustive=projected<=protocol['maximum_projected_exhaustive_seconds']
+    force_exhaustive=protocol.get('scope')=='exhaustive'
+    exhaustive=force_exhaustive or projected<=protocol['maximum_projected_exhaustive_seconds']
     fixed_selection=json.loads(selection_reference.read_text()) if selection_reference else None
     if fixed_selection is not None:exhaustive=fixed_selection['exhaustive']
+    if force_exhaustive and not exhaustive:raise ValueError('Exhaustive protocol cannot use a sampled selection')
     selection={'exhaustive':exhaustive,'benchmark_seconds_per_union':per_union,
         'projected_exhaustive_seconds':projected,'benchmark_union_count':len(probe),
         'decision_basis':'runtime only; no interaction outcomes used for selection'}
     if fixed_selection is not None:selection['decision_basis']='reproduce the fixed recorded selection; current benchmark does not change the sample'
+    if force_exhaustive:selection['decision_basis']='explicit exhaustive protocol; runtime does not change scope; no sampling'
     if not exhaustive:
         # Sample ranks uniformly over physical street pairs, not signature pairs.
         ranks=sorted(random.Random(protocol['fallback_seed']).sample(range(total),min(total,protocol['fallback_uniform_street_pair_sample_size'])))
@@ -149,11 +179,34 @@ def run(network,output,config,protocol_path,selection_reference=None):
     required=sorted({u for _,_,_,u in pairs});selection['evaluated_pair_unions']=len(required)
     save_json('selection.json',selection)
     print('Selection',json.dumps({k:v for k,v in selection.items() if k!='sampled_street_pair_ranks'}),flush=True)
-    last=time.perf_counter()
-    for index,u in enumerate(required,1):
-        if u not in cache:cache[u]=evaluate(u)
-        if time.perf_counter()-last>10:
-            print('Pair unions',index,'/',len(required),'elapsed',round(time.perf_counter()-started,1),flush=True);last=time.perf_counter()
+    last=time.perf_counter();pending=[u for u in required if u not in cache]
+    args=(compact,m.ride_rows,m.stop_ids,modes,active,boardings,grid)
+    if workers==1:
+        initialize_worker(*args)
+        batch_results=map(evaluate_batch,[pending[i:i+64] for i in range(0,len(pending),64)])
+        executor=None
+    else:
+        executor=ProcessPoolExecutor(max_workers=workers,initializer=initialize_worker,initargs=args)
+        # Duplicate reference scenarios verify worker serialization/evaluation too.
+        checks=[(),tuple(sorted(groups[0]['failed_connections']))]
+        batch_results=executor.map(evaluate_batch,[checks]+[pending[i:i+64] for i in range(0,len(pending),64)])
+    try:
+        with (output/'union-checkpoints.jsonl').open('w',encoding='utf-8',newline='\n') as checkpoint:
+            for batch in batch_results:
+                for u,value in batch:
+                    if u==():
+                        if value!=baseline:raise AssertionError('Worker baseline mismatch')
+                    elif u in cache:
+                        if value!=cache[u]:raise AssertionError('Worker single mismatch')
+                    else:cache[u]=value
+                    checkpoint.write(json.dumps([u,value],separators=(',',':'))+'\n')
+                checkpoint.flush()
+                if time.perf_counter()-last>10:
+                    done=sum(u in cache for u in required)
+                    print('Pair unions',done,'/',len(required),'elapsed',round(time.perf_counter()-started,1),flush=True);last=time.perf_counter()
+    finally:
+        if executor is not None:executor.shutdown(wait=True,cancel_futures=True)
+    if any(u not in cache for u in required):raise AssertionError('Incomplete union computation')
     evaluated_pair_count=sum(n for a,b,n,u in pairs)
     summaries=[];histograms=[];top_cases=[]
     for j,(k,w) in enumerate(grid):
@@ -186,18 +239,32 @@ def run(network,output,config,protocol_path,selection_reference=None):
         [(union_ids[u],json.dumps(u,separators=(',',':'))) for u in required])
     write_gzip_csv(output/'union-effects.csv.gz',['union_id','max_line_changes','walking_budget_m','bus_accessible','bus_metro_accessible'],
         [(union_ids[u],k,w,cache[u]['bus'][j],cache[u]['bus_metro'][j]) for u in required for j,(k,w) in enumerate(grid)])
+    if exhaustive:
+        street_keys=[street for g in groups for street in g['streets']]
+        street_ids={street:i for i,street in enumerate(street_keys)}
+        write_gzip_csv(output/'street-index.csv.gz',['street_index','street','signature'],
+            [(street_ids[street],street,g['signature']) for g in groups for street in g['streets']])
+        def physical_rows():
+            rank=0
+            for a,b,n,u in pairs:
+                for local in range(n):
+                    first,second=physical_pair(groups[a]['streets'],groups[b]['streets'],local,a==b)
+                    yield rank,street_ids[first],street_ids[second],union_ids[u]
+                    rank+=1
+        write_gzip_csv(output/'physical-pairs.csv.gz',['pair_rank','first_street_index','second_street_index','union_id'],physical_rows())
     save_json('interaction-distributions.json',histograms);save_json('extreme-cases.json',top_cases)
-    summary={'stage':'m4-pairs-v1','network_sha256':m.network_hash,'config_sha256':m.config_hash,
+    summary={'stage':'m4-pairs-exhaustive-v1' if force_exhaustive else 'm4-pairs-v1','network_sha256':m.network_hash,'config_sha256':m.config_hash,
         'protocol_sha256':hashlib.sha256(protocol_path.read_bytes()).hexdigest(),
         'source_code_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [Path(__file__),Path(__file__).with_name('compact_accessibility.py')]},
         'domain':domain,'selection':{k:v for k,v in selection.items() if k!='sampled_street_pair_ranks'},
         'evaluated_street_pairs':evaluated_pair_count,'all_buildings':single_summary['all_buildings'],
         'single_signatures_reproduced':checked,'full_graph_scenarios_compared':9,
+        'workers':workers,'union_scenarios_evaluated':len(required),'signature_pairs_evaluated':len(pairs),
         'distance_tolerance':'1e-8 m absolute / 1e-12 relative; exact threshold-count agreement required',
         'interaction_unit':'building count; divide by all_buildings for accessibility-share interaction',
         'pair_measure':'each distinct unordered physical source-segment pair has equal weight; no failure-probability interpretation',
         'results':summaries,'elapsed_seconds':time.perf_counter()-started,
-        'artifact_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in output.iterdir()}}
+        'artifact_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in output.iterdir() if p.name!='union-checkpoints.jsonl'}}
     save_json('summary.json',summary);print(json.dumps(summary,indent=2),flush=True)
     return summary
 
@@ -209,4 +276,5 @@ if __name__=='__main__':
     parser.add_argument('--config',type=Path,default=ROOT/'research/config/baseline.json')
     parser.add_argument('--protocol',type=Path,default=ROOT/'research/config/pair-protocol.json')
     parser.add_argument('--selection',type=Path,help='Reproduce a fixed published selection instead of selecting scope by current runtime')
-    a=parser.parse_args();run(a.network,a.output,a.config,a.protocol,a.selection)
+    parser.add_argument('--workers',type=int,default=1)
+    a=parser.parse_args();run(a.network,a.output,a.config,a.protocol,a.selection,a.workers)

@@ -35,5 +35,5 @@ jobs:
         run: python -m research.src.single_closures --baseline research/runs/m3-baseline-v1/summary.json
       - name: Reconcile saved closure artifacts with source dependencies
         run: python -m research.src.audit_closures --directory research/runs/m3-single-closures-v1
-      - name: Audit the frozen pair sample and interaction tables
+      - name: Audit every physical pair and the complete interaction tables
         run: python -m research.src.audit_pairs

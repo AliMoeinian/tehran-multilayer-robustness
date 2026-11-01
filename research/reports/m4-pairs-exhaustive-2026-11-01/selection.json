@@ -1,0 +1,8 @@
+{
+  "exhaustive": true,
+  "benchmark_seconds_per_union": 0.044892382812577125,
+  "projected_exhaustive_seconds": 1239.837828517755,
+  "benchmark_union_count": 128,
+  "decision_basis": "explicit exhaustive protocol; runtime does not change scope; no sampling",
+  "evaluated_pair_unions": 27849
+}

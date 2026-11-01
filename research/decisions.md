@@ -73,23 +73,21 @@ published baseline before closures. Independent forward-state toy checks validat
 failure filtering and grouped versus individual scenarios. Nodewise invariants
 on all scenarios are implementation checks, not external data validation.
 
-## 2026-11-01: paired-closure protocol and fixed sample
+## 2026-11-01: exhaustive paired-closure census
 
-Enumerate physical unordered distinct source-segment pairs, preserving different
-streets with the same single signature. There are 1,417,086 physical pairs,
-28,337 signature-pair blocks and 27,849 distinct failed-connection unions.
-Group scenario evaluation by unions, but compute interaction using each pair's
-two constituent single losses and preserve physical-pair multiplicity.
+The user requires complete experiments. Evaluate all 1,417,086 unordered distinct
+source-segment pairs regardless of runtime. Keep all 28,337 signature-pair blocks,
+including distinct physical streets sharing one signature. They generate 27,849
+unique failed-connection unions. Group only mathematically identical scenarios;
+preserve each pair's two single losses and physical multiplicity for interaction.
 
-Before summarizing interaction, register a 128-union runtime benchmark and a
-900-second projected exhaustive-run limit. Above this limit, use a uniform sample
-without replacement of 512 physical-pair ranks with seed 20261101. The initial
-compact-solver projection was about 1,331 seconds, so the archived result is the
-sample, not a census. Preserve ranks, actual street IDs and the initial decision.
-Reproduction accepts the fixed selection so faster hardware does not change it.
+Use the exact fixed-walking contraction and four independent worker processes.
+Verify parent/worker reference cases and all-scenario budget/mode monotonicity.
+Retain an explicit compressed record of every physical pair, a street index,
+all union effects, signed distributions, extrema and source/input hashes.
+Independently enumerate every physical pair in the saved-output audit.
 
-Contract only the fixed walking metric. Compare the compact algorithm with
-independent small-graph search and the original solver; require exact agreement
-of threshold counts for baseline and all 238 published single signatures. Do not
-infer geographic causes or full-domain interaction extrema from sampled values.
-Path tracing and sensitivity remain next steps.
+The earlier partial paired experiment and its figures/data are removed from the
+current repository. Its results are not the paper's evidence. Git history is
+retained. Broader preservation and cross-solver controls remain a separately
+identified next stage; the full paired domain itself must have no omissions.

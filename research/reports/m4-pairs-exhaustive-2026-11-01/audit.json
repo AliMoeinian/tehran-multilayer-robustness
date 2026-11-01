@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "all physical pair identities, domain completeness, dependency unions, all effect rows and interaction summaries",
+  "exhaustive": true,
+  "evaluated_street_pairs": 1417086,
+  "signature_pairs": 28337,
+  "union_scenarios": 27849,
+  "effect_rows": 250641,
+  "parameter_comparisons": 18
+}

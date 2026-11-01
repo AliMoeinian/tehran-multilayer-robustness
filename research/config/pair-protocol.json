@@ -1,14 +1,12 @@
 {
-  "protocol_version": "pairs-v1",
-  "domain": "unordered distinct pairs of the 1684 observed source street segments",
+  "protocol_version": "pairs-exhaustive-v1",
+  "scope": "exhaustive",
+  "domain": "all unordered distinct pairs of the 1684 observed source street segments",
   "failure_policy": "union of dependent consecutive-stop bus connection IDs; walking and metro fixed",
   "parameter_grid": "all W and K from baseline.json, both bus and bus_metro",
-  "grouping": "exact failed-connection union; retain single-signature pair identities and street multiplicities",
+  "grouping": "exact failed-connection union; preserve every signature pair and physical street pair",
   "benchmark_union_count": 128,
-  "maximum_projected_exhaustive_seconds": 900,
-  "fallback_uniform_street_pair_sample_size": 512,
-  "fallback_seed": 20261101,
-  "selection_rule": "exhaustive if benchmark projects at most 900 seconds; otherwise simple random sample without replacement of street-pair ranks",
+  "selection_rule": "exhaustive regardless of runtime; sampling and automatic scope reduction are prohibited",
   "interaction": "C_count = joint_loss - first_single_loss - second_single_loss; C_share = C_count / 65677",
-  "interpretation": "deterministic interaction in the screened static model; no claim of independent failure probability or dynamic cascade"
+  "interpretation": "complete deterministic pair census within the screened model; no claim of complete operating-service coverage"
 }

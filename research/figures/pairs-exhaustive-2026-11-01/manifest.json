@@ -1,0 +1,12 @@
+{
+  "script_sha256": "98793e837a057c0fc187717567062f9850a84562399f8bc0b888cd53ad198d75",
+  "source_sha256": {
+    "summary.json": "0a44ba5f9bc9f2251b837e606a65142e91ef3335e74ce74bd9768cc2a48cb2a2",
+    "extreme-cases.json": "b610e415c1a6b45e108808651d8ba5edf460dafbcd15c93062f3f4f6d8330590"
+  },
+  "output_sha256": {
+    "01-positive-pair-interaction.svg": "0be8fa4484b8f918c5a0fe61731560046b445dbc7203728a9a5d6229f2ad0f52",
+    "02-pair-interaction-examples.svg": "c51f6ee4dd7aefbd0d53e2b1f3539aa8dc62d55aeb63278ae8ea35de787061f4",
+    "figure-data.json": "e3447ba73a595a2bc7ef3fa061301deabac21ddd10a971888f5f0860119b574c"
+  }
+}

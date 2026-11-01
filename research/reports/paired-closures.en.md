@@ -1,103 +1,131 @@
-# Paired street closures: protocol, exact contraction, and sampled results
+# Exhaustive paired street closures: methods and results
 
-**Date:** 1 November 2026. This extends the [cumulative methods report](research-progress.en.md) using the same frozen OSM dataset, targets, connectors, origin weights and failure policy. No external records were added. The single-closure domain is exhaustive; the paired-closure results below are **a fixed sample**, not an exhaustive analysis.
+**Date:** 1 November 2026. This extends the [cumulative methods report](research-progress.en.md) with the same frozen OSM data, origin/target sets, connectors, weights and failure policy. **All unordered distinct pairs of the 1,684 observed bus-supporting street segments are included. There is no sampling or runtime-based scope reduction.**
 
-## 1. Question and interaction measure
+## 1. Domain and interaction
 
-For two distinct source street segments, we ask whether their joint accessibility loss differs from the sum of their individual losses. In building-count units:
+The domain contains **1,417,086 physical street pairs**. It is partitioned into **28,337 pairs of single-failure signatures**, including pairs of different streets with the same signature. These produce **27,849 distinct unions of failed bus-connection IDs**. A total of 16,289 physical pairs share one single signature. Every physical pair has weight one; a signature-pair result is weighted by the number of physical pairs it represents.
+
+For each pair, count-based interaction is:
 
 ```math
 C_N(e,f)=L_N(\{e,f\})-L_N(\{e\})-L_N(\{f\}).
 ```
 
-Positive values indicate a joint loss larger than the sum of single losses. Negative values indicate overlap or subadditivity. Divide by 65,677 to obtain accessibility-share interaction. The sign does not establish a dynamic cascade, a failure probability, or a causal mechanism outside the model. Two modes are always compared on the same pair and W/K values.
+A positive value means joint loss exceeds the sum of single losses. A negative value means subadditivity or overlapping losses. Divide by 65,677 to express interaction in full-denominator accessibility-share units. This is a deterministic structural interaction, not evidence of a dynamic cascade or a probability of real failures.
 
-A pair removes the union of the two streets' dependent consecutive-stop bus connections. Walking and metro stay fixed, and no bus rerouting is introduced. Pairs are unordered and contain distinct source segments. Two different segments sharing one dependency signature remain a valid pair: they can produce exactly the same failed graph as either single closure, with negative interaction when that single loss is positive.
+The pair disables the union of its dependent consecutive-stop bus connections. Walking and metro remain fixed and buses do not reroute. The two mode sets use identical pairs and W/K values. The census covers the defined observed street domain, not all streets or all operating services in Tehran.
 
-## 2. Domain enumeration and selection recorded before interaction analysis
+## 2. Complete computation and physical-pair identity
 
-The 1,684 observed street units yield **1,417,086 distinct unordered pairs**. They are represented by **28,337 single-signature pairs**, including diagonal combinations with at least two distinct streets. There are **27,849 distinct unions of failed connection IDs**. Of these, 231 can reuse a single-closure scenario and 27,618 are new union scenarios. A total of 16,289 physical street pairs share the same single-failure signature.
+The [protocol](../config/pair-protocol.json) explicitly requires exhaustive computation regardless of runtime. Benchmark timings are diagnostics only. Reusing an exactly identical failed graph is an algebraic reduction, not subsampling: all physical and signature-pair identities remain represented.
 
-The [protocol](../config/pair-protocol.json) set a runtime-based scope rule before paired interaction results were summarized: benchmark 128 evenly spaced new union scenarios; use exhaustive enumeration if the projected solver time is at most 900 seconds, otherwise sample 512 physical street-pair ranks uniformly without replacement with seed **20261101**. The first benchmark measured about 0.0482 seconds per union, projecting about 1,331 seconds for the new unions. The recorded decision therefore selected the fixed sample. The threshold was a computation-scope choice, not a statistical power calculation.
+The solver evaluates all nine W/K combinations for both walking-plus-bus and walking-plus-bus-plus-metro. The output contains **250,641 union-effect rows**, each with both mode counts. The full expanded experiment represents 12,753,774 physical-pair/parameter combinations and 25,507,548 physical-pair/parameter/mode results. The separate layers avoid duplicating identical calculations while retaining exact reconstruction.
 
-Sampling is uniform over physical street pairs, not uniform over signatures. Canonical blocks enumerate signature pairs in source order. Cross-signature blocks use the Cartesian product of their ordered street lists; same-signature blocks use lexicographic combinations. Saved ranks identify exact pairs under this convention. The publication includes the [initial scope decision](m4-pairs-2026-11-01/initial-scope-decision.json), [fixed selection](m4-pairs-2026-11-01/selection.json), and actual street identifiers for every sampled pair.
+Every physical pair is also explicitly enumerated in `physical-pairs.csv.gz`. Its two street indices resolve through `street-index.csv.gz`; its union ID resolves through `unions.csv.gz` and `union-effects.csv.gz`. Constituent single losses resolve through the street signatures and the earlier exhaustive single-closure table. Pairs sharing a failed union can still have different interaction because their two constituent single losses can differ.
 
-The sample covers **512 distinct physical pairs**, represented by **482 signature pairs and 482 union scenarios**. Each union was evaluated over all nine W/K combinations in both mode sets, yielding 4,338 union-effect rows with two mode counts per row. Repeat occurrences in a signature-pair block retain their sampled multiplicity. We report empirical counts and extrema within this sample. We do not treat signature-equivalent pairs as independent observations or extrapolate the sample maxima to the entire domain. Rare positive interactions are particularly uncertain at this sample size.
+<!-- BEGIN EXECUTION -->
+The completed run used **4 worker processes** and took **664.4 seconds** on the local machine. All **27,849 union scenarios** and **28,337 signature pairs** are present; their weights sum to **1,417,086 physical pairs**. Runtime is descriptive, not a guaranteed performance bound.
+<!-- END EXECUTION -->
 
-## 3. Exact walking-metric contraction
+## 3. Exact stop-metric contraction and parallel execution
 
-Running the original 848,604-node walking solver for every union would repeatedly solve identical walking subproblems. We instead precompute shortest walking distances, under the existing 2,000 m search cutoff, between relevant walking anchors. No new transfer links, distance rounding, or approximate geometry is introduced.
+The original solver operates on 848,604 walking nodes. We precompute its fixed walking metric between relevant anchors and contract the repeated walking subproblems. The compact representation has 423,879 sparse origin-to-stop incidences, stop-to-target costs, and a stop-to-stop transfer matrix. All geometric connectors and cumulative walking costs are included. No approximate geometry, float32 conversion, or distance rounding is introduced.
 
-The contracted model stores:
+For each boarding budget, reverse directed riding propagation finds the best downstream alighting option. Walking transfers connect that option to the previous boarding layer. Sparse grouped minima reconstruct all connected-origin costs while retaining walking-only and lower-budget options. Boarding roles, disabled modes, rejected access connectors and onboard passage keep their original meaning.
 
-- The walking-only origin-to-target cost and the target cost at each stop, including connector offsets.
-- A stop-to-stop walking matrix, charging alighting access, walking distance, and boarding access.
-- Sparse origin-to-stop walking incidences, charging the origin and boarding offsets. The current model has **423,879** such incidences.
+Independent union scenarios are distributed across four Python worker processes. Each worker uses the same deterministic formulas and tests boarding-budget and added-metro monotonicity at every origin-cost layer. Parallelism changes which CPU evaluates a scenario; it does not partition the domain by sampling. Parent-side reference cases check worker serialization and evaluation against previously validated values. Incremental checkpoints are local execution-recovery evidence; the published final tables contain the complete census.
 
-For each boarding budget, reverse directed riding propagation finds the best downstream alighting option. A stop-to-stop minimum then connects that option to the previous boarding-budget layer. Origin costs are reconstructed by a sparse grouped minimum over their reachable boarding stops, with walking-only and lower-budget options retained. Entry-only, exit-only, rejected walking connectors, disabled modes and onboard passage have the same semantics as the original solver. Vehicle motion still costs zero walking distance; no travel-time assertion is made.
+## 4. Validation scope
 
-This is a shortest-path contraction of the fixed walking layer. It preserves the modeled origin costs mathematically. Floating-point costs are checked with absolute tolerance 1e-8 m and relative tolerance 1e-12; **threshold counts must agree exactly**. These tolerances are numerical checks, not a spatial uncertainty model.
+The suite contains **37 passing unit tests**, including actual subprocess-worker equivalence and closure propagation. The compact solver was also checked against the full graph and independent forward expanded-state search on small generated graphs, totaling 1,440 origin/budget/scenario comparisons. The original baseline tests and the single-closure tests remain in the suite.
 
-## 4. Validation and saved-output audit
+On the Tehran model, the compact solver reproduces the baseline and every W/K count for all 238 single-failure signatures. Nine real scenarios additionally compare full connected-origin cost vectors with the original solver: the baseline, five fixed single signatures and three fixed pair unions. Numeric tolerance is 1e-8 m absolute and 1e-12 relative; threshold counts must match exactly. This selected full-solver comparison is not an exhaustive cross-solver check of every union. The separate all-scenario controls are described below; broader cross-solver and length-preservation verification belongs to the subsequent validation stage.
 
-The current suite has **36 passing unit tests**. New tests compare the compact solver with both the original full-graph solver and an independent forward expanded-state search on 30 small random graphs, before and after arc deletion: 1,440 origin/budget/scenario comparisons. Other examples check rejected-connector through-riding, origin offsets, disabled modes, same-signature pairs, pair-rank reconstruction, union grouping, and positive, negative and zero interaction.
+The independent output audit enumerates **every one of the 1,417,086 physical pairs** with Cartesian products/combinations, rather than the runner's unranking helper. It compares every saved rank, street identity and union ID, verifies absence of missing/extra rows, reconstructs all 28,337 multiplicities, and checks all 27,849 dependency unions. It then checks every effect row, all nine parameter combinations, mode and budget monotonicity, joint-loss bounds, every signed interaction distribution, summary and illustrated extreme case. All input and artifact identities are checked. These checks establish completeness and internal consistency within the model; they do not certify service activity, hospital operations or real entrances.
 
-On the actual Tehran model, the compact solver reproduced the complete W/K grid for the baseline and **all 238 published single-failure signatures**. Full-graph origin-cost vectors were additionally compared for nine scenarios: the baseline, five deterministically spaced single signatures, and three deterministically spaced benchmark unions. At every budget, all 64,166 connected-origin costs matched within the stated tolerances and threshold counts matched exactly. Full node-vector equivalence was not exhaustively checked for every possible pair.
-
-Mode and boarding-budget monotonicity checks ran for every evaluated compact scenario. At aggregation, every joint loss was checked to be at least either constituent single loss. An independent saved-output audit reconstructed the seeded ranks and physical pair identities using Cartesian products/combinations rather than the runner's unranking helper. It checked union membership, completeness of all 4,338 effect rows, input/artifact hashes, mode dominance, constituent-loss bounds, all interaction distributions, and all summary counts. This audit passed for all 18 parameter/mode comparisons. These checks concern implementation and saved evidence; they do not certify operational transit activity or hospital service.
+<!-- BEGIN AUDIT -->
+**Independent audit: passed.** Every physical pair was verified. All **250,641 effect rows**, **28,337 signature pairs**, **27,849 union scenarios**, and **18 parameter/mode summaries** reconciled.
+<!-- END AUDIT -->
 
 ## 5. Results
 
-At W=1,000 m and K=1, the sample results are:
+The following table is the readability slice W=1,000 m and K=1. Both columns refer to the **same complete physical-pair domain**.
 
+<!-- BEGIN MAIN -->
 | Measure | Walking + bus | Walking + bus + metro |
-|---|---:|---:|
-| Negative-interaction pairs | 15 | 12 |
-| Zero-interaction pairs | 489 | 492 |
-| Positive-interaction pairs | 8 | 8 |
-| Minimum interaction, building locations | −127 | −127 |
-| Maximum interaction, building locations | +32 | +32 |
-| Mean interaction, building locations | −0.506 | −0.592 |
-| Maximum joint loss in the sample, building locations | 344 | 339 |
+| --- | --- | --- |
+| Negative-interaction pairs | 51,443 | 47,356 |
+| Zero-interaction pairs | 1,349,924 | 1,358,291 |
+| Positive-interaction pairs | 15,719 | 11,439 |
+| Minimum C (buildings) | -224 | -219 |
+| Maximum C (buildings) | 192 | 41 |
+| Mean C (buildings) | -0.437564 | -0.545187 |
+| Maximum joint loss (buildings) | 439 | 351 |
+<!-- END MAIN -->
 
-All rows use the same 512 sampled physical pairs. The two sample maxima need not be attached to the same pair. Negative means do not rule out positive interactions or identify a dynamic mechanism.
+The full grid is reported below. Counts and means use equal physical-pair weights. Extremes are domain extremes within the modeled pair experiment, not bounds on real-world disasters.
 
-![Positive interaction counts across the full parameter grid](../figures/pairs-2026-11-01/01-positive-pair-interaction.svg)
+<!-- BEGIN GRID -->
+| K | W (m) | Mode | C < 0 | C = 0 | C > 0 | Min C | Max C | Max joint loss |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 500 | Bus | 61,390 | 1,354,519 | 1,177 | -210 | 7 | 361 |
+| 0 | 500 | Bus + metro | 61,390 | 1,354,519 | 1,177 | -208 | 7 | 359 |
+| 0 | 1,000 | Bus | 49,731 | 1,353,403 | 13,952 | -224 | 192 | 437 |
+| 0 | 1,000 | Bus + metro | 37,281 | 1,365,291 | 14,514 | -219 | 41 | 370 |
+| 0 | 2,000 | Bus | 10,819 | 1,390,008 | 16,259 | -153 | 15 | 198 |
+| 0 | 2,000 | Bus + metro | 5,593 | 1,408,680 | 2,813 | -153 | 6 | 182 |
+| 1 | 500 | Bus | 63,211 | 1,352,331 | 1,544 | -229 | 25 | 387 |
+| 1 | 500 | Bus + metro | 62,958 | 1,352,033 | 2,095 | -227 | 25 | 383 |
+| 1 | 1,000 | Bus | 51,443 | 1,349,924 | 15,719 | -224 | 192 | 439 |
+| 1 | 1,000 | Bus + metro | 47,356 | 1,358,291 | 11,439 | -219 | 41 | 351 |
+| 1 | 2,000 | Bus | 6,800 | 1,388,532 | 21,754 | -153 | 33 | 193 |
+| 1 | 2,000 | Bus + metro | 9,495 | 1,403,685 | 3,906 | -153 | 27 | 182 |
+| 2 | 500 | Bus | 63,211 | 1,352,331 | 1,544 | -229 | 25 | 387 |
+| 2 | 500 | Bus + metro | 62,958 | 1,352,033 | 2,095 | -227 | 25 | 383 |
+| 2 | 1,000 | Bus | 49,567 | 1,352,700 | 14,819 | -224 | 192 | 439 |
+| 2 | 1,000 | Bus + metro | 46,804 | 1,358,495 | 11,787 | -219 | 41 | 351 |
+| 2 | 2,000 | Bus | 6,800 | 1,389,151 | 21,135 | -153 | 28 | 193 |
+| 2 | 2,000 | Bus + metro | 9,495 | 1,403,685 | 3,906 | -153 | 27 | 182 |
+<!-- END GRID -->
 
-**Figure 6.** Counts of sampled pairs with positive interaction among the same 512 pairs at every W/K combination. Color limits are shared between mode panels. The full parameter summaries and signed distributions are in the linked machine-readable evidence. These counts are not an exhaustive census of positive-interaction pairs. [SVG](../figures/pairs-2026-11-01/01-positive-pair-interaction.svg).
+![Positive interactions over all observed street pairs](../figures/pairs-exhaustive-2026-11-01/01-positive-pair-interaction.svg)
 
-Positive interaction varies with walking and boarding budgets. For example, at K=1 the bus-only sample contains 2, 8 and 10 positive pairs for W=500, 1,000 and 2,000 m; the model including metro contains 1, 8 and 4. This sample does not support a universal claim that metro removes pair interaction or that one walking budget gives the strongest general vulnerability.
+**Figure 6.** Number of pairs with positive interaction across the complete W/K grid, out of all 1,417,086 pairs in each cell. Both panels share the color scale. The unit is a physical source-segment pair; equivalent signatures retain their full multiplicity. No statistical uncertainty from pair sampling is involved. Data coverage and modeling uncertainty remain. [SVG](../figures/pairs-exhaustive-2026-11-01/01-positive-pair-interaction.svg).
 
-### Two traceable arithmetic examples
+### Traceable extreme cases
 
-In a selected full-model case at W=1,000 m and K=1, one single loss is zero and the other is 106 building locations; the joint loss is 138. The interaction is therefore **+32**. Three sampled physical pairs share that signature-pair case. An edge with zero single loss can therefore still participate in a positive interaction within this sample.
+<!-- BEGIN EXAMPLES -->
+In the full model at W=1,000 m and K=1, a maximum-interaction case has single losses **0** and **106**, joint loss **147**, and C = **+41** building locations (union ID **26049**). A minimum-interaction case has single losses **219** and **219**, joint loss **219**, and C = **-219** (union ID **22066**). Both are traceable in [extreme-cases.json](m4-pairs-exhaustive-2026-11-01/extreme-cases.json).
+<!-- END EXAMPLES -->
 
-In a selected negative case, single losses are 127 and 128; the joint loss is 128, giving **−127**. The sum of separate losses counts some inaccessible opportunities more than once. These are arithmetic interpretations of structural accessibility, not yet verified geographic or operational explanations. Geographic path tracing remains necessary before assigning a specific redundancy or feeder mechanism to named infrastructure.
+![Complete-domain positive and negative interaction examples](../figures/pairs-exhaustive-2026-11-01/02-pair-interaction-examples.svg)
 
-![Positive and negative interaction examples](../figures/pairs-2026-11-01/02-pair-interaction-examples.svg)
+**Figure 7.** Maximum- and minimum-interaction signature-pair examples in the full model at W=1,000 m and K=1. Bars are first-only, second-only and joint losses; the dashed line is the sum of single losses. These are deliberately selected extremes, not representative cases. Exact signatures, union IDs and physical multiplicities are in the linked extreme-case file. [SVG](../figures/pairs-exhaustive-2026-11-01/02-pair-interaction-examples.svg).
 
-**Figure 7.** Two observed full-model signature-pair examples at W=1,000 m and K=1. Bars show the first-only, second-only and joint building-location losses; the dashed line is the sum of single losses. The examples were selected as the maximum and minimum interaction cases within the sample, rather than as representative cases or full-domain extrema. Their signatures, multiplicities and union IDs are saved in [extreme-cases.json](m4-pairs-2026-11-01/extreme-cases.json). [SVG](../figures/pairs-2026-11-01/02-pair-interaction-examples.svg).
+The arithmetic establishes nonadditivity. A geographic explanation, such as a particular feeder or alternative-path mechanism, still requires explicit path tracing. Added-metro accessibility is never worse for a matched scenario, but neither interaction nor the change in loss is required to improve with metro.
 
-## 6. Evidence and reproducibility
+## 6. Public evidence and reproduction
 
-- [Summary, domain and input identities](m4-pairs-2026-11-01/summary.json), [protocol snapshot](m4-pairs-2026-11-01/protocol.json), and [signed interaction distributions](m4-pairs-2026-11-01/interaction-distributions.json).
-- [Actual sampled streets](m4-pairs-2026-11-01/sampled-street-pairs.csv.gz), [signature-pair multiplicities](m4-pairs-2026-11-01/signature-pairs.csv.gz), [union membership](m4-pairs-2026-11-01/unions.csv.gz), and [union effects](m4-pairs-2026-11-01/union-effects.csv.gz). These are deterministic gzip-compressed UTF-8 CSV files, readable with Python `gzip`/`csv` or a standard archive tool.
-- [Figure source data](../figures/pairs-2026-11-01/figure-data.json) and [figure checksum manifest](../figures/pairs-2026-11-01/manifest.json).
-- Implementation: [compact solver](../src/compact_accessibility.py), [pair runner](../src/pair_closures.py), [independent output audit](../src/audit_pairs.py), and [figure generator](../src/make_pair_figures.py).
+- [Complete summary and hashes](m4-pairs-exhaustive-2026-11-01/summary.json), [protocol snapshot](m4-pairs-exhaustive-2026-11-01/protocol.json), [complete-domain selection record](m4-pairs-exhaustive-2026-11-01/selection.json), and [independent audit receipt](m4-pairs-exhaustive-2026-11-01/audit.json).
+- [Every physical pair](m4-pairs-exhaustive-2026-11-01/physical-pairs.csv.gz), [street index](m4-pairs-exhaustive-2026-11-01/street-index.csv.gz), [signature pairs](m4-pairs-exhaustive-2026-11-01/signature-pairs.csv.gz), [dependency unions](m4-pairs-exhaustive-2026-11-01/unions.csv.gz), and [all union effects](m4-pairs-exhaustive-2026-11-01/union-effects.csv.gz).
+- [Signed interaction distributions](m4-pairs-exhaustive-2026-11-01/interaction-distributions.json) and [extreme cases](m4-pairs-exhaustive-2026-11-01/extreme-cases.json).
+- [Figure data](../figures/pairs-exhaustive-2026-11-01/figure-data.json) and [figure hashes](../figures/pairs-exhaustive-2026-11-01/manifest.json).
+- [Compact solver](../src/compact_accessibility.py), [pair runner](../src/pair_closures.py), [independent audit](../src/audit_pairs.py), and [figure generator](../src/make_pair_figures.py).
 
-After the existing frozen model has been prepared:
+After preparing the matching frozen network and single-closure results:
 
 ```bash
 python -m unittest discover -s tests -v
-python -m research.src.pair_closures --output research/runs/<new-pair-run> --selection research/reports/m4-pairs-2026-11-01/selection.json
-python -m research.src.audit_pairs --directory research/runs/<new-pair-run>
+python -m research.src.pair_closures --protocol research/config/pair-protocol.json --output research/runs/<new-complete-run> --workers 4
+python -m research.src.audit_pairs --directory research/runs/<new-complete-run>
 python -m research.src.make_pair_figures
 ```
 
-The `--selection` option fixes the published sample even on hardware where a fresh runtime-based decision would choose a different scope. Omitting it runs the recorded selection rule anew. The input network must match the published single-closure identity; this is deliberately checked. The publication retains the initial timing-based decision and the subsequent fixed-sample reproduction. Output hashes, code hashes, exact ranks and identifiers are retained. As in earlier stages, output directories refuse overwrite, and code validation is separate from universal byte-identical rebuilding across platforms.
+The exhaustive protocol prohibits automatic runtime-based scope reduction. Output directories refuse overwrite. Gzip CSVs use UTF-8, canonical line endings and fixed compression metadata. Source/configuration identities and every final data file have hashes. Figure sources are fully vector SVG with editable text and recorded source hashes. CPU scheduling and elapsed time are not scientific inputs, and byte-identical rebuilding across every platform is not asserted.
 
-## 7. What comes next
+## 7. Remaining work
 
-The sampled pair stage demonstrates nonadditive effects within the same fixed dataset and failure mechanism. It does not complete the sensitivity work or establish the prevalence and extrema of interaction over all 1.4 million pairs.
+This completes the **pair domain**, not every later stage of the paper. The study still uses 11 accepted bus and 14 rail relations, equal building weights, tag-screened targets, geometric connectors and a static dependency rule. It does not become complete operational coverage merely because every pair was evaluated.
 
-The next analysis should explain the positive/negative examples and the seven earlier negative-DeltaM single signatures with explicit origin/path tracing. It should then test the connector convention, budget choices and alternative failure policies using the same source data. A later exhaustive or larger fixed pair run can use the contracted solver, but it needs an explicit scope amendment and a clear distinction from this archived sample. Claims about ranking stability and final conference conclusions remain pending.
+Next, complete the broader preservation/cross-solver checks, trace specific origins and paths for the positive/negative cases and earlier negative-DeltaM cases, and perform the declared sensitivity analyses. The paper's final interpretation and ranking-stability claims remain pending. No further external data are needed for these stages.

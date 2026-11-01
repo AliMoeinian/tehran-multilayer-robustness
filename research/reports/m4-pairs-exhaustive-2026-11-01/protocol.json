@@ -1,0 +1,12 @@
+{
+  "protocol_version": "pairs-exhaustive-v1",
+  "scope": "exhaustive",
+  "domain": "all unordered distinct pairs of the 1684 observed source street segments",
+  "failure_policy": "union of dependent consecutive-stop bus connection IDs; walking and metro fixed",
+  "parameter_grid": "all W and K from baseline.json, both bus and bus_metro",
+  "grouping": "exact failed-connection union; preserve every signature pair and physical street pair",
+  "benchmark_union_count": 128,
+  "selection_rule": "exhaustive regardless of runtime; sampling and automatic scope reduction are prohibited",
+  "interaction": "C_count = joint_loss - first_single_loss - second_single_loss; C_share = C_count / 65677",
+  "interpretation": "complete deterministic pair census within the screened model; no claim of complete operating-service coverage"
+}

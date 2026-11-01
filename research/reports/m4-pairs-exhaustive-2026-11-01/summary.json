@@ -1,0 +1,248 @@
+{
+  "stage": "m4-pairs-exhaustive-v1",
+  "network_sha256": "465b10f73cc00d655fffe1fbfca50a177296c74820a397a93baad0732e278e06",
+  "config_sha256": "7b8caa982d84ec9b53acd1d80beb64d7fc5bc1f5accb661ea9608050c48b7fe1",
+  "protocol_sha256": "7f8162d69edc4dd95a6f484ec1dc4f5fffe10616d60b03b117820b68478b68aa",
+  "source_code_sha256": {
+    "pair_closures.py": "0291830248f10b51c83b6a52ce5ff10676c23c2adaf1a11471e3ce98beae4b2a",
+    "compact_accessibility.py": "a55deecc5c261e727dae95b847f7db391be42b29c5971fd6c0761367a768eae8"
+  },
+  "domain": {
+    "street_count": 1684,
+    "street_pairs": 1417086,
+    "signature_pairs": 28337,
+    "union_count": 27849,
+    "same_signature_street_pairs": 16289
+  },
+  "selection": {
+    "exhaustive": true,
+    "benchmark_seconds_per_union": 0.044892382812577125,
+    "projected_exhaustive_seconds": 1239.837828517755,
+    "benchmark_union_count": 128,
+    "decision_basis": "explicit exhaustive protocol; runtime does not change scope; no sampling",
+    "evaluated_pair_unions": 27849
+  },
+  "evaluated_street_pairs": 1417086,
+  "all_buildings": 65677,
+  "single_signatures_reproduced": 238,
+  "full_graph_scenarios_compared": 9,
+  "workers": 4,
+  "union_scenarios_evaluated": 27849,
+  "signature_pairs_evaluated": 28337,
+  "distance_tolerance": "1e-8 m absolute / 1e-12 relative; exact threshold-count agreement required",
+  "interaction_unit": "building count; divide by all_buildings for accessibility-share interaction",
+  "pair_measure": "each distinct unordered physical source-segment pair has equal weight; no failure-probability interpretation",
+  "results": [
+    {
+      "max_line_changes": 0,
+      "walking_budget_m": 500,
+      "bus": {
+        "negative_pairs": 61390,
+        "zero_pairs": 1354519,
+        "positive_pairs": 1177,
+        "minimum_interaction_buildings": -210,
+        "maximum_interaction_buildings": 7,
+        "mean_interaction_buildings": -0.5800664179873346,
+        "maximum_joint_loss_buildings": 361
+      },
+      "bus_metro": {
+        "negative_pairs": 61390,
+        "zero_pairs": 1354519,
+        "positive_pairs": 1177,
+        "minimum_interaction_buildings": -208,
+        "maximum_interaction_buildings": 7,
+        "mean_interaction_buildings": -0.5586979195334651,
+        "maximum_joint_loss_buildings": 359
+      }
+    },
+    {
+      "max_line_changes": 0,
+      "walking_budget_m": 1000,
+      "bus": {
+        "negative_pairs": 49731,
+        "zero_pairs": 1353403,
+        "positive_pairs": 13952,
+        "minimum_interaction_buildings": -224,
+        "maximum_interaction_buildings": 192,
+        "mean_interaction_buildings": -0.539938295911469,
+        "maximum_joint_loss_buildings": 437
+      },
+      "bus_metro": {
+        "negative_pairs": 37281,
+        "zero_pairs": 1365291,
+        "positive_pairs": 14514,
+        "minimum_interaction_buildings": -219,
+        "maximum_interaction_buildings": 41,
+        "mean_interaction_buildings": -0.6193117425477352,
+        "maximum_joint_loss_buildings": 370
+      }
+    },
+    {
+      "max_line_changes": 0,
+      "walking_budget_m": 2000,
+      "bus": {
+        "negative_pairs": 10819,
+        "zero_pairs": 1390008,
+        "positive_pairs": 16259,
+        "minimum_interaction_buildings": -153,
+        "maximum_interaction_buildings": 15,
+        "mean_interaction_buildings": -0.09949360871534967,
+        "maximum_joint_loss_buildings": 198
+      },
+      "bus_metro": {
+        "negative_pairs": 5593,
+        "zero_pairs": 1408680,
+        "positive_pairs": 2813,
+        "minimum_interaction_buildings": -153,
+        "maximum_interaction_buildings": 6,
+        "mean_interaction_buildings": -0.053653059870748844,
+        "maximum_joint_loss_buildings": 182
+      }
+    },
+    {
+      "max_line_changes": 1,
+      "walking_budget_m": 500,
+      "bus": {
+        "negative_pairs": 63211,
+        "zero_pairs": 1352331,
+        "positive_pairs": 1544,
+        "minimum_interaction_buildings": -229,
+        "maximum_interaction_buildings": 25,
+        "mean_interaction_buildings": -0.6288164585635593,
+        "maximum_joint_loss_buildings": 387
+      },
+      "bus_metro": {
+        "negative_pairs": 62958,
+        "zero_pairs": 1352033,
+        "positive_pairs": 2095,
+        "minimum_interaction_buildings": -227,
+        "maximum_interaction_buildings": 25,
+        "mean_interaction_buildings": -0.6626429165202394,
+        "maximum_joint_loss_buildings": 383
+      }
+    },
+    {
+      "max_line_changes": 1,
+      "walking_budget_m": 1000,
+      "bus": {
+        "negative_pairs": 51443,
+        "zero_pairs": 1349924,
+        "positive_pairs": 15719,
+        "minimum_interaction_buildings": -224,
+        "maximum_interaction_buildings": 192,
+        "mean_interaction_buildings": -0.43756412807691275,
+        "maximum_joint_loss_buildings": 439
+      },
+      "bus_metro": {
+        "negative_pairs": 47356,
+        "zero_pairs": 1358291,
+        "positive_pairs": 11439,
+        "minimum_interaction_buildings": -219,
+        "maximum_interaction_buildings": 41,
+        "mean_interaction_buildings": -0.5451870952080538,
+        "maximum_joint_loss_buildings": 351
+      }
+    },
+    {
+      "max_line_changes": 1,
+      "walking_budget_m": 2000,
+      "bus": {
+        "negative_pairs": 6800,
+        "zero_pairs": 1388532,
+        "positive_pairs": 21754,
+        "minimum_interaction_buildings": -153,
+        "maximum_interaction_buildings": 33,
+        "mean_interaction_buildings": 0.020259179753381235,
+        "maximum_joint_loss_buildings": 193
+      },
+      "bus_metro": {
+        "negative_pairs": 9495,
+        "zero_pairs": 1403685,
+        "positive_pairs": 3906,
+        "minimum_interaction_buildings": -153,
+        "maximum_interaction_buildings": 27,
+        "mean_interaction_buildings": -0.034050862121282686,
+        "maximum_joint_loss_buildings": 182
+      }
+    },
+    {
+      "max_line_changes": 2,
+      "walking_budget_m": 500,
+      "bus": {
+        "negative_pairs": 63211,
+        "zero_pairs": 1352331,
+        "positive_pairs": 1544,
+        "minimum_interaction_buildings": -229,
+        "maximum_interaction_buildings": 25,
+        "mean_interaction_buildings": -0.6287734124816702,
+        "maximum_joint_loss_buildings": 387
+      },
+      "bus_metro": {
+        "negative_pairs": 62958,
+        "zero_pairs": 1352033,
+        "positive_pairs": 2095,
+        "minimum_interaction_buildings": -227,
+        "maximum_interaction_buildings": 25,
+        "mean_interaction_buildings": -0.6625998704383502,
+        "maximum_joint_loss_buildings": 383
+      }
+    },
+    {
+      "max_line_changes": 2,
+      "walking_budget_m": 1000,
+      "bus": {
+        "negative_pairs": 49567,
+        "zero_pairs": 1352700,
+        "positive_pairs": 14819,
+        "minimum_interaction_buildings": -224,
+        "maximum_interaction_buildings": 192,
+        "mean_interaction_buildings": -0.4371139084007604,
+        "maximum_joint_loss_buildings": 439
+      },
+      "bus_metro": {
+        "negative_pairs": 46804,
+        "zero_pairs": 1358495,
+        "positive_pairs": 11787,
+        "minimum_interaction_buildings": -219,
+        "maximum_interaction_buildings": 41,
+        "mean_interaction_buildings": -0.5451165278606944,
+        "maximum_joint_loss_buildings": 351
+      }
+    },
+    {
+      "max_line_changes": 2,
+      "walking_budget_m": 2000,
+      "bus": {
+        "negative_pairs": 6800,
+        "zero_pairs": 1389151,
+        "positive_pairs": 21135,
+        "minimum_interaction_buildings": -153,
+        "maximum_interaction_buildings": 28,
+        "mean_interaction_buildings": 0.016085826830552274,
+        "maximum_joint_loss_buildings": 193
+      },
+      "bus_metro": {
+        "negative_pairs": 9495,
+        "zero_pairs": 1403685,
+        "positive_pairs": 3906,
+        "minimum_interaction_buildings": -153,
+        "maximum_interaction_buildings": 27,
+        "mean_interaction_buildings": -0.034050862121282686,
+        "maximum_joint_loss_buildings": 182
+      }
+    }
+  ],
+  "elapsed_seconds": 664.4200459999847,
+  "artifact_sha256": {
+    "domain.json": "a61b2a2033324aade3c64ded4f744f47b752b5ccafd78678100c7df4ec576460",
+    "extreme-cases.json": "b610e415c1a6b45e108808651d8ba5edf460dafbcd15c93062f3f4f6d8330590",
+    "interaction-distributions.json": "e3c2ce9850154148b8aa7c9814bfa7255dcacfc4870faf7b81710977a1510105",
+    "physical-pairs.csv.gz": "1b485274c9e39099ce19beaaa432d8f791302c9cee4d0c244acdb7ab0ce5b94b",
+    "protocol.json": "7f8162d69edc4dd95a6f484ec1dc4f5fffe10616d60b03b117820b68478b68aa",
+    "selection.json": "f469dcf37595870557c1f878ba1ce4be05adfff8c03c87d69e52eb7718571516",
+    "signature-pairs.csv.gz": "7f10cb18824e5aeaa762abda4bec6308790f31cfea4d0c9063e9cc46d501dbff",
+    "street-index.csv.gz": "999a425499c3ecc73137e6cdf433fb9d7914097f454c62268c762bc7aff0f379",
+    "union-effects.csv.gz": "8c2a498f06f3c2caa6633ae94c00c02337f28223e4b173da7f43bd3771fee094",
+    "unions.csv.gz": "cfee7a80bda4779a9ce3135d3b2a803f18ba7924359a2eb14ad461dcfbd9bba9"
+  }
+}

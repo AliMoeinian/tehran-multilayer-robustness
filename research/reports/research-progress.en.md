@@ -1,10 +1,10 @@
 # Street–route dependencies and structural healthcare accessibility in Tehran
 
-## Methods and results through single closures and a fixed paired-closure sample
+## Methods and results through exhaustive single and paired closures
 
 **Evidence cutoff:** 1 November 2026. **Map snapshot:** 29 October 2026, 21:21:26 UTC.  
 **Primary dataset:** `tehran-osm-20261029T212126Z-v1.1-public`.  
-**Status:** a cumulative technical report and a basis for manuscript writing. A fixed paired-closure sample is now completed and linked in Section 13. Sensitivity analyses and a literature-based novelty assessment remain pending.
+**Status:** a cumulative technical report and a basis for manuscript writing. The complete paired-closure census is now recorded in Section 13. Sensitivity analyses and a literature-based novelty assessment remain pending.
 
 ## Abstract
 
@@ -247,7 +247,7 @@ We separate file integrity, model implementation checks, and real-world validity
 | Baseline regression | Shared loader reproduces published M3 counts with matching network/configuration hashes |
 | Saved closure outputs | All 1,684 source segments, 238 groups, 2,142 effect rows, memberships, hashes, losses, shares and weighted summaries reconciled against SQLite |
 
-At the single-closure milestone, the suite contained **27 passing unit tests**; the paired-closure extension now contains 36, as detailed in Section 13. The independent closure examples add 27 forward-search comparisons beyond the 720 baseline comparisons. The stored graph-length comparison is a sample of 20 source ways, not a full geometric survey. Nodewise invariants are necessary implementation checks; they would not detect every possible modeling or data error.
+At the single-closure milestone, the suite contained **27 passing unit tests**; the paired-closure extension now contains 37, as detailed in Section 13. The independent closure examples add 27 forward-search comparisons beyond the 720 baseline comparisons. The stored graph-length comparison is a sample of 20 source ways, not a full geometric survey. Nodewise invariants are necessary implementation checks; they would not detect every possible modeling or data error.
 
 The figure generator reads saved evidence directly, emits editable-text vector SVGs, and records source/output SHA-256 values in a figure manifest. Canonical LF line endings keep published artifact hashes stable across checkouts. All five figure layouts were reviewed through rendered PNG previews, and a legend/annotation collision was corrected. SVG structure was checked for editable text and the absence of embedded raster images. Report links and output hashes were also checked. These presentation checks are separate from arithmetic validation.
 
@@ -327,20 +327,30 @@ The following issues remain material:
 
 Sensitivity and interpretation are still required before using these numbers as the final evidence of a conference paper. The current implementation checks justify proceeding to the next analysis stage within the stated model; they do not guarantee a perfect dataset.
 
-## 13. Completed extension: sampled paired closures
+## 13. Completed extension: exhaustive paired closures
 
-The [paired-closure methods and results supplement](paired-closures.en.md) records the next completed stage. It retains the same origin/target sets, source snapshot and failure mechanism. It adds an exact contraction of walking paths onto relevant stops, validated against the original solver and independent small-graph search.
+The [paired-closure supplement](paired-closures.en.md) records the full experiment. All **1,417,086 unordered distinct physical street pairs** are included, across all nine W/K combinations and both mode sets. Exact failed-graph equivalence reduces repeated computation to 27,849 unions, while every physical pair, both constituent single signatures and full multiplicity remain explicit. No pair sampling or runtime-based truncation is used.
 
-The physical pair domain contains 1,417,086 unordered distinct street pairs and 27,849 distinct failed-connection unions. A protocol recorded before interaction analysis selected a fixed uniform sample of 512 physical pairs when the initial benchmark projected more than 900 seconds for an exhaustive run. The initial projection was approximately 1,331 seconds. This sample contains 482 union scenarios. Ranks, actual source-street identifiers, multiplicities and union membership are public; it is not an exhaustive paired-closure census.
+The recorded experiment expands to 25,507,548 physical-pair/parameter/mode results. Every physical pair has an explicit indexed record, and every union has its complete accessibility grid. Interaction is joint loss minus the two corresponding single losses. The following table shows W=1,000 m and K=1:
 
-For a pair, count-based interaction is joint loss minus the sum of its two single losses. At W=1,000 m and K=1, the bus model has 15 negative, 489 zero and 8 positive sampled interactions; the full model has 12 negative, 492 zero and 8 positive interactions. In both models, the observed interaction range is from -127 to +32 building locations. These are sample extrema. The largest sampled joint losses are 344 without metro and 339 with metro.
+<!-- BEGIN PAIR_MAIN -->
+| Measure | Walking + bus | Walking + bus + metro |
+| --- | --- | --- |
+| Negative-interaction pairs | 51,443 | 47,356 |
+| Zero-interaction pairs | 1,349,924 | 1,358,291 |
+| Positive-interaction pairs | 15,719 | 11,439 |
+| Minimum C (buildings) | -224 | -219 |
+| Maximum C (buildings) | 192 | 41 |
+| Mean C (buildings) | -0.437564 | -0.545187 |
+| Maximum joint loss (buildings) | 439 | 351 |
+<!-- END PAIR_MAIN -->
 
-A traceable positive example has single losses 0 and 106 but joint loss 138, producing +32 interaction. This establishes that a zero-single-loss segment can participate in a nonadditive pair within the sample. It does not establish that this is typical across the whole domain. Both the new heatmap and arithmetic examples are linked in the supplement as Figures 6 and 7, with reproducible SVGs and source data.
+The supplement contains the full parameter grid, complete-domain extreme cases, and Figures 6 and 7 as reproducible SVGs. A full independent audit enumerates and reconciles every physical pair, signature pair, dependency union, saved effect row and interaction distribution. The current suite has 37 tests, including worker-process equivalence and the earlier independent solver comparisons.
 
-The suite now has 36 passing tests, including 1,440 compact/full/independent forward-search comparisons on small origin-budget-scenario cases. Baseline and all 238 single-signature count grids were reproduced. Nine real-network scenarios were also checked against the original solver at all connected origins and budgets. An independent audit reconstructed physical sample identities and all saved interaction statistics; it passed.
+Completeness refers to the defined observed street-pair domain. The model still contains the screened 11 bus and 14 rail relations; it does not represent a verified complete operating transit network. The detailed audit distinguishes exhaustive saved-output controls from the nine selected real-network cross-solver comparisons. Broader verification remains the next stage rather than an unreported claim of completeness.
 
-## 14. Next step: path-level explanations and sensitivity
+## 14. Next step: broader verification, path explanations and sensitivity
 
-The next work is to trace specific origins and eligible paths for positive/negative pair cases and for the seven earlier single-failure signatures with negative DeltaM. Arithmetic is established; geographic and operational explanations have not yet been validated.
+Next, complete the declared all-way length-preservation controls and broader solver-equivalence checks. Then trace origins and eligible paths for the complete-domain positive/negative pair extremes and earlier negative-DeltaM cases. Geographic and operational explanations are not established merely by an interaction score.
 
-Then evaluate sensitivity to geometric connection choices, walking/boarding budgets, failure policy, context and supported target sets using the same data. Ranking stability and final conference claims remain pending. A larger or exhaustive pair run can use the contracted solver under a recorded scope amendment; it should remain clearly separate from this fixed sample. No new external records are required for these stages.
+Sensitivity to connector conventions, walking/boarding budgets, failure policy, context and supported target sets follows, using the same dataset. Ranking stability and final conference claims remain pending. The paired-closure domain itself is complete; there is no outstanding expansion from a subset of pairs.

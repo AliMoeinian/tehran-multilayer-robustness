@@ -1,13 +1,25 @@
 import unittest
+from concurrent.futures import ProcessPoolExecutor
 
 import numpy as np
 
 from research.src.accessibility import Stop
 from research.src.compact_accessibility import CompactModel
-from research.src.pair_closures import interaction,pair_domain,physical_pair
+from research.src.pair_closures import interaction,pair_domain,physical_pair,initialize_worker,evaluate_batch
 
 
 class PairTests(unittest.TestCase):
+    def test_worker_evaluation_preserves_counts_and_closures(self):
+        model=CompactModel([[],[]],[Stop(0,0),Stop(1,0)],[(1,0)],[0],[0],100)
+        args=(model,[('x','a','b','bus')],{'a':0,'b':1},
+              {'bus':{'bus'},'bus_metro':{'bus','metro'}},
+              {'bus':np.array([True,True]),'bus_metro':np.array([True,True])},1,[(0,100)])
+        initialize_worker(*args)
+        expected=[((),{'bus':[1],'bus_metro':[1]}),(('x',),{'bus':[0],'bus_metro':[0]})]
+        self.assertEqual(evaluate_batch([(),('x',)]),expected)
+        with ProcessPoolExecutor(max_workers=2,initializer=initialize_worker,initargs=args) as executor:
+            self.assertEqual(list(executor.map(evaluate_batch,[[()],[('x',)]])),[[expected[0]],[expected[1]]])
+
     def test_physical_pair_unranking_is_distinct_and_complete(self):
         a=['a','b','c'];b=['d','e']
         self.assertEqual([physical_pair(a,a,i,True) for i in range(3)],[('a','b'),('a','c'),('b','c')])
