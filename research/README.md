@@ -1,5 +1,18 @@
 # Research implementation
 
+For the cumulative English methods/results narrative and five publication-oriented
+SVG figures, see [the progress report](reports/research-progress.en.md).
+After reconstructing M1/M2, rebuild its figures and numeric tables with:
+
+```bash
+python -m research.src.make_progress_figures
+```
+
+The figure generator requires the frozen model identity used by the published
+results. It writes SVGs, source rows and hashes under `research/figures/` and
+ignored PNG review previews under `research/runs/progress-figure-preview/`.
+It does not rerun or modify the underlying experiments.
+
 This directory implements the research roadmap incrementally. The first module
 audits the stop order on already structurally screened OSM route traces.
 

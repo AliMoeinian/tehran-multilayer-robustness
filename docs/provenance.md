@@ -66,5 +66,8 @@ not distributed; they are not advertised as a portable one-command rebuild.
 Their inventory records hashes. Do not execute historical scripts against the
 frozen data directory. See `scripts/README.md` for supported commands.
 
-The research model, stop-to-route reconstruction and experiments remain planned.
+The screened research model, stop reconstruction, intact-network baseline and
+observed single-closure experiments are now implemented. See the
+[cumulative methods/results report](../research/reports/research-progress.en.md)
+for their scope and remaining work.
 File integrity, structural screening and real-world service validity are distinct.

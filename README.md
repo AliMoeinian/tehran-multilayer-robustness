@@ -14,6 +14,7 @@ We study how street closures affect connections from mapped buildings to hospita
 - [Dataset construction report](docs/dataset-construction.fa.md) — Persian
 - [Code and reproducibility](scripts/README.md)
 - [Research implementation and commands](research/README.md)
+- [Cumulative methods and results report — English, with SVG figures](research/reports/research-progress.en.md)
 
 ```bash
 git clone https://github.com/AliMoeinian/tehran-multilayer-robustness.git

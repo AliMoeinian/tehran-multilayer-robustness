@@ -1,0 +1,25 @@
+{
+  "generated_by": "research/src/make_progress_figures.py",
+  "script_sha256": "33f601d901198cedcda567f94e30c201fc5643399afe9e27c83bee1d905a46ed",
+  "source_sha256": {
+    "research/reports/m1-2026-11-01-summary.json": "2b8bc2dabfe0e4f4978b8eb6a65f17b74bcb518ac9ed41b8092e34b38107948b",
+    "research/reports/m2-2026-11-01-summary.json": "24463800e6b6d55bb0701bd0c5b6347966cb7180c5ceab018e418ca639928fa7",
+    "research/reports/m3-2026-11-01-summary.json": "d4bd5fb906ab8b4e2faee2efdfab3f8d8fab5543c8a801aa07b8a601a4dc73bf",
+    "research/reports/m3-single-closures-2026-11-01/summary.json": "9327102950f05f41d98590abeb783652577a1c075944d0ec70cef8b31469cce3",
+    "research/reports/m3-single-closures-2026-11-01/effects.csv": "f6b627440317f3dfc5697abde59792a68b149f47afff398254be770b14544ad2",
+    "research/model/m1-v1/routes.csv": "996a35c1282ece69e25cfd29a772b6f5a4a8016a19c8ad746f81559639e938b6",
+    "research/model/m1-v1/traces.json": "982174e039560468f90057a8a212af239c19d7dcbe5931ef027ea91663fd0e72",
+    "data/extracted/tehran-osm-20261029T212126Z-v1.1-public/tehran_audited_layers.gpkg": "77fd0961a8eb10f2dbe2d6b19878138a489d4e69f45fc6fce2ae366e99a64ed4",
+    "research/model/m2-v2/network.sqlite": "465b10f73cc00d655fffe1fbfca50a177296c74820a397a93baad0732e278e06"
+  },
+  "output_sha256": {
+    "01-route-screening.svg": "91b96e369e24b3788b6606232a0e5b99c15491e0a3973e958fc57fbfbe179e58",
+    "02-study-network-map.svg": "c06fb1354ca1745e332037c05a731688a886878ef2c890622cdca88f1ab4a520",
+    "03-intact-accessibility.svg": "af7d75f3bc2ac473759bbdfd2d598b774948f867095835d0a9ab5e6bacf756f0",
+    "04-single-closure-loss-distribution.svg": "4eeddfea597394704b1e0c5643ab00ce36089002fff9c50e787e9a151aaa8dfb",
+    "05-metro-loss-comparison.svg": "68ad85f90a11bfe5289f12fcb06030e747e05d5048a23c0e6ee70f346e34bfdb",
+    "figure-data.json": "b18a407b9fcf3e30320f5c40f933a18675411664da25d174a3e2856e41ec9ab1"
+  },
+  "review_previews": "research/runs/progress-figure-preview (ignored)",
+  "scope": "Static vector figures from frozen local evidence; no external data or inferred service coverage."
+}
