@@ -35,3 +35,21 @@ become dependencies; a boundary touch is excluded. The dependency lengths must
 sum to the recorded interval length. Distinct source carriageways are not merged.
 The next solver must account for cumulative walking, line-change state and the
 stored role restrictions before any accessibility statistic is reported.
+
+## 2026-11-01: M3 baseline solver
+
+Implement reverse boarding-budget dynamic programming, checked against independent
+forward expanded-state search on small graphs. An origin's geometric access length
+is counted in the same cumulative walking budget as every transfer and target access.
+At most K line changes means at most K+1 boardings under our conservative convention:
+even reboarding the same route consumes a new boarding. Never allow a free reset.
+
+Do not remove onboard occurrences merely because their walking connector is rejected;
+vehicles may pass through them. Disable boarding/alighting there instead. Disabled
+modes lose boarding/alighting permissions and riding arcs. The model is static,
+direction-aware and walking-cost-based, with no timetable, capacity or waiting model.
+
+The finite cutoff is the largest configured W (2000 m). An infinite output therefore
+means no eligible path within that search budget, not no path of any length. Publish
+the whole parameter grid; the K=1 report table is only a readability slice. No claim
+about the entire city's operating transit network follows from this screened subset.

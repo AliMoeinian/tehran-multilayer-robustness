@@ -29,3 +29,5 @@ jobs:
         run: python -m research.src.build_connections
       - name: Audit stored graph and dependency lengths
         run: python -m research.src.audit_connections
+      - name: Compute the structural accessibility baseline
+        run: python -m research.src.accessibility

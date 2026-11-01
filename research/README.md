@@ -66,3 +66,24 @@ riding does not require alighting. Bus dependencies use the positive overlap
 between the stop-to-stop trace interval and each original adjacent-node segment.
 Endpoint touching alone does not create a dependency. The stored street key
 combines OSM way ID and unordered node pair; distinct carriageways are not merged.
+
+## M3: cumulative-walking accessibility
+
+```bash
+python -m research.src.accessibility --output research/runs/<new-run>
+```
+
+The solver computes exact minimum cumulative walking under an at-most boarding
+budget, with directed riding and entry/exit constraints. First boarding is free
+of line changes; every subsequent boarding, including reboarding the same route,
+consumes another unit. Interchanges use walking and connector costs; no zero-cost
+route reset is allowed. Vehicle motion has zero *walking* cost, not zero travel time.
+
+The implementation uses reverse dynamic programming and incremental multi-source
+Dijkstra. Search is truncated at the largest configured walking budget, so infinity
+does not establish global disconnection. Buildings outside the connector contract
+remain in the full denominator with no eligible model path. All parameter-grid
+results and input hashes are saved, together with per-building costs in ignored runs.
+
+The initial baseline is in `reports/m3-2026-11-01.md`. Closure experiments are next;
+existing M1/M2 reports describe the implementation state at their own milestones.

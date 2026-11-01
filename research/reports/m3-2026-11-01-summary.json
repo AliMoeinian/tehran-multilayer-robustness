@@ -1,0 +1,225 @@
+{
+  "stage": "m3-v1",
+  "network_sha256": "465b10f73cc00d655fffe1fbfca50a177296c74820a397a93baad0732e278e06",
+  "config_sha256": "7b8caa982d84ec9b53acd1d80beb64d7fc5bc1f5accb661ea9608050c48b7fe1",
+  "search_cutoff_walking_m": 2000,
+  "walking_nodes": 848604,
+  "target_features": 241,
+  "target_candidate_groups": 236,
+  "boarding_convention": "at most K+1 boardings; every reboarding consumes one; no route-identity reset",
+  "infinite_distance_meaning": "no path found within walking cutoff; not global disconnection",
+  "results": [
+    {
+      "mode": "walk",
+      "max_line_changes": null,
+      "walking_budget_m": 500,
+      "accessible_buildings": 7944,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.12095558566926017,
+      "share_connected_buildings": 0.12380388367671352
+    },
+    {
+      "mode": "walk",
+      "max_line_changes": null,
+      "walking_budget_m": 1000,
+      "accessible_buildings": 25295,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.38514243951459415,
+      "share_connected_buildings": 0.3942118879157186
+    },
+    {
+      "mode": "walk",
+      "max_line_changes": null,
+      "walking_budget_m": 2000,
+      "accessible_buildings": 45634,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.6948246722596951,
+      "share_connected_buildings": 0.7111866097310102
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 0,
+      "walking_budget_m": 500,
+      "accessible_buildings": 8566,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.13042617659150083,
+      "share_connected_buildings": 0.13349749088302215
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 0,
+      "walking_budget_m": 1000,
+      "accessible_buildings": 26356,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.40129725779192105,
+      "share_connected_buildings": 0.4107471246454509
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 0,
+      "walking_budget_m": 2000,
+      "accessible_buildings": 45921,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.6991945429906969,
+      "share_connected_buildings": 0.7156593834741141
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 1,
+      "walking_budget_m": 500,
+      "accessible_buildings": 8595,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.1308677314737275,
+      "share_connected_buildings": 0.13394944363058317
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 1,
+      "walking_budget_m": 1000,
+      "accessible_buildings": 26360,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.4013581619136075,
+      "share_connected_buildings": 0.4108094629554593
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 1,
+      "walking_budget_m": 2000,
+      "accessible_buildings": 45921,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.6991945429906969,
+      "share_connected_buildings": 0.7156593834741141
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 2,
+      "walking_budget_m": 500,
+      "accessible_buildings": 8595,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.1308677314737275,
+      "share_connected_buildings": 0.13394944363058317
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 2,
+      "walking_budget_m": 1000,
+      "accessible_buildings": 26360,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.4013581619136075,
+      "share_connected_buildings": 0.4108094629554593
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 2,
+      "walking_budget_m": 2000,
+      "accessible_buildings": 45921,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.6991945429906969,
+      "share_connected_buildings": 0.7156593834741141
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 0,
+      "walking_budget_m": 500,
+      "accessible_buildings": 9213,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.14027741827428172,
+      "share_connected_buildings": 0.1435807125268834
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 0,
+      "walking_budget_m": 1000,
+      "accessible_buildings": 28886,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.4398191147585913,
+      "share_connected_buildings": 0.45017610572577377
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 0,
+      "walking_budget_m": 2000,
+      "accessible_buildings": 50296,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.7658084260852354,
+      "share_connected_buildings": 0.7838419100458187
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 1,
+      "walking_budget_m": 500,
+      "accessible_buildings": 9321,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.14192182955981547,
+      "share_connected_buildings": 0.1452638468971106
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 1,
+      "walking_budget_m": 1000,
+      "accessible_buildings": 29105,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.44315361542092363,
+      "share_connected_buildings": 0.45358912819873454
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 1,
+      "walking_budget_m": 2000,
+      "accessible_buildings": 50539,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.7695083514776863,
+      "share_connected_buildings": 0.78762896237883
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 2,
+      "walking_budget_m": 500,
+      "accessible_buildings": 9323,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.14195228162065868,
+      "share_connected_buildings": 0.14529501605211484
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 2,
+      "walking_budget_m": 1000,
+      "accessible_buildings": 29115,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.4433058757251397,
+      "share_connected_buildings": 0.45374497397375557
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 2,
+      "walking_budget_m": 2000,
+      "accessible_buildings": 50539,
+      "all_buildings": 65677,
+      "geometrically_connected_buildings": 64166,
+      "share_all_buildings": 0.7695083514776863,
+      "share_connected_buildings": 0.78762896237883
+    }
+  ],
+  "invariants": "nonincreasing cost with larger boarding budget and added metro: passed",
+  "interpretation": "structural model on 11 bus and 14 rail relations; not time or population accessibility"
+}

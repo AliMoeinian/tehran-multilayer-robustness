@@ -4,7 +4,7 @@ Open research on street–route dependencies and structural healthcare accessibi
 
 We study how street closures affect connections from mapped buildings to hospital candidates through walking, bus and metro layers. The project is being developed for a conference paper in complex networks.
 
-**Status:** the source dataset is frozen and audited. Route/stop diagnostics, the initial walking graph, geometric connectors and street-dependency slicing are implemented. The accessibility solver and experiments remain pending; no simulation results or published paper are claimed yet.
+**Status:** route/stop diagnostics, the walking graph, geometric connectors, street dependencies and a tested structural accessibility solver are implemented. An initial intact-network baseline has been computed on the screened subset. Closure experiments and the conference paper remain in progress; the results are not citywide operational estimates.
 
 ## Start here
 
