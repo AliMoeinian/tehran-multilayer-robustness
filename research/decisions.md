@@ -91,3 +91,19 @@ The earlier partial paired experiment and its figures/data are removed from the
 current repository. Its results are not the paper's evidence. Git history is
 retained. Broader preservation and cross-solver controls remain a separately
 identified next stage; the full paired domain itself must have no omissions.
+
+## 2026-11-01: close earlier validation tasks
+
+Replace the earlier limited length check with a census of every source walking
+way, original segment and split graph edge. Compare every baseline/single/pair
+failed set with a compiled full-walking-node reference at every connected origin
+and boarding budget; require identical threshold counts. Retain both numerical
+tolerance and maximum discrepancy. No graph contraction is used by the reference.
+
+All 28 flagged bus relations receive final, documented exclusions under the
+recorded-order contract. Preserve source member order and record geometrically
+sorted candidates as alternative assumptions, without substituting them silently.
+This closes primary-model eligibility review, not operational certification or
+permanent irreparability. Geometry and the primary route subset remain unchanged.
+All published experiment counts are exactly reproduced, so no numeric result or
+main figure replacement is needed. Path explanations and sensitivity are next.

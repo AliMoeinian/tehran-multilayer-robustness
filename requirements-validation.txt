@@ -1,0 +1,3 @@
+# Optional accelerator for exhaustive full-walking-graph solver verification.
+-r requirements-research.txt
+numba==0.67.0

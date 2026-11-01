@@ -6,6 +6,8 @@ We study how street closures affect connections from mapped buildings to hospita
 
 **Status:** route/stop diagnostics, the walking graph, geometric connectors, street dependencies and tested structural accessibility solvers are implemented. The intact baseline, exhaustive observed single closures, and the complete 1,417,086-pair closure census have been computed on the screened subset. Sensitivity analyses, path-level interpretation and the conference paper remain in progress; results are not citywide operational estimates.
 
+All-way length preservation, the exhaustive full-node solver comparison and final route-exclusion dispositions are documented in the [validation closure report](research/reports/validation-closure.en.md). Published experiment values are unchanged.
+
 ## Start here
 
 - [Dataset, contents and provenance](data/README.md)

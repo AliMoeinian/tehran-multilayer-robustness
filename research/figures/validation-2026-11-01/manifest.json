@@ -1,0 +1,12 @@
+{
+  "source_code_sha256": "add25b2473699e4ba66e89822b7d94918f2dfbf3f6bef471ac94d2e671c30719",
+  "sources": {
+    "route-dispositions.json": "27925e74927d8add90eb4ce8f579f23a352d3d8b942352c9f2cc2a92db974e2c",
+    "stops.csv": "1d4ca8e10a05c59fd96b73d2eaa4610591f9635aa116d8a958dc7671314e7cbf",
+    "traces.json": "982174e039560468f90057a8a212af239c19d7dcbe5931ef027ea91663fd0e72"
+  },
+  "svg_sha256": {
+    "all-28-route-orders-part1.svg": "322cff867c4d8af04e8d8ccc50d17d26e0b726e911299e0d807a4fb5c8457ad0",
+    "all-28-route-orders-part2.svg": "6565f2de614c303cd7bbbb9a5dee4bee14d950442981b285717253e990d848ee"
+  }
+}

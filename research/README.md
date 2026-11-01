@@ -145,3 +145,26 @@ boarding budgets. It publishes no global disconnection or operational claims.
 signature to recover per-street effects. `groups.json` lists failed connection IDs.
 Generated output directories refuse overwrite. Published result copies and hashes
 are in `reports/m3-single-closures-2026-11-01*`.
+
+## Completed full-validation controls
+
+The [closure report](reports/validation-closure.en.md) records the all-way and
+all-segment preservation census, all-scenario compact/full-node comparison and
+final exclusions for all 28 previously flagged bus relations. Published numerical
+results are unchanged. Reproduce the controls with:
+
+```bash
+python -m pip install -r requirements-validation.txt
+python -m research.src.audit_all_lengths
+python -m research.src.resolve_route_exclusions
+python -m research.src.audit_all_solvers
+python -m research.src.verify_full_validation
+python -m research.src.make_validation_report
+```
+
+The full solver census runs every failed set without sampling and can take
+substantial time. The full-node reference is compiled with Numba; it retains
+float64 and the original node-level recurrence. CI verifies all frozen evidence
+tables and the complete unit suite; it does not rerun the long census on every
+commit. Route exclusions are eligibility decisions under the strict primary
+contract, not source repairs or claims that the excluded services do not run.

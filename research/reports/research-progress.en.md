@@ -69,9 +69,9 @@ An earlier strict path screen admitted 39 bus and 14 rail relations. We then rec
 
 Projection checks use a 100 m stop-to-trace limit, a 1 m projection-distance tolerance, a 20 m separation criterion for ambiguous progress locations, and a 1 m order tolerance. Repeated trace locations can be ambiguous even if the nearest geometric distance is small. Stops were not silently sorted by projected distance or reversed to make a relation pass.
 
-Of the 39 bus relations, **11** were accepted for the current connection model and **28** were retained for review: 27 had mixed progress order and one opposed the selected trace orientation. One flagged relation also exceeded the stop-to-trace distance limit. These flags overlap. All 14 rail relations passed this additional diagnostic. Conflicting order can reflect OSM member conventions, paired platforms, or the selected trace orientation; the audit does not establish that all excluded relations are wrong.
+Of the 39 bus relations, **11** were accepted for the current connection model and **28** were retained for review at that milestone and now have explicit final primary-model exclusions (Section 14): 27 had mixed progress order and one opposed the selected trace orientation. One flagged relation also exceeded the stop-to-trace distance limit. These flags overlap. All 14 rail relations passed this additional diagnostic. Conflicting order can reflect OSM member conventions, paired platforms, or the selected trace orientation; the audit does not establish that all excluded relations are wrong.
 
-Across the 53 input relations, 948 stop associations were selected. The accepted subset contains **443 stop occurrences** and **418 directed consecutive-stop connections**, comprising 138 bus and 280 rail connections. An occurrence belongs to a route and position in its sequence; it is not necessarily a distinct physical station. Stop-area reconciliation remains incomplete.
+Across the 53 input relations, 948 stop associations were selected. The accepted subset contains **443 stop occurrences** and **418 directed consecutive-stop connections**, comprising 138 bus and 280 rail connections. An occurrence belongs to a route and position in its sequence; it is not necessarily a distinct physical station. Route occurrences are not merged through stop-area labels; transfers use their geometric walking paths. This does not certify physical station entrances.
 
 ![Route relations retained after the additional stop-order audit](../figures/progress-2026-11-01/01-route-screening.svg)
 
@@ -238,7 +238,7 @@ We separate file integrity, model implementation checks, and real-world validity
 | Source completeness | Archived audit: no duplicate IDs or missing PBF references; complete boundary references |
 | Boundary geometry | Valid city/district geometries, recorded area discrepancy, no forced district assignment |
 | Route projection and order | Tests for repeated-location ambiguity, reverse/mixed order, segment boundaries and zero-length geometry |
-| Walking construction | No dangling accepted anchors; nonnegative costs; 20 sampled original way lengths agree with their split-edge sums |
+| Walking construction | No dangling accepted anchors; nonnegative costs; all 206,474 walking ways, 872,879 source segments and 930,852 split edges pass the follow-up census |
 | Bus incidence | Dependency overlaps sum to each connection interval; no orphan or non-bus dependency records |
 | Boarding semantics | Direction, cumulative access costs, entry/exit permissions, through-riding, and additional-boardings budget tests |
 | Independent solver reference | 720 exact comparisons with forward expanded-state search: 30 deterministic random small graphs × four boarding budgets × six origins |
@@ -247,7 +247,7 @@ We separate file integrity, model implementation checks, and real-world validity
 | Baseline regression | Shared loader reproduces published M3 counts with matching network/configuration hashes |
 | Saved closure outputs | All 1,684 source segments, 238 groups, 2,142 effect rows, memberships, hashes, losses, shares and weighted summaries reconciled against SQLite |
 
-At the single-closure milestone, the suite contained **27 passing unit tests**; the paired-closure extension now contains 37, as detailed in Section 13. The independent closure examples add 27 forward-search comparisons beyond the 720 baseline comparisons. The stored graph-length comparison is a sample of 20 source ways, not a full geometric survey. Nodewise invariants are necessary implementation checks; they would not detect every possible modeling or data error.
+At the single-closure milestone, the suite contained **27 passing unit tests**; the validation extension now contains 44, as detailed in Section 13. The independent closure examples add 27 forward-search comparisons beyond the 720 baseline comparisons. The earlier 20-way length comparison is superseded by the complete source-geometry and split-chain census in Section 14. Nodewise invariants are necessary implementation checks; they would not detect every possible modeling or data error.
 
 The figure generator reads saved evidence directly, emits editable-text vector SVGs, and records source/output SHA-256 values in a figure manifest. Canonical LF line endings keep published artifact hashes stable across checkouts. All five figure layouts were reviewed through rendered PNG previews, and a legend/annotation collision was corrected. SVG structure was checked for editable text and the absence of embedded raster images. Report links and output hashes were also checked. These presentation checks are separate from arithmetic validation.
 
@@ -345,12 +345,25 @@ The recorded experiment expands to 25,507,548 physical-pair/parameter/mode resul
 | Maximum joint loss (buildings) | 439 | 351 |
 <!-- END PAIR_MAIN -->
 
-The supplement contains the full parameter grid, complete-domain extreme cases, and Figures 6 and 7 as reproducible SVGs. A full independent audit enumerates and reconciles every physical pair, signature pair, dependency union, saved effect row and interaction distribution. The current suite has 37 tests, including worker-process equivalence and the earlier independent solver comparisons.
+The supplement contains the full parameter grid, complete-domain extreme cases, and Figures 6 and 7 as reproducible SVGs. A full independent audit enumerates and reconciles every physical pair, signature pair, dependency union, saved effect row and interaction distribution. The current suite has 44 tests, including worker-process equivalence and the earlier independent solver comparisons.
 
-Completeness refers to the defined observed street-pair domain. The model still contains the screened 11 bus and 14 rail relations; it does not represent a verified complete operating transit network. The detailed audit distinguishes exhaustive saved-output controls from the nine selected real-network cross-solver comparisons. Broader verification remains the next stage rather than an unreported claim of completeness.
+Completeness refers to the defined observed street-pair domain. The model still contains the screened 11 bus and 14 rail relations; it does not represent a verified complete operating transit network. The detailed audit distinguishes exhaustive saved-output controls from the nine selected real-network cross-solver comparisons. The completed follow-up census is recorded in Section 14.
 
-## 14. Next step: broader verification, path explanations and sensitivity
+## 14. Completed follow-up: earlier validation tasks
 
-Next, complete the declared all-way length-preservation controls and broader solver-equivalence checks. Then trace origins and eligible paths for the complete-domain positive/negative pair extremes and earlier negative-DeltaM cases. Geographic and operational explanations are not established merely by an interaction score.
+The [complete validation report](validation-closure.en.md) closes the earlier length-preservation and solver-comparison controls. Every one of 206,474 walking ways and 930,852 stored edges was checked. The compact/full-node comparison covered 27,857 failed sets, both modes and all boarding layers: 14,299,778,096 origin-budget cells. Every published threshold count matched exactly, so the numerical experiment tables and main figures are unchanged.
 
-Sensitivity to connector conventions, walking/boarding budgets, failure policy, context and supported target sets follows, using the same dataset. Ranking stability and final conference claims remain pending. The paired-closure domain itself is complete; there is no outstanding expansion from a subset of pairs.
+All 28 previously excluded bus relations now have explicit case-by-case primary-model dispositions. They remain outside the frozen strict model because recorded order conflicts with the trace; one also fails the distance contract. Geometric reordering is a separate reconstruction hypothesis, not verified service. This resolves eligibility decisions without pretending to repair the source or make the operating bus network complete. See the complete registry and Figure 8 in the validation report.
+
+## 15. Next step: path explanations and sensitivity
+
+The earlier controls are closed within the frozen model. The next planned work is to trace origins and eligible paths for the positive/negative interaction cases and negative-DeltaM cases, then perform the declared sensitivity analyses. Verified entrances, operational completeness, clinical capability and population weights remain explicit data limitations. Final interpretation and ranking-stability claims remain pending.
+## 14. Completed follow-up: earlier validation tasks
+
+The [complete validation report](validation-closure.en.md) closes the earlier length-preservation and solver-comparison controls. Every one of 206,474 walking ways and 930,852 stored edges was checked. The compact/full-node comparison covered 27,857 failed sets, both modes and all boarding layers: 14,299,778,096 origin-budget cells. Every published threshold count matched exactly, so the numerical experiment tables and main figures are unchanged.
+
+All 28 previously excluded bus relations now have explicit case-by-case primary-model dispositions. They remain outside the frozen strict model because recorded order conflicts with the trace; one also fails the distance contract. Geometric reordering is a separate reconstruction hypothesis, not verified service. This resolves eligibility decisions without pretending to repair the source or make the operating bus network complete. See the complete registry and Figure 8 in the validation report.
+
+## 15. Next step: path explanations and sensitivity
+
+The earlier controls are closed within the frozen model. The next planned work is to trace origins and eligible paths for the positive/negative interaction cases and negative-DeltaM cases, then perform the declared sensitivity analyses. Verified entrances, operational completeness, clinical capability and population weights remain explicit data limitations. Final interpretation and ranking-stability claims remain pending.

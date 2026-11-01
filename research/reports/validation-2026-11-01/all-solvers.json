@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "scope": "all baseline, all single signatures and every pair-failure union; all connected-origin vectors at all boarding budgets; exact published grid counts",
+  "distinct_failed_sets_checked": 27857,
+  "pair_unions_checked": 27849,
+  "single_signatures_checked": 238,
+  "modes_checked": 2,
+  "origins_checked_per_layer": 64166,
+  "boarding_layers": 4,
+  "origin_budget_mode_scenario_cells_checked": 14299778096,
+  "maximum_absolute_difference_m": 1.1368683772161603e-12,
+  "relative_tolerance": 1e-12,
+  "absolute_tolerance_m": 1e-08,
+  "published_threshold_counts": "all exactly matched",
+  "compiled_reference": "full walking-node reverse-budget DP; no contraction; fastmath disabled",
+  "numba_version": "0.67.0",
+  "network_sha256": "465b10f73cc00d655fffe1fbfca50a177296c74820a397a93baad0732e278e06",
+  "config_sha256": "7b8caa982d84ec9b53acd1d80beb64d7fc5bc1f5accb661ea9608050c48b7fe1",
+  "source_code_sha256": {
+    "audit_all_solvers.py": "0e868b16e1e60030778e6e59f4844f938588ef27934c2e229835952978e5343d",
+    "full_graph_reference.py": "93e19854f396373106258ae696185cd687879425f954f691aa62349d21df8382"
+  },
+  "scenario_table_sha256": "106713b74cdbe29a2f9e84253e297e54b533b2c52b9b2549d104e65c15f89106",
+  "elapsed_seconds": 1908.1545932000154,
+  "workers": 4
+}

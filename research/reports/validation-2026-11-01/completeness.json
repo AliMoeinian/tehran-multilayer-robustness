@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "way_rows": 206474,
+  "solver_scenario_mode_rows": 55714,
+  "origin_budget_cells": 14299778096,
+  "route_dispositions": 28,
+  "walking_only_counts": [
+    {
+      "walking_budget_m": 500,
+      "accessible_buildings": 7944
+    },
+    {
+      "walking_budget_m": 1000,
+      "accessible_buildings": 25295
+    },
+    {
+      "walking_budget_m": 2000,
+      "accessible_buildings": 45634
+    }
+  ]
+}

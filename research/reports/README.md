@@ -1,5 +1,7 @@
 # Research reports
 
+The [validation closure report](validation-closure.en.md) records the complete length/segment audit, every solver-scenario comparison, and final dispositions for all 28 excluded routes. It supersedes the earlier limited controls; primary experiment values did not change.
+
 The cumulative English account is [Methods and results through single closures](research-progress.en.md).
 It includes the data boundary, screening decisions, graph construction, algorithm,
 full parameter tables, validation, limitations, reproducibility and the next stage.
