@@ -1,0 +1,18 @@
+{
+  "config_version": "m1-v1",
+  "dataset_id": "tehran-osm-20261029T212126Z-v1.1-public",
+  "route_status": "continuous_ordered_path_screened",
+  "walking_budgets_m": [500, 1000, 2000],
+  "max_line_changes": [0, 1, 2],
+  "stop_distance_limit_m": 100,
+  "projection_distance_tolerance_m": 1,
+  "ambiguous_progress_separation_m": 20,
+  "stop_order_tolerance_m": 1,
+  "metric_crs": "EPSG:32639",
+  "hospital_screen": "human_hospital_candidate",
+  "outside_city_destinations": true,
+  "failure_policy": "consecutive_stop_connection",
+  "rerouting": false,
+  "historical_reference_in_primary_model": false,
+  "output_directory": "research/model/m1-v1"
+}

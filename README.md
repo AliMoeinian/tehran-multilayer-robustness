@@ -4,7 +4,7 @@ Open research on street–route dependencies and structural healthcare accessibi
 
 We study how street closures affect connections from mapped buildings to hospital candidates through walking, bus and metro layers. The project is being developed for a conference paper in complex networks.
 
-**Status:** the source dataset is frozen and audited. Network construction and research experiments are planned; no simulation results or published paper are claimed yet.
+**Status:** the source dataset is frozen and audited. Implementation has started with a tested route-trace/stop-order diagnostic; the full network and research experiments are not complete. No simulation results or published paper are claimed yet.
 
 ## Start here
 
@@ -13,6 +13,7 @@ We study how street closures affect connections from mapped buildings to hospita
 - [Research protocol](docs/research-protocol.fa.md) — Persian
 - [Dataset construction report](docs/dataset-construction.fa.md) — Persian
 - [Code and reproducibility](scripts/README.md)
+- [Research implementation and commands](research/README.md)
 
 ```bash
 git clone https://github.com/AliMoeinian/tehran-multilayer-robustness.git

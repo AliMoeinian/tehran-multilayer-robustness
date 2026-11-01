@@ -1,0 +1,26 @@
+# M1 evidence: 2026-11-01
+
+Initial diagnostic on the strict 39 bus / 14 rail relations in the frozen public
+OSM dataset. This is not the complete M1 travel model or an estimate of current
+service coverage.
+
+| Result | Bus relations | Rail relations |
+|---|---:|---:|
+| Candidate for walking-connection audit | 11 | 14 |
+| Needs order/geometry review | 28 | 0 |
+
+Among flagged bus relations, 27 have mixed stop progress and one has stop order
+opposing the selected trace. One flagged route also exceeds the 100 m diagnostic
+distance. These are overlapping flags. The diagnostic contains 948 selected
+stop associations and 418 candidate consecutive-stop connections in accepted
+traces. Stops are associations, not distinct physical stations.
+
+These findings do not establish that the routes are incorrectly mapped. OSM
+member ordering, paired platform semantics or an earlier trace-orientation
+choice may be responsible. Stops have not been silently reordered. Stop-area
+reconciliation, walking connectors and street slicing still need implementation.
+
+Six small independent-answer tests passed locally, including a repeated-location
+ambiguity and separate reverse/mixed order cases. Configuration and input file
+hashes are checked by the module. The dated JSON and CSV record exact output;
+detailed per-stop/model files are reproducible under ignored `research/model/`.
