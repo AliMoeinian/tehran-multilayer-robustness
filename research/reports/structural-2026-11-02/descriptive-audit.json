@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "all_origin_ownerships_checked": 65677,
+  "all_target_masks_decoded": 5664,
+  "all_candidate_group_counts_checked": 1576248,
+  "target_union_matches_prior_full_solver_vectors": true,
+  "all_district_effect_rows_checked": 98532,
+  "independent_component_replay": "union-find walking components, then directed quotient-graph DFS/Kosaraju",
+  "unassigned_inside_city_district_gaps": 24,
+  "unassigned_outside_city_points": 0,
+  "source_code_sha256": "14fcde5f4867e08d772db6a41df070d0a6fb858ef8664e7f7bb35f53579e850b",
+  "prior_baseline_cost_table_sha256": "98ee3a34855f0200768d1df6b5d8184de6f8496592988f9345ec98d98d540916"
+}

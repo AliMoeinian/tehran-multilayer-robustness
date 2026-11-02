@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "all_road_rows": 218322,
+  "all_adjacent_occurrences": 968041,
+  "all_canonical_links": 968022,
+  "all_chains": 412775,
+  "all_chain_topologies_verified": true,
+  "maximum_source_length_difference_m": 4.547473508864641e-13,
+  "maximum_chain_length_difference_m": 0.0,
+  "source_code_sha256": "14fcde5f4867e08d772db6a41df070d0a6fb858ef8664e7f7bb35f53579e850b",
+  "artifact_sha256": {
+    "all-corridor-way-audit.csv.gz": "c15db6946c328430557da5ba643807acc777e9269509064d3cb87ed1c61e92e8",
+    "all-corridor-chain-audit.csv.gz": "25ba6c68ee158beb293b05d3fb3311272e50b28812825d2a7b5eed6ea01453e9"
+  }
+}

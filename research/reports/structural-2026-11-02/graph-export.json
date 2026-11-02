@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "vertices": 317852,
+  "od_junctions": 317724,
+  "source_occurrences": 968041,
+  "graph_sha256": "1fa92a09b0e4c1c857d93ac8ced9d10853d856071d93840490242e294c37c415",
+  "definition": "All evaluated vertices, including zero-OD storage cycle vertices; every original source occurrence maps to its physical link and chain. Chain endpoints, lengths and final scores are in junction-centrality.csv.gz.",
+  "source_code_sha256": "f5e6f6f5bc1d455d1e121a2450fa25400f9ac456f3640e33daa58ef4a03e24cc",
+  "artifact_sha256": {
+    "junction-vertices.csv.gz": "7c19c5ce4efddd9cfab5c5e17404e8a4b4881af67cec76cc8c50da94d8dcbe8f",
+    "source-chain-index.json": "6e5f041c07ec101aa290450aecd9096c7b35d1f3e7b7445f22b167b813d7431c",
+    "source-chain-mapping/part-000.csv.gz": "bdc05108b24bfbc3b462a00acfa4acff76de58cc0a4a89ebca576f26541e14dc",
+    "source-chain-mapping/part-001.csv.gz": "735de8edefc117ef906c610f25e297a9bdcf44522c21fe5075bb39d128f3f19b",
+    "source-chain-mapping/part-002.csv.gz": "90c5e70441821cd479539abf32b9488275d009a8dc9b10fde2cc883510b63793",
+    "source-chain-mapping/part-003.csv.gz": "088a1feceedbb6194b9ef579dbb73fbb957f02894856bf87f4010d66e7abd8df",
+    "source-chain-mapping/part-004.csv.gz": "56a3b665829168abf20948b0b224b72cc9bbb914f23b11a89e0120b7591fdb7f",
+    "source-chain-mapping/part-005.csv.gz": "f5e9b2582406599ce6f026c76c06e0fd00fefd8779e59a8ec3fd16b57b3affcc",
+    "source-chain-mapping/part-006.csv.gz": "84ed29b07ed3a43bab9b6d12500bbad5c724e8ecbceeff6d008f6bb8f4060aa3",
+    "source-chain-mapping/part-007.csv.gz": "2bfb0324e4238c7d628485b93133423dc8acc67a713a98ed5c1ec3e0d0c089f7",
+    "source-chain-mapping/part-008.csv.gz": "2d1163eb352d65aa7f605bacbc4c98432079cccb5dae2ff8c84929392d9972b2",
+    "source-chain-mapping/part-009.csv.gz": "88498fd0883b5d6b6e6c6e50c8c8d34e0aa59c6f63396e2457ea7a3e14bca2d9",
+    "source-chain-mapping/part-010.csv.gz": "853006ce2a25c8cfd7442523aa6cb692b0a4fd8670c589fb0e00f567a1081f18",
+    "source-chain-mapping/part-011.csv.gz": "5fdec60c5c33fe8289af96e3df6e19dc19b59cbed751120d698ec44824357b63",
+    "source-chain-mapping/part-012.csv.gz": "50b722a4fe927a09e79e327ac64b124c11abe8d5cc0e78d37efbc96db0a95275",
+    "source-chain-mapping/part-013.csv.gz": "d855b9c8821edf7e51197f880de7464ffe5d8935aa1c46bddd14caa49c0d6c78",
+    "source-chain-mapping/part-014.csv.gz": "5d62493077fc183d0d93ad8fe47cfffccf0c7cfe0c459ba9495164f1a13964fc",
+    "source-chain-mapping/part-015.csv.gz": "b0b2444aedaeae1a070825f6b8e3d4c422365e775d8a837504c8c66c4d15f699",
+    "source-chain-mapping/part-016.csv.gz": "f54d5fe6a3d08b1ba3d977087c1e8f9a3f2488fdf89c98d228e192af3ac2aef5",
+    "source-chain-mapping/part-017.csv.gz": "ccdf47cf9543cc0811687cc4338ac165a8ac98ecdb4f75edd59072d0924fff69",
+    "source-chain-mapping/part-018.csv.gz": "88da301513bd907d23f2e77e4f27be0959b24990f49c2905349475072b69a3a7",
+    "source-chain-mapping/part-019.csv.gz": "284fc562ad9f91261a6d80d3876332e7956741c8a3e59acee4691dfe4c098e99"
+  }
+}

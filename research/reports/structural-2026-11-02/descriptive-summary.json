@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "all_buildings": 65677,
+  "all_districts": 22,
+  "unassigned_origins": 24,
+  "ambiguous_district_points": 0,
+  "candidate_groups_checked": 236,
+  "candidate_features": 241,
+  "all_group_union_thresholds_match_baseline": true,
+  "mask_count": 5664,
+  "single_district_effect_rows": 98532,
+  "all_single_losses_reconcile": true,
+  "components": [
+    {
+      "mode": "walk",
+      "connectivity": "weak",
+      "vertices": 848604,
+      "directed_arcs": 1861704,
+      "components": 2120,
+      "largest_component_vertices": 775973,
+      "components_with_connected_origins": 335
+    },
+    {
+      "mode": "walk",
+      "connectivity": "strong",
+      "vertices": 848604,
+      "directed_arcs": 1861704,
+      "components": 2120,
+      "largest_component_vertices": 775973,
+      "components_with_connected_origins": 335
+    },
+    {
+      "mode": "bus",
+      "connectivity": "weak",
+      "vertices": 848753,
+      "directed_arcs": 1862132,
+      "components": 2118,
+      "largest_component_vertices": 776316,
+      "components_with_connected_origins": 333
+    },
+    {
+      "mode": "bus",
+      "connectivity": "strong",
+      "vertices": 848753,
+      "directed_arcs": 1862132,
+      "components": 2120,
+      "largest_component_vertices": 776120,
+      "components_with_connected_origins": 335
+    },
+    {
+      "mode": "bus_metro",
+      "connectivity": "weak",
+      "vertices": 849047,
+      "directed_arcs": 1862992,
+      "components": 2113,
+      "largest_component_vertices": 777692,
+      "components_with_connected_origins": 330
+    },
+    {
+      "mode": "bus_metro",
+      "connectivity": "strong",
+      "vertices": 849047,
+      "directed_arcs": 1862992,
+      "components": 2115,
+      "largest_component_vertices": 777496,
+      "components_with_connected_origins": 332
+    }
+  ],
+  "network_sha256": "465b10f73cc00d655fffe1fbfca50a177296c74820a397a93baad0732e278e06",
+  "source_code_sha256": "e0b99b187db8ee4ffae3f0457feb1fc00f1496efacf2078848beaf46e36bb0c6",
+  "artifact_sha256": {
+    "building-district-ownership.csv.gz": "9ee1237783eac306b2c20094586ac9004446c719c933fa4e7fc96299f37ddb5b",
+    "building-reachable-target-groups.csv.gz": "b8dd2f5ed1f0761e8f6a5266bf14296d67554e4bef339e263ca1b0e67fb41ee5",
+    "district-baseline.csv.gz": "a30901ccc808bf4b0f8895bc38a83cb09b5151752472e0431cd7c18f15095ee0",
+    "district-index.json": "136bf35e25eefd2ea825da5627908d6cb76cb9bbad6b49d4dd0be7ae19bd2f53",
+    "district-loss-summary.csv.gz": "d92020700d79ebd0d10d669775e43a30cecc641e237c96f8004606dcd9f8488b",
+    "district-single-losses.csv.gz": "8c039e2833308d9f099b3ebc0c2c471e4a6c03292989e3a37a1dcbfc1de2f6a6",
+    "hospital-group-reachability-masks.npz": "2f40dab196c16db91c2865fe0381efacddb30fa278cffed7c44ae65ac0822254",
+    "model-components.csv.gz": "d512332df79dd61ba1236ad442dad8b7028fe5e827cf681a6793212bd587ce62",
+    "target-group-coverage.csv.gz": "068b2ad28d22c8682fd9fcae5208c58f835f9f5af7e8158cae5890c4b9519220",
+    "target-group-mask-index.json": "ee5e55e6cd433a2b407bc2e0fb83b1bd7094f360de694bd12bfaa21a767d2686"
+  }
+}

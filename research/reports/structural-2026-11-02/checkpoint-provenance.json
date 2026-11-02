@@ -1,0 +1,10 @@
+{
+  "reason": "Close the read archive before atomic Windows replacement; numerical kernel unchanged.",
+  "prior_source_sha256": "05b15ef95c02d6809dca4bf682a655f8c1acd831cd4a201e73185acae9b42ea6",
+  "new_source_sha256": "fffbb8c59f2e4ac95254d42ba9d6d9aa7d18599c0d0e8a9db9a665c3eff931f3",
+  "original_paused_checkpoint_sha256": "cb926435e7f5600142cd3a255cddeaa7250d795b699b3b9b50564a4e0521619f",
+  "resumed_checkpoint_sha256": "8ee7f8e07677269095d7738803c6536296e9a33e9dd674db1caa3997b7754453",
+  "retained_projected_sources": 115872,
+  "retained_tasks": 3621,
+  "only_source_change": "saved.close() after fully loading checkpoint arrays"
+}

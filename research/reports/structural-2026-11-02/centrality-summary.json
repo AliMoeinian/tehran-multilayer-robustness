@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "method": "Exact weighted block-cut decomposition; bridge products and all nontrivial-block projected OD sources",
+  "original_od_junctions": 317724,
+  "projected_block_sources": 219879,
+  "bridge_blocks_solved_analytically": 98808,
+  "all_nontrivial_blocks": 1430,
+  "all_tasks_completed": true,
+  "no_sampling": true,
+  "edge_length_betweenness_sum": 1639008646893534.0,
+  "all_pair_distance_sum": 1639008646893534.8,
+  "relative_conservation_difference": 4.575936810470761e-16,
+  "graph_sha256": "1fa92a09b0e4c1c857d93ac8ced9d10853d856071d93840490242e294c37c415",
+  "blocks_sha256": "2c5fd0a9f49fa1aa5214cfbd420de7c127c9dd809e38b5a4b9e03d22063fc758",
+  "source_code_sha256": "fffbb8c59f2e4ac95254d42ba9d6d9aa7d18599c0d0e8a9db9a665c3eff931f3",
+  "artifact_sha256": {
+    "junction-centrality.csv.gz": "9034ca65c9ec4489317b1e846655aa4d12d676f8a2b84531035e5e594097515f",
+    "centrality-source-census.csv.gz": "a8af6140a34216098bbce4a9db2e253303a0efce3af95015058fbf530bf36216"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "all_attachment_mass_rows": 417495,
+  "all_original_od_mass_preserved": 317724,
+  "all_bridge_products_verified": 98808,
+  "all_projected_source_rows_verified": 219879,
+  "all_chain_scores_checked": 412775,
+  "relative_global_distance_conservation_error": 2.44049963225108e-15,
+  "block_weight_check": "Every block partitions its component OD mass; every original vertex satisfies branch-flow conservation. The block-cut graph is a forest, so these mass messages are uniquely determined.",
+  "source_code_sha256": "14fcde5f4867e08d772db6a41df070d0a6fb858ef8664e7f7bb35f53579e850b",
+  "artifact_sha256": {
+    "block-attachment-masses.csv.gz": "180fae31ea3dd99a398fb8629a144850757b28b152668f5887c4be2406e8d863",
+    "bridge-centrality-audit.csv.gz": "2bd897c571cf279f554592f5e78f732069ad83200620d4ddb2a3ccaca3477948"
+  }
+}

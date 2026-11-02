@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "source_sha256": "77fd0961a8eb10f2dbe2d6b19878138a489d4e69f45fc6fce2ae366e99a64ed4",
+  "road_rows": 218322,
+  "original_adjacent_occurrences": 968041,
+  "native_nodes": 873099,
+  "zero_length_occurrences": 0,
+  "positive_unique_physical_edges": 968022,
+  "quotient_nodes": 873099,
+  "junction_graph_vertices": 317852,
+  "od_junctions_and_endpoints": 317724,
+  "junction_graph_edges": 412775,
+  "components": 595,
+  "pure_degree_two_cycle_components": 128,
+  "all_source_occurrences_accounted_for": true,
+  "graph_sha256": "1fa92a09b0e4c1c857d93ac8ced9d10853d856071d93840490242e294c37c415",
+  "definition": "Uniform OD at every degree-not-two quotient junction/endpoint in every component. Degree-two geometry vertices are not demand; all original positive spatial edges map to complete chains. Pure cycles with no junctions have no OD pairs. Undirected full roads_context graph, not legal driving or population flow."
+}

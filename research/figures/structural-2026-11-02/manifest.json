@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "editable_svg_text": true,
+  "figure_count": 6,
+  "source_code_sha256": "681a24a8b2156524bc462fcf4924c6608db3c728cde41c9cf2e3504b6f60bfec",
+  "figures": [
+    {
+      "figure": "district-access-and-loss.svg",
+      "sha256": "2be71744dfec71db07dc43625899c431d96470dd678cf637be11d5f6777a9de2",
+      "scope": "District denominators are all recorded buildings, not population; separate panel scales. OSM district polygons are not certified legal boundaries.",
+      "source_sha256": {
+        "data/extracted/tehran-osm-20261029T212126Z-v1.1-public/tehran_audited_layers.gpkg": "77fd0961a8eb10f2dbe2d6b19878138a489d4e69f45fc6fce2ae366e99a64ed4",
+        "research/reports/structural-2026-11-02/district-index.json": "136bf35e25eefd2ea825da5627908d6cb76cb9bbad6b49d4dd0be7ae19bd2f53",
+        "research/reports/structural-2026-11-02/district-baseline.csv.gz": "a30901ccc808bf4b0f8895bc38a83cb09b5151752472e0431cd7c18f15095ee0",
+        "research/reports/structural-2026-11-02/district-loss-summary.csv.gz": "d92020700d79ebd0d10d669775e43a30cecc641e237c96f8004606dcd9f8488b"
+      }
+    },
+    {
+      "figure": "candidate-group-count-ecdf.svg",
+      "sha256": "ae433da2e5272aed31474762608756d25a35fb3cc0db723e52c81af7ca0fa242",
+      "scope": "Exact ECDF over all origins. Zero reachable groups includes rejected connectors and no feasible modeled path.",
+      "source_sha256": {
+        "research/reports/structural-2026-11-02/building-reachable-target-groups.csv.gz": "b8dd2f5ed1f0761e8f6a5266bf14296d67554e4bef339e263ca1b0e67fb41ee5"
+      }
+    },
+    {
+      "figure": "route-overlap-matrix.svg",
+      "sha256": "6b3d67016a160a914629aaa9218167b6946132ac517ed46e0cbfd30a367f4137",
+      "scope": "Every accepted relation pair; interval unions merge repeat traversals. Distinct source ways remain distinct. Diagonal is the identity, not an evaluated distinct pair.",
+      "source_sha256": {
+        "research/reports/structural-2026-11-02/route-descriptions.csv.gz": "2817359e97338cc8a3f66565f76591d0e2b1e09e25cf1c4b3a81322a7c6c90f5",
+        "research/reports/structural-2026-11-02/route-pair-overlap.csv.gz": "bd7a8d7be14056893e0263bab452c9a35b11793bbaf3d6779fb40863da127835"
+      }
+    },
+    {
+      "figure": "pair-interaction-by-distance.svg",
+      "sha256": "a29ae0e7d4b6c3c6d5e65c46db869dcb0c56f8b916f2de929fb9842846e7bbb8",
+      "scope": "Mean signed interaction, retaining every physical pair and multiplicity. Distance is Euclidean midpoint distance, not travel distance. No error bars or causal inference.",
+      "source_sha256": {
+        "research/reports/structural-2026-11-02/pair-feature-strata.csv.gz": "0524cd41c9a28aeca0f6a136396a220a16bcc2f385b9279e2bf4997726a80b28"
+      }
+    },
+    {
+      "figure": "single-loss-proxy-correlations.svg",
+      "sha256": "19aed24c9707d00d9951c73b28740fa439b5768c384aa9608da0ea93005f8e43",
+      "scope": "All 72 full-domain tied-rank correlations. Constant vectors are undefined. Exact uniform-junction betweenness is a structural corridor comparator, not traffic.",
+      "source_sha256": {
+        "research/reports/structural-2026-11-02/single-benchmark-rank-comparisons.csv.gz": "4a722a8b5093cbfaf88dcd5925e25e6949fef85b09840a698a915b76abd0d53e"
+      }
+    },
+    {
+      "figure": "single-loss-by-highway-class.svg",
+      "sha256": "9e7e23d8ab2a0d28176d046166abe634b647d5d58a2d8794867a8cab71250db2",
+      "scope": "All 1,684 source units; nominal recorded highway classes, no numeric hierarchy and no causal adjustment. Unequal class size is shown explicitly.",
+      "source_sha256": {
+        "research/reports/structural-2026-11-02/single-loss-by-road-class.csv.gz": "61cb366f01e5c22222e43794ebf479932058da288a9fa2979e323cc59f9594a3"
+      }
+    }
+  ]
+}

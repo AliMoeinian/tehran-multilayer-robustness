@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "all_relations_replayed": 25,
+  "all_distinct_pairs_replayed": 300,
+  "all_source_dependency_units_replayed": 1684,
+  "maximum_shared_length_difference_m": 4.3655745685100555e-11,
+  "method": "Independent GEOS unary_union/intersection of source-key intervals; dependency incidence reconciled with complete stored M2 table.",
+  "source_code_sha256": "732a6d2cf64325ff5b42b9c0db315066899e5205c486dae20749110dccaebc78"
+}

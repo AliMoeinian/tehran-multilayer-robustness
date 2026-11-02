@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "primary_source_streets": 1684,
+  "accepted_route_relations": 25,
+  "all_route_pairs": 300,
+  "bus_relations": 11,
+  "rail_relations": 14,
+  "maximum_dependent_relations": 2,
+  "maximum_dependent_connections": 4,
+  "all_dependency_keys_match_effect_domain": true,
+  "overlap_meaning": "Intersection of actual traversed intervals on identical source way/node-pair keys. Parallel corridors with distinct source keys are not merged. Relation instances are not unique services or passenger counts.",
+  "source_code_sha256": "93b744c862bb604196e2851e2fa23d558f574691070b53e378a4830abc4d42bd",
+  "network_sha256": "465b10f73cc00d655fffe1fbfca50a177296c74820a397a93baad0732e278e06",
+  "artifact_sha256": {
+    "street-features.csv.gz": "de6744a0371371b8796c49d785fe04dcf57080c303818234c3bd8e2617237f7f",
+    "route-descriptions.csv.gz": "2817359e97338cc8a3f66565f76591d0e2b1e09e25cf1c4b3a81322a7c6c90f5",
+    "route-pair-overlap.csv.gz": "bd7a8d7be14056893e0263bab452c9a35b11793bbaf3d6779fb40863da127835",
+    "dependency-concentration.csv.gz": "821da8fd10586e95d97370223631fb1d9c443388ce24b11115de0db2edb1bde9"
+  }
+}

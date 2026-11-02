@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "all_physical_pairs": 1417086,
+  "mode_parameter_comparisons": 18,
+  "association_rows": 72,
+  "strata_rows": 432,
+  "distance": "EPSG:32639 Euclidean distance between full source-segment midpoints; not network/travel distance.",
+  "scope": "All pairs; exact tied ranks. Nonzero-outcome correlations condition on the outcome and are descriptive, not unbiased predictive validation. No p-values or independent-pair assumptions.",
+  "source_code_sha256": "8c47d45189529cbd198d05105e00a4360c59d947fc82af1cc87c4916b4a0ec39",
+  "artifact_sha256": {
+    "pair-feature-associations.csv.gz": "54acea79eb0905feacb4ecfae6a285f715f8b446931fdc4eb1d257a4f2e70e0e",
+    "pair-feature-strata.csv.gz": "0524cd41c9a28aeca0f6a136396a220a16bcc2f385b9279e2bf4997726a80b28"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version":"structural-v1",
+  "data":"frozen public OSM snapshot only",
+  "centrality_graph":"All roads_context highway/path geometries, undirected. Identical native adjacent-node pairs are one physical link; zero-length connected links are contracted. Positive links and every component remain represented.",
+  "centrality_od":"Every quotient vertex of degree other than two is a uniform OD junction or endpoint. Degree-two geometry-only vertices are not OD demand. Isolated all-degree-two cycles contain no OD junction pair and have zero benchmark centrality.",
+  "centrality_algorithm":"Exact float64 weighted Brandes with block-cut decomposition: every original OD is retained through attachment weights; all projected sources in every nontrivial block are evaluated, bridges use the exact branch-mass product. No sampled sources, cutoff or LCC truncation. Geometry-chain suppression preserves every junction-to-junction path and length. Direct all-junction Brandes is a control implementation, not used as an empirical result.",
+  "interpretation":"Structural corridor comparator, not legal vehicle routing, traffic flow or building-weighted OD demand.",
+  "comparison_domain":"Every 1684 primary bus-support source segment; retain missing/zero-equivalence flags explicitly. All nine W/K settings and both modes.",
+  "comparators":["nominal highway class distributions","distinct accepted dependent bus relation count","dependent consecutive-stop connection count","source segment length","exact junction-to-junction edge betweenness"],
+  "rank_metrics":"Spearman with average ties, full-domain and nonzero-union comparisons, positive-subset top 1/5/10 percent with cutoff ties; undefined constants remain undefined. No inferential p-values.",
+  "length_control":"Fixed source-length bins from prior sensitivity; no claim of equal-length failure budgets.",
+  "district_rule":"One owner for each of all 65677 original building features: municipality polygon covering the stored representative point; overlapping owners resolved by lowest numeric district number then relation ID. Number is source ref if present or the digits in its recorded source name; unmatched preserved separately. Do not duplicate buildings by footprint overlap.",
+  "district_outputs":"All 22 districts, connected origins, healthy access, every observed single-closure loss and parameter/mode result, worst loss and mean over the full common 1684-unit domain. Fixed building denominator per owner; no population/equity claim.",
+  "descriptives":"All components and route traces, pairwise route street-overlap, bus dependency concentration, distinct hospital candidate groups reachable per origin at each W/K/mode. Groups are possible institutions, not clinically verified hospitals.",
+  "pair_associations":"Every primary physical pair, all W/K and both modes: midpoint Euclidean distance and number of shared accepted bus relations versus joint loss and signed interaction. Fixed distance bins [0,250,500,1000,2000,5000,10000,20000,infinity] metres and shared-relation counts0/1/2. No inference treating pairs as independent.",
+  "source_restriction":"No added map, operational, population or clinical records.",
+  "verification":"Independent explicit-path controls, full source geometry/chain census, every OD source coverage, weighted betweenness-distance conservation, all 22 district totals and all saved effect rows. Runtime measurements do not replace or truncate the final census."
+}

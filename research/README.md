@@ -202,9 +202,52 @@ their configurations, build/geometry receipts and expanded-route order tables
 are public. Frozen receipts preserve their byte hashes across checkouts.
 Use `prepare_sensitivity_models --reuse-verified` to inventory existing builds.
 
-Completeness is scoped to the declared experiments. The original roadmap also
-contains unexecuted structural centrality/road-class/dependency comparisons,
-broader component/district/target-count summaries and pair-feature associations.
-The [coverage ledger](reports/path-sensitivity.en.md#10-coverage-against-the-original-roadmap)
-keeps these open. The broader RQ1 benchmark, manuscript and optional larger
-failure/combined-assumption experiments are not marked complete.
+Completeness is scoped to the declared experiments. The subsequent
+[structural record](reports/structural-comparisons.en.md) completes the full
+centrality/road-class/dependency comparator grid, all component/district/target
+counts and all physical-pair feature associations. Conference claim/figure
+selection and manuscript preparation remain next. Larger multi-segment failures,
+equal-length failure budgets and combined-assumption experiments are unexecuted
+optional extensions.
+
+
+## Completed exact structural and descriptive stage
+
+The [English report](reports/structural-comparisons.en.md) and
+[evidence directory](reports/structural-2026-11-02/README.md) describe every
+primary unit/pair, the complete uniform-junction corridor benchmark, all
+components/districts/possible hospital groups and all 300 accepted-route overlaps.
+Six editable SVG figures link to exact source tables. Run from a prepared
+M1/M2 workspace:
+
+```bash
+python -m research.src.structural_centrality --build
+python -m research.src.structural_blocks
+python -u -m research.src.structural_blocks --run
+python -m research.src.network_descriptives
+python -m research.src.route_structure
+python -m research.src.audit_route_structure
+python -m research.src.structural_comparisons --pairs --singles
+python -m research.src.export_structural_graph
+python -m research.src.audit_structural --geometry --descriptives --centrality
+python -m research.src.structural_figures
+python -m research.src.write_structural_report
+python -m research.src.verify_structural_evidence --freeze
+```
+
+Preserve the distributed frozen evidence before a clean rerun. Centrality is a
+long exact calculation with atomic resumable checkpoints; run one instance and
+do not rebuild its graph or change its source while it runs. The block method
+aggregates all original junction OD demand exactly, rather than sampling it.
+It retains every component and every positive physical geometry link. It is not
+a legal driving or traffic model. Source mapping is sharded only to keep file
+sizes manageable; every original occurrence remains in the ordered index.
+
+To check published output without rerunning the long census, use
+`python -m research.src.verify_structural_evidence`. The verification checks
+public graph/mass/task identities, all target masks, district losses, rankings
+and vector sources. The long centrality execution and full geometry/full-node
+replays are distinguished from the checks actually repeated in CI. With a
+rebuilt M1/M2 model, `python -m research.src.audit_route_structure --check-only`
+also independently replays every route overlap without overwriting frozen
+receipts.

@@ -1,0 +1,118 @@
+{
+  "districts": [
+    {
+      "district": 1,
+      "relation_id": 6728830,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f1 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 2,
+      "relation_id": 6728896,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f2 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 3,
+      "relation_id": 6728897,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f3 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 4,
+      "relation_id": 6728863,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f4 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 5,
+      "relation_id": 6729507,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f5 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 6,
+      "relation_id": 6729037,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f6 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 7,
+      "relation_id": 6729036,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f7 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 8,
+      "relation_id": 6729035,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f8 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 9,
+      "relation_id": 6729508,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f9 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 10,
+      "relation_id": 6729501,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f1\u06f0 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 11,
+      "relation_id": 6729111,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f1\u06f1 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 12,
+      "relation_id": 6729112,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f1\u06f2 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 13,
+      "relation_id": 6729034,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f1\u06f3 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 14,
+      "relation_id": 6729033,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f1\u06f4 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 15,
+      "relation_id": 6729032,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f1\u06f5 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 16,
+      "relation_id": 6729110,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f1\u06f6 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 17,
+      "relation_id": 6729502,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f1\u06f7 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 18,
+      "relation_id": 6729503,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f1\u06f8 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 19,
+      "relation_id": 6729109,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f1\u06f9 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 20,
+      "relation_id": 6729031,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f2\u06f0 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 21,
+      "relation_id": 6729505,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f2\u06f1 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    },
+    {
+      "district": 22,
+      "relation_id": 6729506,
+      "recorded_name": "\u0645\u0646\u0637\u0642\u0647 \u06f2\u06f2 \u0634\u0647\u0631 \u062a\u0647\u0631\u0627\u0646"
+    }
+  ],
+  "unassigned_code": 0,
+  "ambiguous_points": 0,
+  "unassigned_origins": 24,
+  "rule": "Stored representative point covered by district polygon; lowest district number then relation ID resolves any overlap. Number comes from source ref or recorded source name."
+}

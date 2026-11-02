@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "all_streets": 1684,
+  "centrality_available": 1684,
+  "rank_comparison_rows": 72,
+  "length_strata_rows": 504,
+  "class_rows": 198,
+  "centrality_definition": "Exact uniform-junction OD, undirected mapped highway/path context; not traffic or legal driving.",
+  "road_class": "Nominal categories; no invented numeric hierarchy score. Correlations and cutoff-tie positive top sets are descriptive. Each original source unit retains its own weight, even where geometry maps to the same centrality chain.",
+  "source_code_sha256": "8c47d45189529cbd198d05105e00a4360c59d947fc82af1cc87c4916b4a0ec39",
+  "artifact_sha256": {
+    "street-structural-comparators.csv.gz": "118ccada0ad8603a9146b0c772e04fcbbea9b9c56c5dcb63097ac7f4519b1b85",
+    "single-benchmark-rank-comparisons.csv.gz": "4a722a8b5093cbfaf88dcd5925e25e6949fef85b09840a698a915b76abd0d53e",
+    "single-benchmark-length-strata.csv.gz": "6ac4bd902b7321a17fa997aaa0e8bb8a89a7e688575633a9dff7c827479310d7",
+    "single-loss-by-road-class.csv.gz": "61cb366f01e5c22222e43794ebf479932058da288a9fa2979e323cc59f9594a3"
+  }
+}

@@ -41,3 +41,7 @@ jobs:
         run: python -m research.src.verify_full_validation
       - name: Verify complete sensitivity receipts, loss masks and vector figures
         run: python -m research.src.verify_sensitivity_evidence
+      - name: Replay every accepted-route overlap and dependency incidence
+        run: python -m research.src.audit_route_structure --check-only
+      - name: Verify complete structural graph, source census and descriptive evidence
+        run: python -m research.src.verify_structural_evidence

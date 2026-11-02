@@ -2,9 +2,9 @@
 
 ## Methods and results through exhaustive single and paired closures
 
-**Evidence cutoff:** 1 November 2026. **Map snapshot:** 29 October 2026, 21:21:26 UTC.  
+**Evidence cutoff:** 2 November 2026. **Map snapshot:** 29 October 2026, 21:21:26 UTC.
 **Primary dataset:** `tehran-osm-20261029T212126Z-v1.1-public`.  
-**Status:** a cumulative technical report and a basis for manuscript writing. The complete paired-closure census is now recorded in Section 13. Sensitivity analyses and a literature-based novelty assessment remain pending.
+**Status:** complete registered single/pair censuses, validation, path/sensitivity analyses and structural/descriptive comparisons are recorded through Section 16. Conference claim selection, literature comparison and manuscript writing remain pending.
 
 ## Abstract
 
@@ -359,4 +359,30 @@ All 28 previously excluded bus relations now have explicit case-by-case primary-
 
 The [technical path/sensitivity record](path-sensitivity.en.md) adds the exact origin-set mechanism decomposition for all physical pairs and all W/K/mode combinations; every tied extreme pair case and every negative-DeltaM case; 7,155 origin/state certificates with independent graph replay; all 18 common-domain OAT variants and the separate 310-way aggregation; exact ranking agreement on every physical unit/pair; full model length audits and editable SVG figures. No primary published result changes. The report explicitly separates complete finite-domain computation from uncertainty in the mapped data and assumptions.
 
-The original roadmap also proposed structural comparators (road class, dependent-route counts and weighted street betweenness), broader component/district/target-count summaries and pair-feature association analyses. These have not been completed and are now explicitly open in the coverage ledger of the new report and the TODO. The earlier RQ1 checklist label referred too broadly to the completed closure census; it must not be read as completion of those comparative analyses. Next, complete or explicitly scope those items before the final claim/manuscript stage. Optional larger multi-segment stress curves remain a separate, unexecuted extension. Operational service validation and new external data are outside this experiment.
+At the end of the path/sensitivity stage, structural comparators, component/district/target-count summaries and pair-feature associations remained open. Section 16 now records their completed follow-up. Optional larger multi-segment stress curves remain a separate, unexecuted extension. Operational service validation and new external data are outside this experiment.
+
+
+## 16. Completed: exact structural comparisons and full spatial descriptions
+
+The [structural technical record](structural-comparisons.en.md) closes the previously open RQ1 comparator clause and descriptive outputs. It includes all 1,684 original units, every 1,417,086 physical pair, all nine W/K settings and both mode sets. The uniform-junction corridor benchmark retains every mapped highway/path component, suppresses geometry-only degree-two points without creating OD demand, and evaluates all 317,724 original junction/endpoints through exact block-cut attachment masses. All 219,879 nontrivial-block projected sources and 98,808 analytical bridge products are complete; no partial timing probe or sampled prefix supplies the published scores. The public graph, original-source mapping, complete task ledger and mass/conservation receipts are included.
+
+The independent geometry census covers every 218,322 context road and 412,775 chain. Source-mass identities, every bridge value, complete projected-source coverage and weighted pair-distance conservation pass. This is a structural corridor comparator, not legal driving or population-weighted flow. Raw B counts unordered junction-pair path fractions. Every 1,684 primary unit matches a chain, preserving unit multiplicity.
+
+At W = 1,000 m and K = 1, full-domain tied-rank associations are:
+
+| Mode | Comparator | Spearman |
+| --- | --- | --- |
+| bus | dependent_bus_relations | 0.3673 |
+| bus | dependent_connections | 0.2816 |
+| bus | length_m | 0.0631 |
+| bus | junction_edge_betweenness | 0.0949 |
+| bus_metro | dependent_bus_relations | 0.1729 |
+| bus_metro | dependent_connections | 0.1273 |
+| bus_metro | length_m | 0.0523 |
+| bus_metro | junction_edge_betweenness | -0.0256 |
+
+All 236 connected possible institution groups are separately retargeted, producing 5,664 masks over every 65,677 original origin. At the main setting, at least two groups are reachable from 11,522 walking-only origins, 13,528 bus origins and 18,404 bus-plus-metro origins. These are mapped candidate groups, not independent clinical alternatives. Their union matches the preceding full-node solver pointwise. All 22 district owners and 98,532 district effects reconcile; 24 city origins in source polygon gaps remain in district0 and the city denominator. Population equity is not inferred.
+
+Every weak/strong component is described; every 300 relation-pair overlap is independently replayed with GEOS interval unions; all 1,684 dependency feature rows reconcile. Every physical street pair enters the fixed Euclidean-distance/shared-route association grid with its original multiplicity. At the main setting, shared-relation versus C Spearman is -0.4016 (bus) and -0.3720 (bus+metro), descriptive values without independent-pair inference. Negative C is subadditivity relative to single losses, not negative joint harm.
+
+Six source-backed editable SVGs, exact counts/ranks/top-set sizes, full length/class strata and reproduction commands accompany the record. The registered numerical core is complete within its declared domains. Selecting claims and conference figures, comparing the closest literature, and drafting/reviewing the manuscript remain next. Equal-length failure budgets, larger multi-segment failures and combined-factor sensitivity are explicitly unexecuted optional extensions.

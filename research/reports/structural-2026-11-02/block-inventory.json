@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "blocks": 100238,
+  "bridge_blocks": 98808,
+  "nontrivial_blocks": 1430,
+  "largest_blocks": [
+    {
+      "block": 98884,
+      "vertices": 209761,
+      "edges": 299652,
+      "projected_od_mass": 314811
+    },
+    {
+      "block": 11147,
+      "vertices": 493,
+      "edges": 801,
+      "projected_od_mass": 314811
+    },
+    {
+      "block": 64570,
+      "vertices": 125,
+      "edges": 173,
+      "projected_od_mass": 314811
+    },
+    {
+      "block": 93165,
+      "vertices": 123,
+      "edges": 201,
+      "projected_od_mass": 314811
+    },
+    {
+      "block": 100063,
+      "vertices": 94,
+      "edges": 150,
+      "projected_od_mass": 99
+    },
+    {
+      "block": 19436,
+      "vertices": 80,
+      "edges": 119,
+      "projected_od_mass": 314811
+    },
+    {
+      "block": 19485,
+      "vertices": 67,
+      "edges": 101,
+      "projected_od_mass": 314811
+    },
+    {
+      "block": 61580,
+      "vertices": 55,
+      "edges": 75,
+      "projected_od_mass": 314811
+    },
+    {
+      "block": 75733,
+      "vertices": 53,
+      "edges": 76,
+      "projected_od_mass": 314811
+    },
+    {
+      "block": 73637,
+      "vertices": 51,
+      "edges": 69,
+      "projected_od_mass": 314811
+    }
+  ],
+  "identity": "In each block, attachment weight at v is all original OD mass in the corresponding block-cut-tree branch. Sum of attachment weights equals the original connected-component OD mass. Bridges have betweenness equal to the product of their two branch masses."
+}
