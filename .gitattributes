@@ -5,5 +5,9 @@
 *.pbf binary
 *.gpkg binary
 *.gz binary
+*.npz binary
+# Frozen receipts are byte-hashed; keep their archival line endings on checkout.
+research/reports/sensitivity-2026-11-01/**/*.json -text whitespace=cr-at-eol
+research/figures/sensitivity-2026-11-02/*.json -text whitespace=cr-at-eol
 # Preserve original archival bytes so their SHA-256 inventory survives checkout.
 provenance/source-scripts/*.py -text whitespace=cr-at-eol

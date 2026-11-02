@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "signature_pair_mode_parameter_rows": 510066,
+  "physical_pairs_per_comparison": 1417086,
+  "identity": "C = new joint-only losses - shared single losses",
+  "all_new_loss_counts_nonnegative": true,
+  "results": [
+    {
+      "mode": "bus",
+      "max_line_changes": 0,
+      "walking_budget_m": 500,
+      "shared_only": 57364,
+      "neither": 1354519,
+      "both": 4026,
+      "joint_only": 1177
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 0,
+      "walking_budget_m": 1000,
+      "shared_only": 45132,
+      "neither": 1352246,
+      "both": 6395,
+      "joint_only": 13313
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 0,
+      "walking_budget_m": 2000,
+      "neither": 1390008,
+      "joint_only": 15243,
+      "shared_only": 10561,
+      "both": 1274
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 1,
+      "walking_budget_m": 500,
+      "shared_only": 59068,
+      "neither": 1352331,
+      "both": 4365,
+      "joint_only": 1322
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 1,
+      "walking_budget_m": 1000,
+      "shared_only": 42379,
+      "neither": 1348695,
+      "joint_only": 14579,
+      "both": 11433
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 1,
+      "walking_budget_m": 2000,
+      "neither": 1388490,
+      "joint_only": 16761,
+      "shared_only": 5854,
+      "both": 5981
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 2,
+      "walking_budget_m": 500,
+      "shared_only": 59042,
+      "neither": 1352331,
+      "both": 4391,
+      "joint_only": 1322
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 2,
+      "walking_budget_m": 1000,
+      "shared_only": 41911,
+      "neither": 1349595,
+      "joint_only": 13679,
+      "both": 11901
+    },
+    {
+      "mode": "bus",
+      "max_line_changes": 2,
+      "walking_budget_m": 2000,
+      "neither": 1389151,
+      "joint_only": 16100,
+      "shared_only": 5854,
+      "both": 5981
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 0,
+      "walking_budget_m": 500,
+      "shared_only": 57406,
+      "neither": 1354519,
+      "both": 3984,
+      "joint_only": 1177
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 0,
+      "walking_budget_m": 1000,
+      "shared_only": 33443,
+      "neither": 1364686,
+      "joint_only": 13765,
+      "both": 5192
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 0,
+      "walking_budget_m": 2000,
+      "neither": 1408680,
+      "shared_only": 5593,
+      "joint_only": 2652,
+      "both": 161
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 1,
+      "walking_budget_m": 500,
+      "shared_only": 59155,
+      "neither": 1352031,
+      "both": 3805,
+      "joint_only": 2095
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 1,
+      "walking_budget_m": 1000,
+      "neither": 1356268,
+      "shared_only": 40872,
+      "both": 10430,
+      "joint_only": 9516
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 1,
+      "walking_budget_m": 2000,
+      "neither": 1403685,
+      "shared_only": 9495,
+      "joint_only": 2894,
+      "both": 1012
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 2,
+      "walking_budget_m": 500,
+      "shared_only": 59129,
+      "neither": 1352031,
+      "both": 3831,
+      "joint_only": 2095
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 2,
+      "walking_budget_m": 1000,
+      "neither": 1357168,
+      "shared_only": 40464,
+      "both": 10838,
+      "joint_only": 8616
+    },
+    {
+      "mode": "bus_metro",
+      "max_line_changes": 2,
+      "walking_budget_m": 2000,
+      "neither": 1403685,
+      "shared_only": 9495,
+      "joint_only": 2894,
+      "both": 1012
+    }
+  ],
+  "path_pair_cases": 8,
+  "negative_delta_single_cases": 7,
+  "table_sha256": "19e0d2adb4b6c4da6923292a80fe3b56717ed20d25c789b0f2482f124d117a79"
+}

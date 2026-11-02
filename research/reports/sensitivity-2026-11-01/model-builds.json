@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "models": [
+    {
+      "model": "shared-250",
+      "config_sha256": "1da6cbb611688fcd6cbb72e5f0ce3311c01e019a436ba589ecd85e672fba78bc",
+      "network_sha256": "efff71b27959e5982268e399012aac04250d9266823f9db85b6ff262062ac3c0",
+      "candidate_routes": {
+        "metro": 14,
+        "bus": 11
+      },
+      "walking_edges": 931626,
+      "accepted_buildings": 65530,
+      "target_features": 248,
+      "geometry_status": "passed",
+      "evidence_sha256": {
+        "all-lengths.json": "d0105a8e02cae23e0baa3c3be25aa8d2d8c10a6be66f028ddd21841b81359883",
+        "all-way-lengths.csv.gz": "15995c1dad17c1ddf704b20f7b4ec207e117a12706f1d54102e857bbb50b81b3",
+        "m1-summary.json": "766b800e895116cf85f8be11befacc88b3b55a942917df89a481e612537e543d",
+        "m2-summary.json": "7aef41c3e9ee270d6b81e8293d25c84c00dab4c2b28cb9fe12f7f340a4182f83"
+      }
+    },
+    {
+      "model": "tie-min",
+      "config_sha256": "a7a43fb00e40ec42a477c07a6ef45b8b972c82a63885de63e52ff95873d0e8c7",
+      "network_sha256": "14367a567d70cd0fdce22d28f5ebcc621f178eef6d80ae07b0f6b88c2e58d3da",
+      "candidate_routes": {
+        "metro": 14,
+        "bus": 11
+      },
+      "walking_edges": 930852,
+      "accepted_buildings": 64166,
+      "target_features": 241,
+      "geometry_status": "passed",
+      "evidence_sha256": {
+        "all-lengths.json": "2e9ae199f51a6f8d446a2053479336610965f64ce07d193efceb31983f2d7d79",
+        "all-way-lengths.csv.gz": "9fd2ccca647ec3731baf6356dce75bac597d3038ed5f9aadbd93604a6f58bd19",
+        "m1-summary.json": "d78ee5b55d47cca38eea4f4f5a0f4d8827b6f80d875d0b6029b060cb90dd241e",
+        "m2-summary.json": "38d97a103c0441811cfef28323ccf96e9099974ff951be0c0f8be2723e8d63ae"
+      }
+    },
+    {
+      "model": "tie-max",
+      "config_sha256": "7d5a873fade5f30fc8c98dd53347d2c7684e7f08fafc43293a545b4af3cec1ad",
+      "network_sha256": "ecc1c7f251a18f6c1d2767b095d53e37ab45ede6e31167f00e8df1ee020b0c48",
+      "candidate_routes": {
+        "metro": 14,
+        "bus": 11
+      },
+      "walking_edges": 930852,
+      "accepted_buildings": 64166,
+      "target_features": 241,
+      "geometry_status": "passed",
+      "evidence_sha256": {
+        "all-lengths.json": "51d2241ad77a3cbee739ed0617c02a898414760a2bf3684a6b4ebfe49a913f44",
+        "all-way-lengths.csv.gz": "364ba361cf30eec608399cd9092cda53af20a34501283342b462cc09c7713213",
+        "m1-summary.json": "e9b0d55c9e91f8e07cb1c940682fd14037cdd81fcbafd4264dbf2cb9c63dbc9a",
+        "m2-summary.json": "20e90b92f79076cfef160a8dd47b6f91bc8fe2dd5937b5461860cf9fd39c0ec7"
+      }
+    },
+    {
+      "model": "centroid",
+      "config_sha256": "8a2dc37be3d66785191b6c853b5d85d568f4ba2f6ee87b8e6bba4390b8dd579c",
+      "network_sha256": "2c3d040d51ad168aeaff127548d27414c9a066c3321dfe226703a4525361f407",
+      "candidate_routes": {
+        "metro": 14,
+        "bus": 11
+      },
+      "walking_edges": 930839,
+      "accepted_buildings": 64158,
+      "target_features": 241,
+      "geometry_status": "passed",
+      "evidence_sha256": {
+        "all-lengths.json": "897bba04ce56f8c114f7869b0a64458c7a92c73b756af0aaf24723088d78654b",
+        "all-way-lengths.csv.gz": "1fffdc7b3cd9f91cb8eb035fc37e7fdc1f61a384c420ee7dcc13070650bf0a49",
+        "m1-summary.json": "3faa56a58ed50dea33b07714f92f6748c6744c6ce2ebb897a22c6f9fc0488ce1",
+        "m2-summary.json": "bfa328eef8afbadc9ec9dcab0f15684cd0e2cc5cadf2ace46820b7d130b2631d"
+      }
+    },
+    {
+      "model": "extended",
+      "config_sha256": "05d904f141db0732acbee83ab10f6402ad4501ac1347dbe75faa633acfde6514",
+      "network_sha256": "a094d06b67d61c0aabcf47fab14061c6a56c0ebd337683f0dec1ceb791d54a0a",
+      "candidate_routes": {
+        "bus": 17,
+        "metro": 16
+      },
+      "walking_edges": 930929,
+      "accepted_buildings": 64166,
+      "target_features": 241,
+      "geometry_status": "passed",
+      "evidence_sha256": {
+        "all-lengths.json": "5bb552b608f2fa9cbeed61983ea5fb3223063f92e30be4f2b45d1bf275359edd",
+        "all-way-lengths.csv.gz": "13cc5545d0da9414678d75a4ea8a1f583d445740752573bcdff6fd6355e67947",
+        "connections.csv": "ba7c3c779567fc904309864ba7ebbb54a97b40cfa061609ad321283783bf6d2e",
+        "m1-summary.json": "21845f9d32f702d2165c2d1649c9254227643c6c07e4cb459de76ba4935db6d4",
+        "m2-summary.json": "71e7450c61cb821d230ff1545d1bb2084b439507e1c81181a0c9008a0fb95beb",
+        "routes.csv": "295235fea38e51d57573fbe718c61036bc9b0602c622370c3e149c7d9afa2569",
+        "stops.csv": "6e8ffa44aa96ede5fb87a393c7605ec6248a75be11cc35fef45ce8fb87555dd1"
+      }
+    },
+    {
+      "model": "derived",
+      "config_sha256": "3fd51865592fd6a42b1bf406d9be1a18a5cea47cd36958b115fea3bd981e77fb",
+      "network_sha256": "29b960ff22cf6de38768d1911690c11593af04835ba42c570435d88e7ed89e33",
+      "candidate_routes": {
+        "metro": 14,
+        "bus": 38
+      },
+      "walking_edges": 931254,
+      "accepted_buildings": 64166,
+      "target_features": 241,
+      "geometry_status": "passed",
+      "evidence_sha256": {
+        "all-lengths.json": "ca541bce124c49fca258d97d94069b3842955ef3145fcfdf3b56f2d74e35f68e",
+        "all-way-lengths.csv.gz": "45f645a7dbca353bc2783b12aae35e697239a1227ee26592b6ffeeef5ec7030c",
+        "connections.csv": "9edd60fb3ed8ef395847f282027616eb418e2afec0ec940f85fa195c16b9a8d0",
+        "m1-summary.json": "bd6bfd7badfdf68a44bc4056a1f6269ffadad57940cf25623a44108560fa2d1f",
+        "m2-summary.json": "d13827c714a1d6804964acff66c41ed03ca7eed733fbd255c75da9f45ffcbeb2",
+        "routes.csv": "3b3741744c96181847bb4aa221ef7a27a2aa742c4512f97c01b87e58e8f5ff9f",
+        "stops.csv": "a771a511c762699de8dabe731d33e2f6d68288c35c5ef66779a3747ec5090b91"
+      }
+    }
+  ],
+  "all_models_built_and_all_way_length_audits_passed": true,
+  "source_code_sha256": "2733a481734564ac0f9088d5966c08449a35fabc7e8c866a4f0762317990f139",
+  "builder_source_sha256": {
+    "extract_routes.py": "797fd1bff4d4794731d1f8bcc76d194b4775803d80825c8427da208f74d14b3e",
+    "build_connections.py": "a36421eab2006e7f7fc96ded5c00195b7307896d9e7febb7884c5fa3e4cb728d",
+    "audit_all_lengths.py": "5e741b91fb10060a1a52d65eac9ee15da2606822e47cef385cb6d94d8b5c798f"
+  }
+}

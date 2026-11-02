@@ -1,0 +1,208 @@
+{
+  "status": "passed",
+  "case_rule": "all tied extrema at W=1000,K=1 in either mode; all negative-DeltaM single signatures; no sampled origins",
+  "pair_cases": 8,
+  "negative_delta_cases": 7,
+  "unique_state_mode_requests": 44,
+  "case_origin_memberships": 3437,
+  "origin_state_certificates": 7155,
+  "successful_paths": 2984,
+  "maximum_compact_full_walking_difference_m": 1.1368683772161603e-12,
+  "walking_edge_ids_used": 3193,
+  "riding_mode_sequences": {
+    "bus": 2806,
+    "bus,bus": 118,
+    "metro,bus": 13,
+    "metro": 47
+  },
+  "case_results": [
+    {
+      "case": "pair-0",
+      "mode": "bus",
+      "affected_origins": 406,
+      "shared_single_losses": 0,
+      "new_joint_only_losses": 192,
+      "interaction": 192
+    },
+    {
+      "case": "pair-0",
+      "mode": "bus_metro",
+      "affected_origins": 41,
+      "shared_single_losses": 0,
+      "new_joint_only_losses": 35,
+      "interaction": 35
+    },
+    {
+      "case": "pair-1",
+      "mode": "bus",
+      "affected_origins": 224,
+      "shared_single_losses": 224,
+      "new_joint_only_losses": 0,
+      "interaction": -224
+    },
+    {
+      "case": "pair-1",
+      "mode": "bus_metro",
+      "affected_origins": 219,
+      "shared_single_losses": 219,
+      "new_joint_only_losses": 0,
+      "interaction": -219
+    },
+    {
+      "case": "pair-2",
+      "mode": "bus",
+      "affected_origins": 224,
+      "shared_single_losses": 224,
+      "new_joint_only_losses": 0,
+      "interaction": -224
+    },
+    {
+      "case": "pair-2",
+      "mode": "bus_metro",
+      "affected_origins": 219,
+      "shared_single_losses": 219,
+      "new_joint_only_losses": 0,
+      "interaction": -219
+    },
+    {
+      "case": "pair-3",
+      "mode": "bus",
+      "affected_origins": 224,
+      "shared_single_losses": 224,
+      "new_joint_only_losses": 0,
+      "interaction": -224
+    },
+    {
+      "case": "pair-3",
+      "mode": "bus_metro",
+      "affected_origins": 219,
+      "shared_single_losses": 219,
+      "new_joint_only_losses": 0,
+      "interaction": -219
+    },
+    {
+      "case": "pair-4",
+      "mode": "bus",
+      "affected_origins": 224,
+      "shared_single_losses": 224,
+      "new_joint_only_losses": 0,
+      "interaction": -224
+    },
+    {
+      "case": "pair-4",
+      "mode": "bus_metro",
+      "affected_origins": 219,
+      "shared_single_losses": 219,
+      "new_joint_only_losses": 0,
+      "interaction": -219
+    },
+    {
+      "case": "pair-5",
+      "mode": "bus",
+      "affected_origins": 147,
+      "shared_single_losses": 0,
+      "new_joint_only_losses": 41,
+      "interaction": 41
+    },
+    {
+      "case": "pair-5",
+      "mode": "bus_metro",
+      "affected_origins": 147,
+      "shared_single_losses": 0,
+      "new_joint_only_losses": 41,
+      "interaction": 41
+    },
+    {
+      "case": "pair-6",
+      "mode": "bus",
+      "affected_origins": 147,
+      "shared_single_losses": 0,
+      "new_joint_only_losses": 41,
+      "interaction": 41
+    },
+    {
+      "case": "pair-6",
+      "mode": "bus_metro",
+      "affected_origins": 147,
+      "shared_single_losses": 0,
+      "new_joint_only_losses": 41,
+      "interaction": 41
+    },
+    {
+      "case": "pair-7",
+      "mode": "bus",
+      "affected_origins": 147,
+      "shared_single_losses": 0,
+      "new_joint_only_losses": 41,
+      "interaction": 41
+    },
+    {
+      "case": "pair-7",
+      "mode": "bus_metro",
+      "affected_origins": 147,
+      "shared_single_losses": 0,
+      "new_joint_only_losses": 41,
+      "interaction": 41
+    },
+    {
+      "case": "negative-delta-105",
+      "bus_loss": 21,
+      "bus_metro_loss": 28,
+      "extra_full_baseline_lost": 13,
+      "bus_loss_rescued": 6
+    },
+    {
+      "case": "negative-delta-106",
+      "bus_loss": 21,
+      "bus_metro_loss": 28,
+      "extra_full_baseline_lost": 13,
+      "bus_loss_rescued": 6
+    },
+    {
+      "case": "negative-delta-107",
+      "bus_loss": 25,
+      "bus_metro_loss": 31,
+      "extra_full_baseline_lost": 13,
+      "bus_loss_rescued": 7
+    },
+    {
+      "case": "negative-delta-108",
+      "bus_loss": 25,
+      "bus_metro_loss": 31,
+      "extra_full_baseline_lost": 13,
+      "bus_loss_rescued": 7
+    },
+    {
+      "case": "negative-delta-109",
+      "bus_loss": 51,
+      "bus_metro_loss": 57,
+      "extra_full_baseline_lost": 13,
+      "bus_loss_rescued": 7
+    },
+    {
+      "case": "negative-delta-110",
+      "bus_loss": 51,
+      "bus_metro_loss": 57,
+      "extra_full_baseline_lost": 13,
+      "bus_loss_rescued": 7
+    },
+    {
+      "case": "negative-delta-111",
+      "bus_loss": 51,
+      "bus_metro_loss": 57,
+      "extra_full_baseline_lost": 13,
+      "bus_loss_rescued": 7
+    }
+  ],
+  "unreachable_meaning": "No path within 1000m walking and two boardings; null minimum means no path within the 2000m search cutoff.",
+  "tie_policy": "One deterministic shortest-walking witness, not every tied path; riding distance is not optimized.",
+  "network_sha256": "465b10f73cc00d655fffe1fbfca50a177296c74820a397a93baad0732e278e06",
+  "elapsed_seconds": 43.21571659995243,
+  "source_code_sha256": "b10ff62a1f83d3643873c2107ddeec8191c4b79ec8d0ad6b29b48252f435ae09",
+  "artifact_sha256": {
+    "path-case-members.csv.gz": "049c7bef85dbe2a734bdf1af570a06ff5f336a87c67fe7e0ddd90dcfab4cf6b0",
+    "path-case-registry.json": "dc616615ba6b3542986d61e8de85e20438fc6a2bc0931bc6dfb6ddda03f5b31f",
+    "path-failed-sets.json": "68eef432c35d7b4ce85ed3b9636d9b971979f8bab19d608e51b7743d25bc8717",
+    "path-witnesses.jsonl.gz": "fb141712c18901c5aefa1425bb09149ffa2d00ead5774656e6ddc4ac57da7664"
+  }
+}

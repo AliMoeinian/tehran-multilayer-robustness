@@ -16,11 +16,11 @@ import shapely
 from .accessibility import ROOT
 
 
-def run():
-    out=ROOT/'research/reports/validation-2026-11-01';out.mkdir(exist_ok=True)
+def run(network=None,output=None):
+    out=output or ROOT/'research/reports/validation-2026-11-01';out.mkdir(parents=True,exist_ok=True)
     cfg=json.loads((ROOT/'research/config/baseline.json').read_text())
     source=ROOT/'data/extracted'/cfg['dataset_id']/'tehran_audited_layers.gpkg'
-    network=ROOT/'research/model/m2-v2/network.sqlite'
+    network=network or ROOT/'research/model/m2-v2/network.sqlite'
     db=sqlite3.connect(network.as_uri()+'?mode=ro',uri=True)
     src=sqlite3.connect(source.as_uri()+'?mode=ro',uri=True)
     project=Transformer.from_crs(4326,32639,always_xy=True)

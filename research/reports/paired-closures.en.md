@@ -38,7 +38,7 @@ Independent union scenarios are distributed across four Python worker processes.
 
 ## 4. Validation scope
 
-The suite now contains **44 passing unit tests**, including actual subprocess-worker equivalence and closure propagation. The compact solver was also checked against the full graph and independent forward expanded-state search on small generated graphs, totaling 1,440 origin/budget/scenario comparisons. The original baseline tests and the single-closure tests remain in the suite.
+The validation milestone used **44 passing unit tests**, including actual subprocess-worker equivalence and closure propagation. The [path/sensitivity extension](path-sensitivity.en.md) brings the local suite to 48. The compact solver was also checked against the full graph and independent forward expanded-state search on small generated graphs, totaling 1,440 origin/budget/scenario comparisons. The original baseline tests and the single-closure tests remain in the suite.
 
 On the Tehran model, the compact solver reproduces the baseline and every W/K count for all 238 single-failure signatures. Nine real scenarios additionally compare full connected-origin cost vectors with the original solver: the baseline, five fixed single signatures and three fixed pair unions. Numeric tolerance is 1e-8 m absolute and 1e-12 relative; threshold counts must match exactly. This selected full-solver comparison is not an exhaustive cross-solver check of every union. The separate all-scenario controls are described below; the [completed follow-up census](validation-closure.en.md) now supplies the full-node comparison for every failed set and the full source-length census.
 
@@ -128,4 +128,4 @@ The exhaustive protocol prohibits automatic runtime-based scope reduction. Outpu
 
 This completes the **pair domain**, not every later stage of the paper. The study still uses 11 accepted bus and 14 rail relations, equal building weights, tag-screened targets, geometric connectors and a static dependency rule. It does not become complete operational coverage merely because every pair was evaluated.
 
-The broader preservation/cross-solver checks are [completed](validation-closure.en.md). Next, trace specific origins and paths for the positive/negative cases and earlier negative-DeltaM cases, and perform the declared sensitivity analyses. The paper's final interpretation and ranking-stability claims remain pending. No further external data are needed for these stages.
+The broader preservation/cross-solver checks are [completed](validation-closure.en.md). Path certificates and the registered sensitivity/ranking stage are also [completed](path-sensitivity.en.md), with an explicit ledger of the broader structural benchmarks and descriptive analyses still open in the original roadmap. Final conference claim/figure selection and manuscript work remain pending. No further external data entered these experiments.

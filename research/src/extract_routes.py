@@ -71,8 +71,9 @@ def run(config):
             actual = hashlib.file_digest(f, "sha256").hexdigest()
         if actual != manifest["files"][name]["sha256"]:
             raise ValueError("Input identity mismatch: " + name)
+    statuses=cfg['route_status'] if isinstance(cfg['route_status'],list) else [cfg['route_status']]
     inventory = {int(r["relation_id"]): r for r in csv_rows(data / "transit_routes.csv")
-                 if r["status"] == cfg["route_status"]}
+                 if r["status"] in statuses}
     paths = collections.defaultdict(list)
     for row in csv_rows(data / "transit_paths.csv"):
         if int(row["route_relation_id"]) in inventory:
@@ -184,6 +185,15 @@ def run(config):
                 "latitude": point[1], "distance_to_trace_m": d,
                 "trace_progress_m": along, "ambiguous_projection": ambiguous})
         order = order_status(progress, cfg["stop_order_tolerance_m"])
+        order_policy='recorded_source_order'
+        if cfg.get('allow_geometric_stop_order',False) and order!='forward' and not flags:
+            # An explicit sensitivity assumption, never an operational repair.
+            candidate=sorted(local_rows,key=lambda s:s['trace_progress_m'])
+            if all(b['trace_progress_m']-a['trace_progress_m']>cfg['stop_order_tolerance_m'] for a,b in zip(candidate,candidate[1:])):
+                local_rows=candidate
+                for index,s in enumerate(local_rows):s['stop_sequence']=index
+                progress=[s['trace_progress_m'] for s in local_rows]
+                order='forward';order_policy='derived_geometric_order_sensitivity'
         if order != "forward":
             flags.append("recorded_stop_order_" + order)
         if any(abs(b-a) <= cfg["stop_order_tolerance_m"] for a,b in zip(progress,progress[1:])):
@@ -196,7 +206,8 @@ def run(config):
         route_rows.append({"relation_id": rid, "mode": row["mode"], "ref": row["ref"],
             "status": status, "flags": ";".join(flags), "selected_stop_kind": kind,
             "selected_stops": len(stops), "stop_position_candidates": len(candidates["stop"]),
-            "platform_candidates": len(candidates["platform"]), "trace_way_count": len(seq)})
+            "platform_candidates": len(candidates["platform"]), "trace_way_count": len(seq),
+            "order_policy":order_policy,"source_inventory_flags":row.get('flags','')})
         if not flags:
             for a, b in zip(local_rows, local_rows[1:]):
                 connection_rows.append({"route_relation_id": rid,

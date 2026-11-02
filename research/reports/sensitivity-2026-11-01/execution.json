@@ -1,0 +1,53 @@
+{
+  "status": "completed",
+  "census_started_utc": "2026-11-02T07:07:39.671722+00:00",
+  "last_variant_written_utc": "2026-11-02T07:59:57.575686+00:00",
+  "osm_snapshot_utc": "2026-10-29T21:21:26Z",
+  "protocol_sha256": "210b18ffa891fe36b88f4890d83b6f6d9b1f98de1bab934d36bf54442edf7126",
+  "source_code_sha256": {
+    "sensitivity_runs.py": "a13e33c4bbf7a1b57ce609412823d30dd1c4b545f00cca156a5627f0dc1ff76a",
+    "compiled_compact.py": "f0a4d11fb1df32e29266547c4aa8211dd424521430f7af5522f83cdfd9932a06",
+    "compact_accessibility.py": "a55deecc5c261e727dae95b847f7db391be42b29c5971fd6c0761367a768eae8",
+    "accessibility.py": "65fc592714fc359d7b5e92af7e476a48875aed40fca5d242527efd52916c33c7",
+    "pair_closures.py": "0291830248f10b51c83b6a52ce5ff10676c23c2adaf1a11471e3ce98beae4b2a"
+  },
+  "requirements_sha256": {
+    "requirements-research.txt": "a38cf9421796ce0277debd044e1843ff126f536eb241235cd5e65f92b4b2c36d",
+    "requirements-validation.txt": "bf1912860100f51bc427fdae2aca36168a03652e43729d6639507a81aba61f58"
+  },
+  "variant_summary_sha256": {
+    "baseline": "1ea89b780aa13bde0c8cb6aad8dcf5026abb373fbc237a556c73d648dba6729e",
+    "connector-250m": "f42af6f542f2875a13bdaac4e2e9c86f2b8ccc5509c303667343dcb0eee56613",
+    "connector-25m": "c09b04e2b1cbf3637a284974c80f14efc59ac9f4fdeba79d9d7213a8150318ad",
+    "connector-50m": "45a349ff3921407800ada25300f2f334a080cb83ee83ffa572a00a6b670a8935",
+    "context-10km": "91669b316de92211a4ecc7867f8a72968377e42cc06aa6877b3cf149a1a42751",
+    "context-1km": "7acc2f179e68bdce852e718bd5948010a26cf75d907ad2cdb3e3f8b51cf15de3",
+    "context-3km": "e607bc3513bbafe1913d5a8a12c5413ba83f11670f2d6423c03e88acca750cb6",
+    "context-5km": "49eb837456aa076e6d3fb72cba2ccf9aaf97d4bb7e43c8f3529e6481b792112d",
+    "failure-independent-bus": "5aa76527b5000bc7e5158455d00df9170868dbbf8fef76b55f7f8f5ab8b974d3",
+    "failure-whole-route": "21a2305e60d7707a40d31bcfe7ae8c907f470b95f9838ff08eec3823358c5bbf",
+    "origin-centroid": "09012fb6124be1f43e12cdcc854d77e9c2744382d850c3296250ab2edbcab453",
+    "routes-derived-order": "277c4a6fd755c808752747d846c7ae8a63e4b0f3d46249304532f24a66940c32",
+    "routes-semantic-extension": "59b3ad3b74ad079b69dcb213630b6e2895d45b6226a1dab4630daf22b0ac9986",
+    "targets-emergency-inside": "50695bd00392bd598dc82b1d339b700a1272aff1e28f4353ee0c55486aadd4fa",
+    "targets-emergency-tag": "fc239d045c69b2a0bd348095520026f97ae7d36f8f6833335d64991562591b2f",
+    "targets-human-inside": "b9f39ee14e8cb5b87eb7a683c689a92b7e693cf51ae97bbdc780ae76ad569487",
+    "tie-max-way": "46e8c4bb2798a71baade125a091dca5736878109b7846c6e58b2be7180c3ff2c",
+    "tie-min-way": "d4c26f05b16204db43e289138b9aa5dc19e7ecd89c9cf15df853825b8e9fdd0d",
+    "whole-osm-way": "933d92708670ed81b4f57b6b02fe0a53e81dcb540d0dad1acaaeb5aebb9eac55"
+  },
+  "python": "3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "package_versions": {
+    "numpy": "2.4.6",
+    "numba": "0.67.0",
+    "scipy": "1.17.1",
+    "shapely": "2.1.2",
+    "pyproj": "3.7.2",
+    "matplotlib": "3.11.1",
+    "osmium": "4.3.2"
+  },
+  "physical_pair_scenarios_over_variants": 25555443,
+  "receipt_writer_sha256": "1ca4048e0c8a3e6f7d3f27de56755b2857968126fee8491108e78a8701cc72ae",
+  "note": "Complete declared finite domains, not all possible subsets of failed streets. Last output timestamp is read from the finished census files; preserve it before copying/regenerating outputs."
+}

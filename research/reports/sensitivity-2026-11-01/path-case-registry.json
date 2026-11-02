@@ -1,0 +1,166 @@
+{
+  "rule": "all tied extrema at W=1000,K=1 in either mode; all negative-DeltaM single signatures; no sampled origins",
+  "pairs": [
+    {
+      "first_group": 13,
+      "second_group": 38,
+      "union_id": 3010,
+      "street_pair_count": 4,
+      "selection_reasons": [
+        {
+          "mode": "bus",
+          "kind": "maximum",
+          "interaction": 192
+        }
+      ]
+    },
+    {
+      "first_group": 129,
+      "second_group": 130,
+      "union_id": 22066,
+      "street_pair_count": 8,
+      "selection_reasons": [
+        {
+          "mode": "bus",
+          "kind": "minimum",
+          "interaction": -224
+        },
+        {
+          "mode": "bus_metro",
+          "kind": "minimum",
+          "interaction": -219
+        }
+      ]
+    },
+    {
+      "first_group": 129,
+      "second_group": 131,
+      "union_id": 22067,
+      "street_pair_count": 1,
+      "selection_reasons": [
+        {
+          "mode": "bus",
+          "kind": "minimum",
+          "interaction": -224
+        },
+        {
+          "mode": "bus_metro",
+          "kind": "minimum",
+          "interaction": -219
+        }
+      ]
+    },
+    {
+      "first_group": 130,
+      "second_group": 130,
+      "union_id": 22279,
+      "street_pair_count": 28,
+      "selection_reasons": [
+        {
+          "mode": "bus",
+          "kind": "minimum",
+          "interaction": -224
+        },
+        {
+          "mode": "bus_metro",
+          "kind": "minimum",
+          "interaction": -219
+        }
+      ]
+    },
+    {
+      "first_group": 130,
+      "second_group": 131,
+      "union_id": 22280,
+      "street_pair_count": 8,
+      "selection_reasons": [
+        {
+          "mode": "bus",
+          "kind": "minimum",
+          "interaction": -224
+        },
+        {
+          "mode": "bus_metro",
+          "kind": "minimum",
+          "interaction": -219
+        }
+      ]
+    },
+    {
+      "first_group": 172,
+      "second_group": 207,
+      "union_id": 25753,
+      "street_pair_count": 1,
+      "selection_reasons": [
+        {
+          "mode": "bus_metro",
+          "kind": "maximum",
+          "interaction": 41
+        }
+      ]
+    },
+    {
+      "first_group": 176,
+      "second_group": 207,
+      "union_id": 26108,
+      "street_pair_count": 38,
+      "selection_reasons": [
+        {
+          "mode": "bus_metro",
+          "kind": "maximum",
+          "interaction": 41
+        }
+      ]
+    },
+    {
+      "first_group": 177,
+      "second_group": 207,
+      "union_id": 26049,
+      "street_pair_count": 1,
+      "selection_reasons": [
+        {
+          "mode": "bus_metro",
+          "kind": "maximum",
+          "interaction": 41
+        }
+      ]
+    }
+  ],
+  "negative_delta_singles": [
+    {
+      "group_index": 105,
+      "signature": "e1e05472617ea3facec5d2372995ac76342a3ddba4bd61a672d034390e4326c1",
+      "street_count": 1
+    },
+    {
+      "group_index": 106,
+      "signature": "323d45e2ca118b19ebadbdd3890518fcb894d5988f3d1592d7d91e80933f2dcb",
+      "street_count": 4
+    },
+    {
+      "group_index": 107,
+      "signature": "715ef8f9a5bbf1e02dfa1c96ec1f7112105085726346f2caf100534a8552b7ea",
+      "street_count": 1
+    },
+    {
+      "group_index": 108,
+      "signature": "d3b56390d4f3244e4b3a100a191ef81f45ad1c94e48413f5bd0c6f6129fe9101",
+      "street_count": 8
+    },
+    {
+      "group_index": 109,
+      "signature": "31a5bc37ba79258e825fbe4e2320587c6d8e06b553fca4c4222066b114935a6e",
+      "street_count": 1
+    },
+    {
+      "group_index": 110,
+      "signature": "13e9d8d28104e7e6dd356921eef7b1c9b426d8dbfaf2095b6f242ad3d35cd532",
+      "street_count": 82
+    },
+    {
+      "group_index": 111,
+      "signature": "a56dd572666f99e2cde91fd5af33df57ef4be3c1214f37fe41446a19a1fe0ba6",
+      "street_count": 1
+    }
+  ]
+}

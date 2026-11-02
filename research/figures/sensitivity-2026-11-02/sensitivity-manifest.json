@@ -1,0 +1,32 @@
+{
+  "source_code_sha256": "397249f982ff06755ae10c4ae021a6c92b843adaa6200da9823246e721466213",
+  "source_sha256": {
+    "research/reports/sensitivity-2026-11-01/sensitivity-audit.json": "b7f533389edb416a16f005c436174c471369d498dcc825e79d489e6eacb27c49",
+    "research/reports/sensitivity-2026-11-01/ranking-stability.csv.gz": "bb42df074a55437d76add7dc65eeb59c81d6a04acd0af752d79aa75c4cc1a3ca",
+    "research/reports/sensitivity-2026-11-01/variants/baseline/summary.json": "1ea89b780aa13bde0c8cb6aad8dcf5026abb373fbc237a556c73d648dba6729e",
+    "research/reports/sensitivity-2026-11-01/variants/connector-25m/summary.json": "c09b04e2b1cbf3637a284974c80f14efc59ac9f4fdeba79d9d7213a8150318ad",
+    "research/reports/sensitivity-2026-11-01/variants/connector-50m/summary.json": "45a349ff3921407800ada25300f2f334a080cb83ee83ffa572a00a6b670a8935",
+    "research/reports/sensitivity-2026-11-01/variants/connector-250m/summary.json": "f42af6f542f2875a13bdaac4e2e9c86f2b8ccc5509c303667343dcb0eee56613",
+    "research/reports/sensitivity-2026-11-01/variants/tie-min-way/summary.json": "d4c26f05b16204db43e289138b9aa5dc19e7ecd89c9cf15df853825b8e9fdd0d",
+    "research/reports/sensitivity-2026-11-01/variants/tie-max-way/summary.json": "46e8c4bb2798a71baade125a091dca5736878109b7846c6e58b2be7180c3ff2c",
+    "research/reports/sensitivity-2026-11-01/variants/origin-centroid/summary.json": "09012fb6124be1f43e12cdcc854d77e9c2744382d850c3296250ab2edbcab453",
+    "research/reports/sensitivity-2026-11-01/variants/targets-emergency-tag/summary.json": "fc239d045c69b2a0bd348095520026f97ae7d36f8f6833335d64991562591b2f",
+    "research/reports/sensitivity-2026-11-01/variants/targets-human-inside/summary.json": "b9f39ee14e8cb5b87eb7a683c689a92b7e693cf51ae97bbdc780ae76ad569487",
+    "research/reports/sensitivity-2026-11-01/variants/targets-emergency-inside/summary.json": "50695bd00392bd598dc82b1d339b700a1272aff1e28f4353ee0c55486aadd4fa",
+    "research/reports/sensitivity-2026-11-01/variants/context-1km/summary.json": "7acc2f179e68bdce852e718bd5948010a26cf75d907ad2cdb3e3f8b51cf15de3",
+    "research/reports/sensitivity-2026-11-01/variants/context-3km/summary.json": "e607bc3513bbafe1913d5a8a12c5413ba83f11670f2d6423c03e88acca750cb6",
+    "research/reports/sensitivity-2026-11-01/variants/context-5km/summary.json": "49eb837456aa076e6d3fb72cba2ccf9aaf97d4bb7e43c8f3529e6481b792112d",
+    "research/reports/sensitivity-2026-11-01/variants/context-10km/summary.json": "91669b316de92211a4ecc7867f8a72968377e42cc06aa6877b3cf149a1a42751",
+    "research/reports/sensitivity-2026-11-01/variants/failure-whole-route/summary.json": "21a2305e60d7707a40d31bcfe7ae8c907f470b95f9838ff08eec3823358c5bbf",
+    "research/reports/sensitivity-2026-11-01/variants/failure-independent-bus/summary.json": "5aa76527b5000bc7e5158455d00df9170868dbbf8fef76b55f7f8f5ab8b974d3",
+    "research/reports/sensitivity-2026-11-01/variants/routes-semantic-extension/summary.json": "59b3ad3b74ad079b69dcb213630b6e2895d45b6226a1dab4630daf22b0ac9986",
+    "research/reports/sensitivity-2026-11-01/variants/routes-derived-order/summary.json": "277c4a6fd755c808752747d846c7ae8a63e4b0f3d46249304532f24a66940c32",
+    "research/reports/sensitivity-2026-11-01/variants/whole-osm-way/summary.json": "933d92708670ed81b4f57b6b02fe0a53e81dcb540d0dad1acaaeb5aebb9eac55"
+  },
+  "svg_sha256": {
+    "sensitivity-healthy-access.svg": "46c3dc1ac0a0ed14cae3112e2234d810c303207e4b096646afc92c74fcf38ee3",
+    "sensitivity-maximum-losses.svg": "a5fd08e6024be399bd5739cdfc310dcac5652bbf997b96c21056c8bf45468159",
+    "ranking-grid-bus.svg": "c61e85b80dca2e5b8efdd292e47657583f5519d7ebe2dbc3dac42706d757c266",
+    "ranking-grid-bus_metro.svg": "f0273b6aefbb31e4d65bcd04bb9c169d104f5071b38ef88a9ab24268a523c7c0"
+  }
+}

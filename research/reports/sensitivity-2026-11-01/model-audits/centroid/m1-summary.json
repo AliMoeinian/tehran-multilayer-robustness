@@ -1,0 +1,30 @@
+{
+  "config_version": "m1-v1",
+  "config_sha256": "8a2dc37be3d66785191b6c853b5d85d568f4ba2f6ee87b8e6bba4390b8dd579c",
+  "dataset_id": "tehran-osm-20261029T212126Z-v1.1-public",
+  "input_routes": 53,
+  "route_status_by_mode": {
+    "bus": {
+      "needs_review": 28,
+      "candidate_for_walking_connection_audit": 11
+    },
+    "metro": {
+      "candidate_for_walking_connection_audit": 14
+    }
+  },
+  "flag_counts": {
+    "recorded_stop_order_mixed": 27,
+    "stop_far_from_trace": 1,
+    "recorded_stop_order_opposes_trace": 1
+  },
+  "selected_stop_associations": 948,
+  "candidate_connections": 418,
+  "not_yet_implemented": [
+    "walking connectors",
+    "stop-area reconciliation",
+    "street dependency slicing between stops",
+    "accessibility solver",
+    "simulation"
+  ],
+  "meaning": "Recorded stop-order diagnostic; candidates are not a certified service or completed travel model."
+}

@@ -144,6 +144,8 @@ The scripts read the frozen dataset and network without changing them. The solve
 
 The previously open controls are now resolved within the frozen primary model: complete preservation audit, complete solver census, and documented final route exclusions. **Next-stage work remains path-level explanation and sensitivity analysis.** Real-world service completeness, legal boundary equivalence, verified entrances, population weights and clinical capabilities remain data/model limitations, not claims established by these checks.
 '''
+    if (ROOT/'research/reports/path-sensitivity.en.md').exists():
+        text+='\n**Follow-up, 2 November 2026:** the path-level explanation and registered sensitivity stage is now [completed in its separate technical record](path-sensitivity.en.md). The next-stage wording above preserves this validation milestone’s original date.\n'
     (ROOT/'research/reports/validation-closure.en.md').write_text(text,encoding='utf-8',newline='\n')
     progress=ROOT/'research/reports/research-progress.en.md'
     current=progress.read_text(encoding='utf-8')
@@ -155,8 +157,12 @@ The previously open controls are now resolved within the frozen primary model: c
     current=current.replace('28 were retained for review','28 were retained for review at that milestone and are now explicitly excluded after the complete case-by-case review')
     current=current.replace('**28** were retained for review:','**28** were retained for review at that milestone and now have explicit final primary-model exclusions (Section 14):')
     current=current.replace('20 sampled original way lengths agree with their split-edge sums',f"all {lengths['walking_ways_checked']:,} walking ways, {lengths['source_segments_checked']:,} source segments and {lengths['stored_edges_checked']:,} split edges pass the follow-up census")
-    if '## 14. Next step:' in current:
-        current=current[:current.index('## 14. Next step:')]
+    for marker in ['## 14. Next step:', '## 14. Completed follow-up:']:
+        if marker in current:current=current[:current.index(marker)]
+    # The validation generator owns section 14 only. Preserve later-stage
+    # records when rerunning this earlier milestone's report generator.
+    existing=progress.read_text(encoding='utf-8')
+    later=existing[existing.index('## 15. Completed'): ] if '## 15. Completed' in existing else ''
     current+=f'''## 14. Completed follow-up: earlier validation tasks
 
 The [complete validation report](validation-closure.en.md) closes the earlier length-preservation and solver-comparison controls. Every one of {lengths['walking_ways_checked']:,} walking ways and {lengths['stored_edges_checked']:,} stored edges was checked. The compact/full-node comparison covered {solvers['distinct_failed_sets_checked']:,} failed sets, both modes and all boarding layers: {solvers['origin_budget_mode_scenario_cells_checked']:,} origin-budget cells. Every published threshold count matched exactly, so the numerical experiment tables and main figures are unchanged.
@@ -167,6 +173,8 @@ All 28 previously excluded bus relations now have explicit case-by-case primary-
 
 The earlier controls are closed within the frozen model. The next planned work is to trace origins and eligible paths for the positive/negative interaction cases and negative-DeltaM cases, then perform the declared sensitivity analyses. Verified entrances, operational completeness, clinical capability and population weights remain explicit data limitations. Final interpretation and ranking-stability claims remain pending.
 '''
+    if later:
+        current=current[:current.index('## 15. Next step:')]+later
     progress.write_text(current,encoding='utf-8',newline='\n')
     paired=ROOT/'research/reports/paired-closures.en.md';current=paired.read_text(encoding='utf-8')
     current=current.replace('The suite contains **37 passing unit tests**','The suite now contains **44 passing unit tests**')

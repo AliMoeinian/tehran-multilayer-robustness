@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "scope": "every eligible source walking way, every source segment and every stored split edge",
+  "source_road_rows_examined": 218322,
+  "walking_ways_checked": 206474,
+  "source_segments_checked": 872879,
+  "stored_edges_checked": 931254,
+  "zero_length_source_ways_excluded_by_builder": 0,
+  "absolute_tolerance_m": 1e-05,
+  "maximum_way_difference_m": 2.2737367544323206e-13,
+  "maximum_segment_difference_m": 1.8189894035458565e-12,
+  "failure_count": 0,
+  "failures": [],
+  "network_sha256": "29b960ff22cf6de38768d1911690c11593af04835ba42c570435d88e7ed89e33",
+  "geopackage_sha256": "77fd0961a8eb10f2dbe2d6b19878138a489d4e69f45fc6fce2ae366e99a64ed4",
+  "all_way_table_sha256": "45f645a7dbca353bc2783b12aae35e697239a1227ee26592b6ffeeef5ec7030c",
+  "source_code_sha256": "5e741b91fb10060a1a52d65eac9ee15da2606822e47cef385cb6d94d8b5c798f"
+}

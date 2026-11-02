@@ -1,0 +1,39 @@
+{
+  "dataset_id": "tehran-osm-20261029T212126Z-v1.1-public",
+  "stage": "m2-v2",
+  "config_sha256": "7d5a873fade5f30fc8c98dd53347d2c7684e7f08fafc43293a545b4af3cec1ad",
+  "connector_limit_m": 100.0,
+  "walking_ways": 206474,
+  "walking_edges": 930852,
+  "connectors_by_kind": {
+    "building": {
+      "geometric_candidate": 64166,
+      "beyond_distance_limit": 1511
+    },
+    "hospital": {
+      "geometric_candidate": 241,
+      "beyond_distance_limit": 8
+    },
+    "stop": {
+      "geometric_candidate": 443
+    }
+  },
+  "transit_connections": 418,
+  "bus_dependency_segment_occurrences": 1895,
+  "unique_bus_street_segments": 1684,
+  "candidate_routes": {
+    "metro": 14,
+    "bus": 11
+  },
+  "restricted_stop_associations": 16,
+  "pending": [
+    "stop-area reconciliation",
+    "review of excluded routes",
+    "transfer-state accessibility solver",
+    "connectivity coverage and failure simulation"
+  ],
+  "nearest_tie_policy": "max_way_id",
+  "origin_point_policy": "stored_representative_point",
+  "entities_with_multiple_nearest_ways": 431,
+  "centroids_outside_footprint": 0
+}

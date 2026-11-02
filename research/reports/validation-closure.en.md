@@ -112,3 +112,5 @@ python -m research.src.make_validation_report
 The scripts read the frozen dataset and network without changing them. The solver census can take substantial time; it has no sampling or automatic runtime fallback. Validation outputs are separate from the dataset and main experiment outputs.
 
 The previously open controls are now resolved within the frozen primary model: complete preservation audit, complete solver census, and documented final route exclusions. **Next-stage work remains path-level explanation and sensitivity analysis.** Real-world service completeness, legal boundary equivalence, verified entrances, population weights and clinical capabilities remain data/model limitations, not claims established by these checks.
+
+**Follow-up, 2 November 2026:** the path-level explanation and registered sensitivity stage is now [completed in its separate technical record](path-sensitivity.en.md). The next-stage wording above preserves this validation milestone’s original date.

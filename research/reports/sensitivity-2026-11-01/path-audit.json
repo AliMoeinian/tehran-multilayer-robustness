@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "certificates_replayed": 7155,
+  "successful_paths_replayed": 2984,
+  "maximum_walking_cost_difference_m": 5.684341886080801e-13,
+  "geometry": {
+    "walking_edges_checked": 930852,
+    "maximum_edge_geometry_difference_m": 4.582428880794964e-10,
+    "accepted_connectors_checked": 64850,
+    "maximum_connector_geometry_difference_m": 2.3922908098938933e-10
+  },
+  "mode_sequences": {
+    "bus": 2806,
+    "bus,bus": 118,
+    "metro,bus": 13,
+    "metro": 47
+  },
+  "case_memberships_match_all_published_losses": true,
+  "all_seven_negative_groups_same_13_extra_origins": true,
+  "every_extra_origin_full_baseline_witness_mode_sequence": [
+    "metro",
+    "bus"
+  ],
+  "riding_distance_km": {
+    "median": 2.609734757230002,
+    "p95": 4.8319029544357255,
+    "max": 23.53717697908589
+  },
+  "interpretation": "Riding lengths describe selected minimum-walking witnesses, not shortest total-distance journeys or feasible travel times.",
+  "source_sha256": "5b5c7b9ab8bbc5216c937f6aadd7369ba2d7cc7d69bd9151a3f5aeb4f4dde2a0",
+  "artifact_sha256": {
+    "path-case-members.csv.gz": "049c7bef85dbe2a734bdf1af570a06ff5f336a87c67fe7e0ddd90dcfab4cf6b0",
+    "path-case-registry.json": "dc616615ba6b3542986d61e8de85e20438fc6a2bc0931bc6dfb6ddda03f5b31f",
+    "path-entity-coordinates.csv.gz": "5e4608ec80687d7367f2b38a16f6e90c5f91bef3e757691b079a29fdf42e3668",
+    "path-failed-sets.json": "68eef432c35d7b4ce85ed3b9636d9b971979f8bab19d608e51b7743d25bc8717",
+    "path-node-coordinates.csv.gz": "728459cc4dd47fe806665dcebd17ce6024d5b63563a20c8a5049af5192238525",
+    "path-ride-profiles.csv.gz": "105ae418b7142c2e5565b1463f11347347755b395ce76f3c5ab7257323c73a74",
+    "path-summary.json": "dfdb6a738755ce08f6055fcf6b3331c6e24c740ef7a487be4d2ed750c7572501",
+    "path-walking-edges.csv.gz": "b2984274c7dd9a115c8e9c5704a7ff76aba9b436befc671c52a3891a954c4b41",
+    "path-witnesses.jsonl.gz": "fb141712c18901c5aefa1425bb09149ffa2d00ead5774656e6ddc4ac57da7664"
+  }
+}

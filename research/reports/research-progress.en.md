@@ -247,7 +247,7 @@ We separate file integrity, model implementation checks, and real-world validity
 | Baseline regression | Shared loader reproduces published M3 counts with matching network/configuration hashes |
 | Saved closure outputs | All 1,684 source segments, 238 groups, 2,142 effect rows, memberships, hashes, losses, shares and weighted summaries reconciled against SQLite |
 
-At the single-closure milestone, the suite contained **27 passing unit tests**; the validation extension now contains 44, as detailed in Section 13. The independent closure examples add 27 forward-search comparisons beyond the 720 baseline comparisons. The earlier 20-way length comparison is superseded by the complete source-geometry and split-chain census in Section 14. Nodewise invariants are necessary implementation checks; they would not detect every possible modeling or data error.
+At the single-closure milestone, the suite contained **27 passing unit tests**; the validation milestone used 44; the completed path/sensitivity extension has 48, as detailed in Section 15. The independent closure examples add 27 forward-search comparisons beyond the 720 baseline comparisons. The earlier 20-way length comparison is superseded by the complete source-geometry and split-chain census in Section 14. Nodewise invariants are necessary implementation checks; they would not detect every possible modeling or data error.
 
 The figure generator reads saved evidence directly, emits editable-text vector SVGs, and records source/output SHA-256 values in a figure manifest. Canonical LF line endings keep published artifact hashes stable across checkouts. All five figure layouts were reviewed through rendered PNG previews, and a legend/annotation collision was corrected. SVG structure was checked for editable text and the absence of embedded raster images. Report links and output hashes were also checked. These presentation checks are separate from arithmetic validation.
 
@@ -319,13 +319,13 @@ The following issues remain material:
 
 1. **Mapped coverage and selection.** Only 11 of the 39 initially strict bus relations enter the present model. The route-order exclusions can produce selection bias; small effects cannot be generalized to the full bus system. A relation passing an audit is not certified to operate on the snapshot date.
 2. **Origin and target meaning.** Buildings have equal weights and incomplete stock coverage is possible. Targets are tag-screened hospital candidates with possible duplicates, not validated emergency services. No population, demand, passenger count, or capacity is available.
-3. **Geometric access.** Straight nearest-way offsets, unverified entrances and barriers, nearest-way ties, walking eligibility and incomplete stop-area reconciliation can alter accessibility. The 100 m convention needs testing.
+3. **Geometric access.** Straight nearest-way offsets, unverified entrances and barriers, nearest-way ties, walking eligibility and incomplete stop-area reconciliation can alter accessibility. The 25/50/100/250 m connector contracts are now evaluated in Section 15; actual entrances and barriers remain unverified.
 4. **Service constraints.** There are no timetables, waiting times, vehicle speeds, transfer synchronization, or operational validation. Budgeted structural paths can contain long rides. Additional boardings are deliberately counted conservatively.
 5. **Failure definition.** Closures affect dependent bus arcs only; pedestrians and metro are fixed. No rerouting, capacity redistribution or car-routing restrictions are simulated. Source segmentation and separate carriageways affect the scenario unit.
-6. **Boundaries.** OSM is the operational city mask, not a verified legal boundary. External destinations are permitted within the available context, whose routing sufficiency has not been established by convergence tests.
+6. **Boundaries.** OSM is the operational city mask, not a verified legal boundary. External destinations are permitted within the available context. The complete registered output tables agree under the 1/3/5/10 km context restrictions (Section 15); routes outside the source extract remain untested.
 7. **Inference and novelty.** These are exhaustive deterministic results within a finite observed single-closure domain, not a random sample of independent real failures. We have not fit a power law, estimated a failure probability, established a threshold transition, or completed the literature work needed to claim methodological novelty.
 
-Sensitivity and interpretation are still required before using these numbers as the final evidence of a conference paper. The current implementation checks justify proceeding to the next analysis stage within the stated model; they do not guarantee a perfect dataset.
+The registered path/sensitivity stage is now completed (Section 15). The broader structural comparators and descriptive outputs listed in its coverage ledger remain open before final manuscript claims. Completed finite-model checks do not certify a perfect real-world dataset.
 
 ## 13. Completed extension: exhaustive paired closures
 
@@ -345,7 +345,7 @@ The recorded experiment expands to 25,507,548 physical-pair/parameter/mode resul
 | Maximum joint loss (buildings) | 439 | 351 |
 <!-- END PAIR_MAIN -->
 
-The supplement contains the full parameter grid, complete-domain extreme cases, and Figures 6 and 7 as reproducible SVGs. A full independent audit enumerates and reconciles every physical pair, signature pair, dependency union, saved effect row and interaction distribution. The current suite has 44 tests, including worker-process equivalence and the earlier independent solver comparisons.
+The supplement contains the full parameter grid, complete-domain extreme cases, and Figures 6 and 7 as reproducible SVGs. A full independent audit enumerates and reconciles every physical pair, signature pair, dependency union, saved effect row and interaction distribution. The validation milestone used 44 tests, including worker-process equivalence and the earlier independent solver comparisons.
 
 Completeness refers to the defined observed street-pair domain. The model still contains the screened 11 bus and 14 rail relations; it does not represent a verified complete operating transit network. The detailed audit distinguishes exhaustive saved-output controls from the nine selected real-network cross-solver comparisons. The completed follow-up census is recorded in Section 14.
 
@@ -355,15 +355,8 @@ The [complete validation report](validation-closure.en.md) closes the earlier le
 
 All 28 previously excluded bus relations now have explicit case-by-case primary-model dispositions. They remain outside the frozen strict model because recorded order conflicts with the trace; one also fails the distance contract. Geometric reordering is a separate reconstruction hypothesis, not verified service. This resolves eligibility decisions without pretending to repair the source or make the operating bus network complete. See the complete registry and Figure 8 in the validation report.
 
-## 15. Next step: path explanations and sensitivity
+## 15. Completed: path explanations and exhaustive sensitivity
 
-The earlier controls are closed within the frozen model. The next planned work is to trace origins and eligible paths for the positive/negative interaction cases and negative-DeltaM cases, then perform the declared sensitivity analyses. Verified entrances, operational completeness, clinical capability and population weights remain explicit data limitations. Final interpretation and ranking-stability claims remain pending.
-## 14. Completed follow-up: earlier validation tasks
+The [technical path/sensitivity record](path-sensitivity.en.md) adds the exact origin-set mechanism decomposition for all physical pairs and all W/K/mode combinations; every tied extreme pair case and every negative-DeltaM case; 7,155 origin/state certificates with independent graph replay; all 18 common-domain OAT variants and the separate 310-way aggregation; exact ranking agreement on every physical unit/pair; full model length audits and editable SVG figures. No primary published result changes. The report explicitly separates complete finite-domain computation from uncertainty in the mapped data and assumptions.
 
-The [complete validation report](validation-closure.en.md) closes the earlier length-preservation and solver-comparison controls. Every one of 206,474 walking ways and 930,852 stored edges was checked. The compact/full-node comparison covered 27,857 failed sets, both modes and all boarding layers: 14,299,778,096 origin-budget cells. Every published threshold count matched exactly, so the numerical experiment tables and main figures are unchanged.
-
-All 28 previously excluded bus relations now have explicit case-by-case primary-model dispositions. They remain outside the frozen strict model because recorded order conflicts with the trace; one also fails the distance contract. Geometric reordering is a separate reconstruction hypothesis, not verified service. This resolves eligibility decisions without pretending to repair the source or make the operating bus network complete. See the complete registry and Figure 8 in the validation report.
-
-## 15. Next step: path explanations and sensitivity
-
-The earlier controls are closed within the frozen model. The next planned work is to trace origins and eligible paths for the positive/negative interaction cases and negative-DeltaM cases, then perform the declared sensitivity analyses. Verified entrances, operational completeness, clinical capability and population weights remain explicit data limitations. Final interpretation and ranking-stability claims remain pending.
+The original roadmap also proposed structural comparators (road class, dependent-route counts and weighted street betweenness), broader component/district/target-count summaries and pair-feature association analyses. These have not been completed and are now explicitly open in the coverage ledger of the new report and the TODO. The earlier RQ1 checklist label referred too broadly to the completed closure census; it must not be read as completion of those comparative analyses. Next, complete or explicitly scope those items before the final claim/manuscript stage. Optional larger multi-segment stress curves remain a separate, unexecuted extension. Operational service validation and new external data are outside this experiment.

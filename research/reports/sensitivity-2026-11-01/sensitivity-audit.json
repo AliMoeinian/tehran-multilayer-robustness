@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "variants_checked": 19,
+  "comparisons": 1044,
+  "coverage": [
+    {
+      "variant": "baseline",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "connector-25m",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "connector-50m",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "connector-250m",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "tie-min-way",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "tie-max-way",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "origin-centroid",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "targets-emergency-tag",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "targets-human-inside",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "targets-emergency-inside",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "context-1km",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "context-3km",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "context-5km",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "context-10km",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 28337,
+      "rows_checked": 255033,
+      "failed_unions": 27849
+    },
+    {
+      "variant": "failure-whole-route",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 91,
+      "rows_checked": 819,
+      "failed_unions": 85
+    },
+    {
+      "variant": "failure-independent-bus",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 1,
+      "rows_checked": 9,
+      "failed_unions": 1
+    },
+    {
+      "variant": "routes-semantic-extension",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 29297,
+      "rows_checked": 263673,
+      "failed_unions": 28803
+    },
+    {
+      "variant": "routes-derived-order",
+      "units": 1684,
+      "pairs": 1417086,
+      "signature_pair_blocks": 32276,
+      "rows_checked": 290484,
+      "failed_unions": 31750
+    },
+    {
+      "variant": "whole-osm-way",
+      "units": 310,
+      "pairs": 47895,
+      "signature_pair_blocks": 14583,
+      "rows_checked": 131247,
+      "failed_unions": 14332
+    }
+  ],
+  "total_physical_pairs_over_variants": 25555443,
+  "ranking": "Exact Spearman with average tied ranks, no sampling; constant vectors have undefined (null) correlation.",
+  "top_sets": "Both full-domain and positive-subset fractions, including all cutoff ties; zero values excluded. Empty-union Jaccard is undefined. Nonzero-union ranks/sign agreement are also retained to expose zero-heavy agreement.",
+  "length_control": "Full physical source-unit lengths; strata describe sensitivity and are not equal-length-budget failure experiments.",
+  "source_sha256": "de386a4d02e58818b9ab8afe86f3abd7aea507c76761e087b14a244ccaafbb4e",
+  "artifact_sha256": {
+    "ranking-stability.csv.gz": "bb42df074a55437d76add7dc65eeb59c81d6a04acd0af752d79aa75c4cc1a3ca",
+    "length-strata.csv.gz": "bb1a749866cc090fc65d1bcdf91ff1838b3507bf14d9e129c2cb8ee5040bcb5d",
+    "metro-loss-comparisons.csv.gz": "010479f30b1c5b28fd25744668d0b12974265e02801762ef35ad681bf6541812"
+  }
+}

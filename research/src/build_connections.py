@@ -81,10 +81,17 @@ def run(config, connector_limit=100, output=None):
         cumulative = np.r_[0,np.cumsum(np.linalg.norm(np.diff(xy,axis=0),axis=1))]
         if cumulative[-1] > 0:
             ways.append({'id':wid,'geometry':g,'nodes':ns,'progress':cumulative})
-    for typ, ident, raw in db.execute("SELECT osm_type,osm_id,attributes_json FROM buildings_city"):
+    origin_policy=cfg.get('origin_point_policy','stored_representative_point')
+    query="SELECT osm_type,osm_id,attributes_json,geom FROM buildings_city" if origin_policy=='centroid' else "SELECT osm_type,osm_id,attributes_json,NULL FROM buildings_city"
+    for typ, ident, raw, blob in db.execute(query):
         a=json.loads(raw)
+        outside=False
+        if origin_policy=='centroid':
+            footprint=geometry(blob);point=footprint.centroid;outside=not footprint.covers(point)
+            location=Point(project(point.x,point.y))
+        else:location=Point(project(a['point_lon'],a['point_lat']))
         origins.append({'key':f'building:{typ}{ident}','kind':'building',
-                        'group':f'{typ}{ident}','point':Point(project(a['point_lon'],a['point_lat']))})
+                        'group':f'{typ}{ident}','point':location,'centroid_outside_footprint':outside})
     for raw, blob in db.execute("SELECT attributes_json,geom FROM hospital_screened_candidates"):
         a=json.loads(raw)
         if a['screen_decision']!='human_hospital_candidate':
@@ -104,8 +111,14 @@ def run(config, connector_limit=100, output=None):
             'point':Point(project(float(s['longitude']),float(s['latitude'])))})
     tree=STRtree([w['geometry'] for w in ways])
     queries=np.asarray([e['point'] for e in entities],dtype=object)
-    indices,distances=tree.query_nearest(queries,return_distance=True,all_matches=False)
-    nearest={int(i):(int(j),float(d)) for (i,j),d in zip(indices.T,distances)}
+    tie_policy=cfg.get('nearest_tie_policy','one_STRtree_result')
+    indices,distances=tree.query_nearest(queries,return_distance=True,all_matches=tie_policy in ['min_way_id','max_way_id'])
+    nearest={};ties=collections.Counter()
+    for (i,j),d in zip(indices.T,distances):
+        i,j=int(i),int(j);ties[i]+=1
+        if i not in nearest:nearest[i]=(j,float(d))
+        elif ((tie_policy=='min_way_id' and ways[j]['id']<ways[nearest[i][0]]['id']) or
+              (tie_policy=='max_way_id' and ways[j]['id']>ways[nearest[i][0]]['id'])):nearest[i]=(j,float(d))
     anchors=collections.defaultdict(list); connector_rows=[]
     for i,e in enumerate(entities):
         j,d=nearest[i];w=ways[j];along=float(w['geometry'].project(e['point']))
@@ -124,9 +137,16 @@ def run(config, connector_limit=100, output=None):
       CREATE TABLE transit_connections(connection_id TEXT PRIMARY KEY,route_id INTEGER,from_stop TEXT,to_stop TEXT,length_m REAL,mode TEXT);
       CREATE TABLE bus_dependencies(connection_id TEXT,street_segment TEXT,osm_way_id INTEGER,overlap_m REAL);
     ''')
+    store_coordinates=cfg.get('store_node_coordinates',False)
+    if store_coordinates:
+        target.executescript('CREATE TABLE walk_nodes(node_id TEXT PRIMARY KEY,x_m REAL,y_m REAL); CREATE TABLE entity_points(entity TEXT PRIMARY KEY,x_m REAL,y_m REAL,centroid_outside_footprint INTEGER);')
+        target.executemany('INSERT INTO entity_points VALUES(?,?,?,?)',[(e['key'],e['point'].x,e['point'].y,int(e.get('centroid_outside_footprint',False))) for e in entities])
     edge_rows=[]
     for j,w in enumerate(ways):
         cumulative=w['progress'];by_segment=collections.defaultdict(list)
+        if store_coordinates:
+            xy=np.asarray(w['geometry'].coords)
+            target.executemany('INSERT OR IGNORE INTO walk_nodes VALUES(?,?,?)',[(f'n{node}',float(p[0]),float(p[1])) for node,p in zip(w['nodes'],xy)])
         for along,index in anchors.get(j,[]):
             node_index=int(np.argmin(np.abs(cumulative-along)))
             if abs(cumulative[node_index]-along)<=1e-7:
@@ -142,6 +162,9 @@ def run(config, connector_limit=100, output=None):
             selected=by_segment.get(k,[])
             cuts=cut_positions(a,b,[x for x,_ in selected])
             names=[f"n{w['nodes'][k]}"]+[f"w{w['id']}:{k}:{q}" for q in range(1,len(cuts)-1)]+[f"n{w['nodes'][k+1]}"]
+            if store_coordinates and len(cuts)>2:
+                points=[xy[k]+(position-a)/(b-a)*(xy[k+1]-xy[k]) for position in cuts[1:-1]]
+                target.executemany('INSERT OR IGNORE INTO walk_nodes VALUES(?,?,?)',[(name,float(p[0]),float(p[1])) for name,p in zip(names[1:-1],points)])
             for along,index in selected:
                 q=int(np.argmin(np.abs(np.asarray(cuts)-along)))
                 connector_rows[index]['anchor_node']=names[q]
@@ -188,6 +211,10 @@ def run(config, connector_limit=100, output=None):
         'restricted_stop_associations':sum(x['kind']=='stop' and not(x['board_allowed'] and x['alight_allowed']) for x in connector_rows),
         'pending':['stop-area reconciliation','review of excluded routes','transfer-state accessibility solver','connectivity coverage and failure simulation'],
         'nearest_tie_policy':'one STRtree nearest result; equal-distance alternatives not resolved; connector sensitivity remains necessary'}
+    if store_coordinates:
+        summary.update({'nearest_tie_policy':tie_policy,'origin_point_policy':origin_policy,
+                        'entities_with_multiple_nearest_ways':sum(n>1 for n in ties.values()),
+                        'centroids_outside_footprint':sum(e.get('centroid_outside_footprint',False) for e in origins)})
     target.close()
     write_csv(out/'connectors.csv',connector_rows)
     (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')

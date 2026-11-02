@@ -39,3 +39,5 @@ jobs:
         run: python -m research.src.audit_pairs
       - name: Verify all frozen validation evidence and walking baseline
         run: python -m research.src.verify_full_validation
+      - name: Verify complete sensitivity receipts, loss masks and vector figures
+        run: python -m research.src.verify_sensitivity_evidence

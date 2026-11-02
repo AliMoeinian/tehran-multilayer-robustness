@@ -107,3 +107,38 @@ This closes primary-model eligibility review, not operational certification or
 permanent irreparability. Geometry and the primary route subset remain unchanged.
 All published experiment counts are exactly reproduced, so no numeric result or
 main figure replacement is needed. Path explanations and sensitivity are next.
+
+## 2026-11-02: complete registered path and sensitivity domains
+
+Retain the frozen primary model. Run all 18 registered one-factor variants on
+every original source segment and every distinct physical pair, plus the
+separate 310-way/all-47,895-pair aggregation. Keep all nine W/K combinations,
+both modes, the full 65,677-origin denominator and exact multiplicities. Route
+extensions use the common primary failure exposure, not their additional
+supporting streets. These are alternative assumptions, not verified repairs.
+
+Decompose every primary pair exactly into shared single losses and new joint-only
+losses. Reconstruct all affected origins for every tied registered extreme pair
+and all seven negative-DeltaM signatures. Independently replay every saved
+certificate, recover primary split-node geometry from primary progress, and
+check all walking-edge and accepted-connector geometries. Report riding lengths
+descriptively and retain the minimum-walking objective.
+
+Rank comparisons enumerate every aligned physical unit/pair with exact tied
+ranks. Also record nonzero-union comparisons and positive-subset top sets, so
+shared zeros cannot conceal sensitivity. Undefined constant-vector correlations
+remain undefined. Context/tie-policy outcomes match the reference exactly;
+connector, target, failure and route assumptions can change losses/rankings.
+Negative metro-benefit cases are certified for the primary but disappear at
+W1000/K1 under the derived-order route hypothesis. Do not claim universal
+stability or operational metro harm.
+
+## 2026-11-02: correct roadmap coverage labels
+
+The earlier generic RQ1 checkmark overstated coverage: the full single-closure
+census was complete, but the original road-class/dependent-route/weighted
+betweenness benchmark was not executed. Broader component, district,
+reachable-target-count and pair-feature summaries also remain open. Correct
+the checklist and publish an explicit coverage ledger rather than silently
+calling the entire roadmap complete. Registered path/OAT/ranking work is now
+complete; manuscript/claim selection and separately scoped extensions remain.

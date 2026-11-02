@@ -1,0 +1,32 @@
+{
+  "source_code_sha256": "8c4327bf4bde5fc86bc535498ed3ef78a67fcf7dbb9c54cd6a24d51057a15704",
+  "sources": {
+    "path-audit.json": "b032619b8b87b68ac515d3bb0101babb3ee51fc38e6a12fefb6cc35569c5aa57",
+    "path-case-members.csv.gz": "049c7bef85dbe2a734bdf1af570a06ff5f336a87c67fe7e0ddd90dcfab4cf6b0",
+    "path-case-registry.json": "dc616615ba6b3542986d61e8de85e20438fc6a2bc0931bc6dfb6ddda03f5b31f",
+    "path-entity-coordinates.csv.gz": "5e4608ec80687d7367f2b38a16f6e90c5f91bef3e757691b079a29fdf42e3668",
+    "path-failed-sets.json": "68eef432c35d7b4ce85ed3b9636d9b971979f8bab19d608e51b7743d25bc8717",
+    "path-node-coordinates.csv.gz": "728459cc4dd47fe806665dcebd17ce6024d5b63563a20c8a5049af5192238525",
+    "path-ride-profiles.csv.gz": "105ae418b7142c2e5565b1463f11347347755b395ce76f3c5ab7257323c73a74",
+    "path-summary.json": "dfdb6a738755ce08f6055fcf6b3331c6e24c740ef7a487be4d2ed750c7572501",
+    "path-walking-edges.csv.gz": "b2984274c7dd9a115c8e9c5704a7ff76aba9b436befc671c52a3891a954c4b41",
+    "path-witnesses.jsonl.gz": "fb141712c18901c5aefa1425bb09149ffa2d00ead5774656e6ddc4ac57da7664"
+  },
+  "reconstructed_model_inputs_sha256": {
+    "research/model/m1-v1/traces.json": "982174e039560468f90057a8a212af239c19d7dcbe5931ef027ea91663fd0e72",
+    "research/model/m1-v1/routes.csv": "996a35c1282ece69e25cfd29a772b6f5a4a8016a19c8ad746f81559639e938b6",
+    "research/model/m1-v1/stops.csv": "1d4ca8e10a05c59fd96b73d2eaa4610591f9635aa116d8a958dc7671314e7cbf"
+  },
+  "svg_sha256": {
+    "pair-mechanisms-all-extrema.svg": "3e2791805abe3bc1e9135aa778fa00689be0ce23d6859d272323c5b4cf97c93e",
+    "negative-metro-decomposition.svg": "3741aca5985ff1f716a1291609e14747acf8d9e479e717609ad27dbc1dd00f1e",
+    "all-extreme-origin-maps-1.svg": "2b01a86f6f12b1eaedc9db1924e2593696fb7b8ed9337ac66cb2070306deb1b1",
+    "all-extreme-origin-maps-2.svg": "1beb2177f8e7ad042f4f10c66bf8d8df8ea5d39cda346f947d24fdea6d9363cf",
+    "all-extreme-origin-maps-3.svg": "e03bb342e1989ca96716d55ca6a5107fdcdc5cc09cc17a2cae4c4779ceb39d73",
+    "all-extreme-origin-maps-4.svg": "4b1a306fe53bd21b455281b9d0fba33ab09cc059f07e537cff09c3ef3c45de43",
+    "metro-bus-witness.svg": "5bf85d206c5c28dc88ea0b05c48bb073d64fc47dbb438a9ab6f217b5d32f0218"
+  },
+  "illustration_origin": "building:w1106691446",
+  "illustration_target": "hospital:n14109886845",
+  "map_note": "EPSG:32639. Extreme maps show windows around every affected origin; source closure segments may lie outside these windows. Grey lines are accepted route traces. Witness traces are mapping associations; stop-to-trace offsets are not extra modeled walking legs."
+}

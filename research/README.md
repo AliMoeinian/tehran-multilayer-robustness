@@ -168,3 +168,43 @@ float64 and the original node-level recurrence. CI verifies all frozen evidence
 tables and the complete unit suite; it does not rerun the long census on every
 commit. Route exclusions are eligibility decisions under the strict primary
 contract, not source repairs or claims that the excluded services do not run.
+
+## Completed path and registered sensitivity stage
+
+The [English technical record](reports/path-sensitivity.en.md) contains every
+registered extreme/negative-benefit case, 7,155 replayable origin/state
+certificates, 18 common-domain OAT variants and the separate 310-way experiment.
+Every variant includes its full single/pair domain, all W/K settings and both
+mode sets. The registered variants together cover 25,555,443 physical-pair
+scenarios. Eleven standalone editable SVGs accompany the record.
+
+```bash
+python -m research.src.prepare_sensitivity_models
+python -m research.src.audit_compact_compilation
+python -m research.src.decompose_interactions
+python -m research.src.path_witnesses
+python -m research.src.audit_path_witnesses
+CENSUS_STARTED_UTC=$(python -c "from datetime import datetime,timezone; print(datetime.now(timezone.utc).isoformat())")
+python -m research.src.sensitivity_runs
+python -m research.src.audit_sensitivity
+python -m research.src.write_sensitivity_execution --census-started-utc "$CENSUS_STARTED_UTC"
+python -m research.src.make_path_figures
+python -m research.src.make_sensitivity_report
+python -m research.src.verify_sensitivity_evidence
+python -m unittest discover -s tests -v
+```
+
+The full sequence is for a clean evidence workspace; preserve the distributed
+frozen result folder before regenerating it. To check the published evidence
+without repeating the long census, run `verify_sensitivity_evidence` only.
+The six network builds are reproducible under ignored `research/model/`;
+their configurations, build/geometry receipts and expanded-route order tables
+are public. Frozen receipts preserve their byte hashes across checkouts.
+Use `prepare_sensitivity_models --reuse-verified` to inventory existing builds.
+
+Completeness is scoped to the declared experiments. The original roadmap also
+contains unexecuted structural centrality/road-class/dependency comparisons,
+broader component/district/target-count summaries and pair-feature associations.
+The [coverage ledger](reports/path-sensitivity.en.md#10-coverage-against-the-original-roadmap)
+keeps these open. The broader RQ1 benchmark, manuscript and optional larger
+failure/combined-assumption experiments are not marked complete.

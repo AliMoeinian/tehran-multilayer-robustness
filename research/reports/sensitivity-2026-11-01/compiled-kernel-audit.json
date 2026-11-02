@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "failed_sets_checked": 27857,
+  "modes": 2,
+  "origin_count": 64166,
+  "boarding_layers": 4,
+  "origin_budget_cells_checked": 14299778096,
+  "maximum_absolute_difference_m": 0.0,
+  "threshold_counts": "all exactly match the published primary",
+  "elapsed_seconds": 1272.870765300002,
+  "source_code_sha256": {
+    "audit_compact_compilation.py": "0fcadb476cde68adcb279415dfd67b63dc414554e2e6ca7fc7cae2062db87fdf",
+    "compiled_compact.py": "f0a4d11fb1df32e29266547c4aa8211dd424521430f7af5522f83cdfd9932a06"
+  }
+}

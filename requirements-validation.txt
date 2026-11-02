@@ -1,3 +1,4 @@
 # Optional accelerator for exhaustive full-walking-graph solver verification.
 -r requirements-research.txt
 numba==0.67.0
+scipy==1.17.1
