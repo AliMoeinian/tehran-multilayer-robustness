@@ -250,9 +250,11 @@ The [saved-output census](sensitivity-2026-11-01/sensitivity-audit.json) checks 
 
 The [execution receipt](sensitivity-2026-11-01/execution.json) retains the verified census start time, final output timestamp, snapshot identity, source-code and configuration identities, every variant-summary hash and the evaluated Python/package versions. It records the Windows execution environment without requiring byte-identical rebuilt SQLite files on every platform.
 
+Raw evaluated-source hashes are retained for provenance. For cross-platform source comparison only, CRLF line endings are normalized to LF and a separate canonical source hash is checked. The first Linux CI execution reproduced the baseline and closure checks but exposed this line-ending mismatch in the raw hash of `accessibility.py`; the portable source check corrects that packaging issue without changing model calculations. Code-content changes still fail the hash check. Dataset, configuration and result-artifact hashes remain strict byte hashes.
+
 The complete compilation and full-node comparisons validate the primary model over every failed set. For sensitivity models, the same compiled recurrence is used with new exact walking metrics; the audits check every saved scenario and invariants, while the unit suite checks varied directed/zero-cost graphs and every reconstructed parent chain on those controls. We do not claim a second exhaustive full-node numerical census on all 19 sensitivity networks. Algebraic exactness and tested implementation equivalence should be distinguished from independent recomputation of every alternate-network distance.
 
-The extended local unit suite passes **48 tests**, including complete parent-chain replay on 60 varied small directed/zero-cost controls, compact compilation comparisons, tie-aware ranking/positive-set definitions and the preceding solver/closure tests. Synthetic controls are algorithm tests and never enter the empirical Tehran results.
+The extended local unit suite passes **49 tests**, including complete parent-chain replay on 60 varied small directed/zero-cost controls, compact compilation comparisons, tie-aware ranking/positive-set definitions, source-receipt newline portability and the preceding solver/closure tests. Synthetic controls are algorithm tests and never enter the empirical Tehran results.
 
 Reproduce from the extracted public archive and completed primary pipeline, using `requirements-validation.txt`:
 

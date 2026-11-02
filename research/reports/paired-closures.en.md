@@ -38,7 +38,7 @@ Independent union scenarios are distributed across four Python worker processes.
 
 ## 4. Validation scope
 
-The validation milestone used **44 passing unit tests**, including actual subprocess-worker equivalence and closure propagation. The [path/sensitivity extension](path-sensitivity.en.md) brings the local suite to 48. The compact solver was also checked against the full graph and independent forward expanded-state search on small generated graphs, totaling 1,440 origin/budget/scenario comparisons. The original baseline tests and the single-closure tests remain in the suite.
+The validation milestone used **44 passing unit tests**, including actual subprocess-worker equivalence and closure propagation. The [path/sensitivity extension](path-sensitivity.en.md) brings the local suite to 49. The compact solver was also checked against the full graph and independent forward expanded-state search on small generated graphs, totaling 1,440 origin/budget/scenario comparisons. The original baseline tests and the single-closure tests remain in the suite.
 
 On the Tehran model, the compact solver reproduces the baseline and every W/K count for all 238 single-failure signatures. Nine real scenarios additionally compare full connected-origin cost vectors with the original solver: the baseline, five fixed single signatures and three fixed pair unions. Numeric tolerance is 1e-8 m absolute and 1e-12 relative; threshold counts must match exactly. This selected full-solver comparison is not an exhaustive cross-solver check of every union. The separate all-scenario controls are described below; the [completed follow-up census](validation-closure.en.md) now supplies the full-node comparison for every failed set and the full source-length census.
 

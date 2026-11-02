@@ -11,6 +11,14 @@
     "accessibility.py": "65fc592714fc359d7b5e92af7e476a48875aed40fca5d242527efd52916c33c7",
     "pair_closures.py": "0291830248f10b51c83b6a52ce5ff10676c23c2adaf1a11471e3ce98beae4b2a"
   },
+  "source_code_lf_sha256": {
+    "sensitivity_runs.py": "a13e33c4bbf7a1b57ce609412823d30dd1c4b545f00cca156a5627f0dc1ff76a",
+    "compiled_compact.py": "f0a4d11fb1df32e29266547c4aa8211dd424521430f7af5522f83cdfd9932a06",
+    "compact_accessibility.py": "a55deecc5c261e727dae95b847f7db391be42b29c5971fd6c0761367a768eae8",
+    "accessibility.py": "78af2b8576ddc09864005d659da51ba7f61c109e7ed4c6241934545b9d9492eb",
+    "pair_closures.py": "0291830248f10b51c83b6a52ce5ff10676c23c2adaf1a11471e3ce98beae4b2a"
+  },
+  "source_identity_policy": "Retain raw evaluated-source hashes; cross-platform verification uses only CRLF-to-LF normalization. Dataset and result artifact hashes remain exact byte hashes.",
   "requirements_sha256": {
     "requirements-research.txt": "a38cf9421796ce0277debd044e1843ff126f536eb241235cd5e65f92b4b2c36d",
     "requirements-validation.txt": "bf1912860100f51bc427fdae2aca36168a03652e43729d6639507a81aba61f58"
@@ -48,6 +56,6 @@
     "osmium": "4.3.2"
   },
   "physical_pair_scenarios_over_variants": 25555443,
-  "receipt_writer_sha256": "1ca4048e0c8a3e6f7d3f27de56755b2857968126fee8491108e78a8701cc72ae",
+  "receipt_writer_sha256": "61887228915a751940e29b6744c0c71853fd7fdd01885d31aa3ec119cde4f65c",
   "note": "Complete declared finite domains, not all possible subsets of failed streets. Last output timestamp is read from the finished census files; preserve it before copying/regenerating outputs."
 }

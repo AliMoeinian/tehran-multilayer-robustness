@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 import numpy as np
 
 from .accessibility import ROOT
+from .write_sensitivity_execution import source_sha256_lf
 
 
 def run():
@@ -23,7 +24,10 @@ def run():
     execution=read(out/'execution.json');assert execution['status']=='completed'
     assert execution['protocol_sha256']==sha(protocol)
     assert execution['receipt_writer_sha256']==sha(ROOT/'research/src/write_sensitivity_execution.py')
-    hashes(ROOT/'research/src',execution['source_code_sha256']);hashes(ROOT,execution['requirements_sha256'])
+    assert execution['source_code_sha256'].keys()==execution['source_code_lf_sha256'].keys()
+    for name,digest in execution['source_code_lf_sha256'].items():
+        assert source_sha256_lf(ROOT/'research/src'/name)==digest,name
+    hashes(ROOT,execution['requirements_sha256'])
     for name in names:
         folder=out/'variants'/name;r=read(folder/'summary.json');assert r['status']=='passed'
         hashes(folder,r['artifact_sha256']);assert r['protocol_sha256']==sha(protocol)

@@ -11,6 +11,11 @@ from pathlib import Path
 from .accessibility import ROOT
 
 
+def source_sha256_lf(path):
+    """Portable source identity: normalize only CRLF line endings to LF."""
+    return hashlib.sha256(path.read_bytes().replace(b'\r\n',b'\n')).hexdigest()
+
+
 def run(started_utc):
     start=datetime.datetime.fromisoformat(started_utc)
     if start.tzinfo is None:raise ValueError('A timezone-aware, genuinely recorded census start is required')
@@ -27,6 +32,8 @@ def run(started_utc):
         'last_variant_written_utc':datetime.datetime.fromtimestamp(max(p.stat().st_mtime for p in summaries),datetime.timezone.utc).isoformat(),
         'osm_snapshot_utc':'2026-10-29T21:21:26Z','protocol_sha256':sha(ROOT/'research/config/sensitivity-protocol.json'),
         'source_code_sha256':{n:sha(ROOT/'research/src'/n) for n in code},
+        'source_code_lf_sha256':{n:source_sha256_lf(ROOT/'research/src'/n) for n in code},
+        'source_identity_policy':'Retain raw evaluated-source hashes; cross-platform verification uses only CRLF-to-LF normalization. Dataset and result artifact hashes remain exact byte hashes.',
         'requirements_sha256':{n:sha(ROOT/n) for n in ['requirements-research.txt','requirements-validation.txt']},
         'variant_summary_sha256':{p.parent.name:sha(p) for p in summaries},
         'python':sys.version,'platform':platform.platform(),
