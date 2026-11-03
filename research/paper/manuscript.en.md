@@ -171,9 +171,9 @@ The four-category census shows why positive interaction and joint-only loss are 
 
 For bus, C ranges from −224 to 192; for the full model, from −219 to 41. In the maximum-positive bus interaction case, joint loss is 406, with S = 0 and N = 192. The same signature-pair case has full-model joint loss 41 and N = 35. This matched example illustrates substitution by full-model paths, whereas separate maxima summarize different scenarios. Every tied registered extremum is retained in the explanatory evidence.
 
-![Complete pair-interaction grid](../figures/pairs-exhaustive-2026-11-01/01-positive-pair-interaction.svg)
+![Positive-interaction pair counts across all evaluated budgets](../figures/pairs-exhaustive-2026-11-01/01-positive-pair-interaction.svg)
 
-**Figure 2.** Complete registered pair-interaction results across the evaluated walking/boarding settings. The domain is all physical supporting-segment pairs, with exact multiplicity restored from signature grouping. [The companion origin-set panels](../figures/sensitivity-2026-11-02/pair-mechanisms-all-extrema.svg) show S and N for every registered extremum. Extremum cases are deliberately selected explanations, not prevalence estimates or representative incidents.
+**Figure 2.** Counts of physical pairs with positive net interaction (C > 0) across every evaluated walking/boarding setting in both mode sets. Each cell is computed from all 1,417,086 physical supporting-segment pairs, with exact multiplicity restored from signature grouping. The heatmap shows only positive-C counts; Table 2 reports all four mechanism categories at the reference setting. [The companion origin-set panels](../figures/sensitivity-2026-11-02/pair-mechanisms-all-extrema.svg) show S and N for every registered extremum. Extremum cases are deliberately selected explanations, not prevalence estimates or representative incidents.
 
 ### 5.3. Identical signatures do not account for all pair mechanisms
 
