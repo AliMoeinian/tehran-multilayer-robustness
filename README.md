@@ -4,7 +4,7 @@ Open research on street–route dependencies and structural healthcare accessibi
 
 We study how street closures affect connections from mapped buildings to hospital candidates through walking, bus and metro layers. The project is being developed for a conference paper in complex networks.
 
-**Status:** the screened-network baseline, every observed single closure, all 1,417,086 primary pairs, and the registered path/sensitivity stage are complete. The new record includes 19 exhaustive model variants and 11 SVG figures. Broader structural benchmarks, descriptive summaries, final claims and the conference manuscript remain open; results are structural observations on the mapped subset.
+**Status:** the screened-network baseline, every observed single closure, all 1,417,086 primary pairs, registered sensitivity, exact structural comparisons and spatial descriptions are complete within their declared domains. A targeted literature review and complete first scientific manuscript draft are available. Author revision, final conference layout and submission review remain open; results describe structural opportunities on the screened mapped subset.
 
 All-way length preservation, the exhaustive full-node solver comparison and final route-exclusion dispositions are documented in the [validation closure report](research/reports/validation-closure.en.md). Published experiment values are unchanged.
 
@@ -21,6 +21,8 @@ All-way length preservation, the exhaustive full-node solver comparison and fina
 - [Path certificates, exhaustive sensitivity and remaining-work ledger — English](research/reports/path-sensitivity.en.md)
 - [Exact structural comparisons, full spatial descriptions and SVG figures — English](research/reports/structural-comparisons.en.md)
 - [Literature positioning, bounded claims and conference figure plan — English](research/paper/literature-and-claims.en.md)
+- [First scientific manuscript draft — English](research/paper/manuscript.en.md)
+- [Draft evidence checks and remaining submission work — English](research/paper/manuscript-review.en.md)
 
 ```bash
 git clone https://github.com/AliMoeinian/tehran-multilayer-robustness.git

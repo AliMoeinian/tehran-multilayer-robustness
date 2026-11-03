@@ -1,6 +1,10 @@
 # Conference-paper development
 
-Start with [the literature and claim plan](literature-and-claims.en.md).
+Read [the complete first scientific draft](manuscript.en.md) and its
+[evidence/editorial review](manuscript-review.en.md). The draft contains all
+scientific sections; conference formatting and submission review remain open.
+
+The [literature and claim plan](literature-and-claims.en.md)
 It selects the scientific contribution, maps C1-C6 to inspectable evidence,
 records rejected overclaims, and chooses existing SVGs for manuscript layout.
 It is a positioning document, not a finished manuscript or systematic review.
@@ -16,6 +20,7 @@ It is a positioning document, not a finished manuscript or systematic review.
 
 ```bash
 python research/paper/build_claim_evidence.py --check
+python research/paper/check_manuscript.py
 ```
 
 Omit `--check` only for a deliberate regeneration, review the diff, and update
@@ -27,8 +32,12 @@ The analytical source snapshot remains `2026-10-29T21:21:26Z`. Literature review
 date and publication dates are manuscript metadata, not a new dataset vintage.
 Full texts and external study datasets are linked, not redistributed here.
 
-Next: draft Data/Model, Methods and Results around the bounded C1-C4 claims;
-then Introduction, Discussion, limitations and abstract. Venue-specific final
-layout awaits an identified template/page limit. Larger multi-segment failure,
+The manuscript checker compares both marked result tables with frozen evidence,
+checks local and registered literature links, and checks section structure. It
+does not validate all prose or publication rendering. `--update-tables` is an
+explicit regeneration option; inspect the diff and update dependent prose.
+
+Next: author review and revision of scientific draft 1, then venue-specific
+layout with an identified template/page limit. Larger multi-segment failure,
 equal-length budgets, matched-target centrality and operational calibration are
 not silently added to the selected scope.

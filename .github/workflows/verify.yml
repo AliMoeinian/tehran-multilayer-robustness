@@ -47,3 +47,5 @@ jobs:
         run: python -m research.src.verify_structural_evidence
       - name: Reconcile manuscript claim evidence with the complete frozen census
         run: python research/paper/build_claim_evidence.py --check
+      - name: Check manuscript tables, references and section structure
+        run: python research/paper/check_manuscript.py

@@ -269,5 +269,9 @@ multiplicity, and separates 16,289 identical-signature pairs from the 1,400,797
 distinct-signature pairs. The main claim selection emphasizes shared versus
 joint-only losses, their cancellation, traceable modal effects and sensitivity.
 Weak centrality agreement and route-aware modeling are explicitly recognized as
-precedented. The next writing work is Data/Model, Methods and Results; final
-conference layout and submission review remain open.
+precedented. [Scientific draft 1](paper/manuscript.en.md) now contains the full
+prose, including Data/Model, Methods and Results. Its
+[review record](paper/manuscript-review.en.md) separates automated table/link
+checks from editorial and future layout checks. Run
+`python research/paper/check_manuscript.py` after editing it. Author revision,
+final conference layout and submission review remain open.

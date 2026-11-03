@@ -2,9 +2,9 @@
 
 ## Methods and results through exhaustive single and paired closures
 
-**Evidence cutoff:** 2 November 2026. **Map snapshot:** 29 October 2026, 21:21:26 UTC.
+**Numerical evidence cutoff:** 2 November 2026. **Writing/review update:** 3 November 2026. **Map snapshot:** 29 October 2026, 21:21:26 UTC.
 **Primary dataset:** `tehran-osm-20261029T212126Z-v1.1-public`.  
-**Status:** complete registered single/pair censuses, validation, path/sensitivity analyses and structural/descriptive comparisons are recorded through Section 16. Conference claim selection, literature comparison and manuscript writing remain pending.
+**Status:** complete registered single/pair censuses, validation, path/sensitivity analyses and structural/descriptive comparisons are recorded through Section 16. Literature/claim selection is recorded in Section 17 and the complete first scientific draft in Section 18. Author revision, conference layout and submission review remain open.
 
 ## Abstract
 
@@ -414,3 +414,34 @@ sensitivity. Main figure roles are selected from existing SVGs, with final
 composition deferred to manuscript layout. Data/Model, Methods and Results
 writing is the next deliverable. Manuscript completion, venue formatting and
 submission review are not marked complete.
+
+## 18. Completed: first scientific manuscript draft and scoped evidence checks
+
+On 3 November 2026, [scientific draft 1](../paper/manuscript.en.md) was written
+in English. It contains an abstract, introduction, related work, data/model,
+methods, results, discussion, limitations/reproducibility and conclusion.
+The primary story remains shared and joint-only pair losses, the separate
+signature diagnostic and sensitivity of the quantitative interpretation.
+The numerical model, dataset, result tables and existing SVGs were not changed.
+
+The [draft review](../paper/manuscript-review.en.md) traces each consequential
+claim group to the frozen evidence and records the editorial boundaries.
+In particular, the 98-unit excess absolute loss with rail disappears under
+both the semantic-extension and derived-order route variants at the reference
+setting. This qualification is reported beside the primary witness mechanism.
+All 28 order exclusions are distinguished from the single additional distance
+conflict; the reverse-monotone and distance-conflict cases are not conflated.
+
+`check_manuscript.py` reconstructs both marked result tables (14 data rows)
+from claim evidence, checks every local draft link and registered literature
+link, and validates section structure. The existing claim-evidence builder
+continues to reconcile every full-grid mechanism row and physical multiplicity.
+These automated checks complement editorial review; they do not verify every
+prose token or rendered publication layout. Existing SVGs are linked with
+scoped captions rather than regenerated or presented as final composites.
+
+The next deliverable is author revision and venue-specific composition,
+followed by final submission review. A full first prose draft is complete;
+the manuscript is not yet declared submission-ready. No new heavy experiment,
+external analytical source, population inference or operational forecast has
+been introduced.
