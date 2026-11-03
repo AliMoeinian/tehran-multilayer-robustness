@@ -20,6 +20,7 @@ All-way length preservation, the exhaustive full-node solver comparison and fina
 - [Exhaustive paired-closure protocol and results — English](research/reports/paired-closures.en.md)
 - [Path certificates, exhaustive sensitivity and remaining-work ledger — English](research/reports/path-sensitivity.en.md)
 - [Exact structural comparisons, full spatial descriptions and SVG figures — English](research/reports/structural-comparisons.en.md)
+- [Literature positioning, bounded claims and conference figure plan — English](research/paper/literature-and-claims.en.md)
 
 ```bash
 git clone https://github.com/AliMoeinian/tehran-multilayer-robustness.git

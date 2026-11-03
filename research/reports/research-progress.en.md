@@ -386,3 +386,31 @@ All 236 connected possible institution groups are separately retargeted, produci
 Every weak/strong component is described; every 300 relation-pair overlap is independently replayed with GEOS interval unions; all 1,684 dependency feature rows reconcile. Every physical street pair enters the fixed Euclidean-distance/shared-route association grid with its original multiplicity. At the main setting, shared-relation versus C Spearman is -0.4016 (bus) and -0.3720 (bus+metro), descriptive values without independent-pair inference. Negative C is subadditivity relative to single losses, not negative joint harm.
 
 Six source-backed editable SVGs, exact counts/ranks/top-set sizes, full length/class strata and reproduction commands accompany the record. The registered numerical core is complete within its declared domains. Selecting claims and conference figures, comparing the closest literature, and drafting/reviewing the manuscript remain next. Equal-length failure budgets, larger multi-segment failures and combined-factor sensitivity are explicitly unexecuted optional extensions.
+
+
+## 17. Completed: literature positioning and bounded manuscript claims
+
+On 3 November 2026, the [targeted literature and claim plan](../paper/literature-and-claims.en.md)
+compared 20 transport/network sources and one geographic-context source, with
+primary access levels and version limits retained in a register and BibTeX.
+This is a narrative positioning review, not a systematic review or evidence
+that no earlier identical work exists. No external analytical data was added.
+The review identifies direct precedents for healthcare stress tests, multi-link
+criticality, route-preserving models, marginal accessibility contributions and
+weak agreement between criticality rankings. These are not priority claims.
+
+A reproducible summary of the existing full mechanism table additionally exposes
+1,229 bus pairs and 2,023 full-layer pairs with balanced nonzero N=S at the
+reference setting. These pairs have zero net C while both mechanisms occur.
+All 16,289 identical-signature pairs are separately identified; the 1,400,797
+different-signature pairs still contain 15,719/11,439 positive-C pairs and
+26,012/19,946 pairs with newly lost origins (bus/full). The source census is
+unchanged: these are complete weighted summaries, not new sampled experiments.
+
+The paper now prioritizes pair-loss mechanisms and their contract sensitivity.
+The generic betweenness comparison is supporting evidence with explicit OD
+mismatch; the primary negative-DeltaM mechanism is paired with its route-order
+sensitivity. Main figure roles are selected from existing SVGs, with final
+composition deferred to manuscript layout. Data/Model, Methods and Results
+writing is the next deliverable. Manuscript completion, venue formatting and
+submission review are not marked complete.

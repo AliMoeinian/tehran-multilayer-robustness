@@ -251,3 +251,23 @@ replays are distinguished from the checks actually repeated in CI. With a
 rebuilt M1/M2 model, `python -m research.src.audit_route_structure --check-only`
 also independently replays every route overlap without overwriting frozen
 receipts.
+
+
+## Literature positioning and manuscript claims
+
+The [English claim plan](paper/literature-and-claims.en.md) records a targeted
+21-record review, exact access/version limits, C1-C6, rejected novelty claims,
+reviewer objections and selected source SVGs. The evidence builder only reads
+existing frozen output; it adds no analytical records or simulations:
+
+```bash
+python research/paper/build_claim_evidence.py --check
+```
+
+It reconciles all 510,066 mechanism rows, every W/K/mode result and physical
+multiplicity, and separates 16,289 identical-signature pairs from the 1,400,797
+distinct-signature pairs. The main claim selection emphasizes shared versus
+joint-only losses, their cancellation, traceable modal effects and sensitivity.
+Weak centrality agreement and route-aware modeling are explicitly recognized as
+precedented. The next writing work is Data/Model, Methods and Results; final
+conference layout and submission review remain open.

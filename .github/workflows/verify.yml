@@ -45,3 +45,5 @@ jobs:
         run: python -m research.src.audit_route_structure --check-only
       - name: Verify complete structural graph, source census and descriptive evidence
         run: python -m research.src.verify_structural_evidence
+      - name: Reconcile manuscript claim evidence with the complete frozen census
+        run: python research/paper/build_claim_evidence.py --check

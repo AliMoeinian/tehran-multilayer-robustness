@@ -1,0 +1,3795 @@
+{
+  "all_pair_mechanism_settings": [
+    {
+      "balanced_nonzero": 0,
+      "both": 4026,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "negative_C": 61390,
+      "neither": 1354519,
+      "new_only": 1177,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 5203,
+      "positive_C": 1177,
+      "shared_only": 57364,
+      "walking_budget_m": 500,
+      "zero_C": 1354519
+    },
+    {
+      "balanced_nonzero": 1157,
+      "both": 6395,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "negative_C": 49731,
+      "neither": 1352246,
+      "new_only": 13313,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 19708,
+      "positive_C": 13952,
+      "shared_only": 45132,
+      "walking_budget_m": 1000,
+      "zero_C": 1353403
+    },
+    {
+      "balanced_nonzero": 0,
+      "both": 1274,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "negative_C": 10819,
+      "neither": 1390008,
+      "new_only": 15243,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 16517,
+      "positive_C": 16259,
+      "shared_only": 10561,
+      "walking_budget_m": 2000,
+      "zero_C": 1390008
+    },
+    {
+      "balanced_nonzero": 0,
+      "both": 4365,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "negative_C": 63211,
+      "neither": 1352331,
+      "new_only": 1322,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 5687,
+      "positive_C": 1544,
+      "shared_only": 59068,
+      "walking_budget_m": 500,
+      "zero_C": 1352331
+    },
+    {
+      "balanced_nonzero": 1229,
+      "both": 11433,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "negative_C": 51443,
+      "neither": 1348695,
+      "new_only": 14579,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 26012,
+      "positive_C": 15719,
+      "shared_only": 42379,
+      "walking_budget_m": 1000,
+      "zero_C": 1349924
+    },
+    {
+      "balanced_nonzero": 42,
+      "both": 5981,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "negative_C": 6800,
+      "neither": 1388490,
+      "new_only": 16761,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 22742,
+      "positive_C": 21754,
+      "shared_only": 5854,
+      "walking_budget_m": 2000,
+      "zero_C": 1388532
+    },
+    {
+      "balanced_nonzero": 0,
+      "both": 4391,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "negative_C": 63211,
+      "neither": 1352331,
+      "new_only": 1322,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 5713,
+      "positive_C": 1544,
+      "shared_only": 59042,
+      "walking_budget_m": 500,
+      "zero_C": 1352331
+    },
+    {
+      "balanced_nonzero": 3105,
+      "both": 11901,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "negative_C": 49567,
+      "neither": 1349595,
+      "new_only": 13679,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 25580,
+      "positive_C": 14819,
+      "shared_only": 41911,
+      "walking_budget_m": 1000,
+      "zero_C": 1352700
+    },
+    {
+      "balanced_nonzero": 0,
+      "both": 5981,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "negative_C": 6800,
+      "neither": 1389151,
+      "new_only": 16100,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 22081,
+      "positive_C": 21135,
+      "shared_only": 5854,
+      "walking_budget_m": 2000,
+      "zero_C": 1389151
+    },
+    {
+      "balanced_nonzero": 0,
+      "both": 3984,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "negative_C": 61390,
+      "neither": 1354519,
+      "new_only": 1177,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 5161,
+      "positive_C": 1177,
+      "shared_only": 57406,
+      "walking_budget_m": 500,
+      "zero_C": 1354519
+    },
+    {
+      "balanced_nonzero": 605,
+      "both": 5192,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "negative_C": 37281,
+      "neither": 1364686,
+      "new_only": 13765,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 18957,
+      "positive_C": 14514,
+      "shared_only": 33443,
+      "walking_budget_m": 1000,
+      "zero_C": 1365291
+    },
+    {
+      "balanced_nonzero": 0,
+      "both": 161,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "negative_C": 5593,
+      "neither": 1408680,
+      "new_only": 2652,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 2813,
+      "positive_C": 2813,
+      "shared_only": 5593,
+      "walking_budget_m": 2000,
+      "zero_C": 1408680
+    },
+    {
+      "balanced_nonzero": 2,
+      "both": 3805,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "negative_C": 62958,
+      "neither": 1352031,
+      "new_only": 2095,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 5900,
+      "positive_C": 2095,
+      "shared_only": 59155,
+      "walking_budget_m": 500,
+      "zero_C": 1352033
+    },
+    {
+      "balanced_nonzero": 2023,
+      "both": 10430,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "negative_C": 47356,
+      "neither": 1356268,
+      "new_only": 9516,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 19946,
+      "positive_C": 11439,
+      "shared_only": 40872,
+      "walking_budget_m": 1000,
+      "zero_C": 1358291
+    },
+    {
+      "balanced_nonzero": 0,
+      "both": 1012,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "negative_C": 9495,
+      "neither": 1403685,
+      "new_only": 2894,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 3906,
+      "positive_C": 3906,
+      "shared_only": 9495,
+      "walking_budget_m": 2000,
+      "zero_C": 1403685
+    },
+    {
+      "balanced_nonzero": 2,
+      "both": 3831,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "negative_C": 62958,
+      "neither": 1352031,
+      "new_only": 2095,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 5926,
+      "positive_C": 2095,
+      "shared_only": 59129,
+      "walking_budget_m": 500,
+      "zero_C": 1352033
+    },
+    {
+      "balanced_nonzero": 1327,
+      "both": 10838,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "negative_C": 46804,
+      "neither": 1357168,
+      "new_only": 8616,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 19454,
+      "positive_C": 11787,
+      "shared_only": 40464,
+      "walking_budget_m": 1000,
+      "zero_C": 1358495
+    },
+    {
+      "balanced_nonzero": 0,
+      "both": 1012,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "negative_C": 9495,
+      "neither": 1403685,
+      "new_only": 2894,
+      "pairs": 1417086,
+      "pairs_with_joint_only_losses": 3906,
+      "positive_C": 3906,
+      "shared_only": 9495,
+      "walking_budget_m": 2000,
+      "zero_C": 1403685
+    }
+  ],
+  "all_primary_proxy_comparisons": [
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.3333333333333333,
+      "positive_top_5pct_reference_count": 44,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.3597617753605855,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.21808510638297873,
+      "positive_top_5pct_reference_count": 44,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.2658818449522583,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.023809523809523808,
+      "positive_top_5pct_reference_count": 44,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.0832709066642834,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 44,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.07537953579852708,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.3333333333333333,
+      "positive_top_5pct_reference_count": 44,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.36485036400795995,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.21808510638297873,
+      "positive_top_5pct_reference_count": 44,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.26850094908759903,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.023809523809523808,
+      "positive_top_5pct_reference_count": 44,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.08075521677144772,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 44,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.07199399476211249,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.22627737226277372,
+      "positive_top_5pct_reference_count": 52,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.332477890767201,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.16748768472906403,
+      "positive_top_5pct_reference_count": 52,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.2517995070599046,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.03787878787878788,
+      "positive_top_5pct_reference_count": 52,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.06615266056551472,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 52,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.10522747421965832,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.006711409395973154,
+      "positive_top_5pct_reference_count": 34,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.19845502780670313,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.02336448598130841,
+      "positive_top_5pct_reference_count": 34,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.15908750395843316,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.017094017094017096,
+      "positive_top_5pct_reference_count": 34,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.05993577060277322,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 34,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.023691139439120112,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.031506893838348954,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.024752475247524754,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.05866398540299688,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.07,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.02592554759003744,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": -0.005624566680152005,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 13,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.08967671747937532,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.020618556701030927,
+      "positive_top_5pct_reference_count": 13,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.1260157414683417,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.053763440860215055,
+      "positive_top_5pct_reference_count": 13,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.10792135058785624,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 13,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": -0.03446247338336713,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.2857142857142857,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.37808707838276645,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.205607476635514,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.2773847212284701,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.01935483870967742,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.07611053053486215,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.025974025974025976,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.07430318547796903,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.2857142857142857,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.3522486061431753,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.205607476635514,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.2557545357653676,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.01935483870967742,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.07585577179338321,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.025974025974025976,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.062110428280730254,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.2116788321167883,
+      "positive_top_5pct_reference_count": 50,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.3672935168141943,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.15763546798029557,
+      "positive_top_5pct_reference_count": 50,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.28159796322491437,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.038461538461538464,
+      "positive_top_5pct_reference_count": 50,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.06314204717151288,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 50,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.0949148877742269,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.006172839506172839,
+      "positive_top_5pct_reference_count": 47,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.1729380912774421,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.03111111111111111,
+      "positive_top_5pct_reference_count": 47,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.12731751178509546,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.03125,
+      "positive_top_5pct_reference_count": 47,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.0523336842247981,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 47,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": -0.025555240785325048,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.024211582101610188,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.024752475247524754,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.05383658533180762,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.07,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.023347185410943765,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": -0.011153391132067507,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.039109643032863614,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.024752475247524754,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.07792148030016825,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.07,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.13604283168702014,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": -0.009841188725500912,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.2857142857142857,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.37808707838276645,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.205607476635514,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.2773847212284701,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.01935483870967742,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.07611053053486215,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.025974025974025976,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.07430318547796903,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.2857142857142857,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.3522486061431753,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.205607476635514,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.2557545357653676,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.01935483870967742,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.07585577179338321,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.025974025974025976,
+      "positive_top_5pct_reference_count": 73,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.062110428280730254,
+      "walking_budget_m": 500
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.2116788321167883,
+      "positive_top_5pct_reference_count": 50,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.36729404330303134,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.15763546798029557,
+      "positive_top_5pct_reference_count": 50,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.2816089016652391,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.038461538461538464,
+      "positive_top_5pct_reference_count": 50,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.06326114081930162,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 50,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.09501551638665497,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.006172839506172839,
+      "positive_top_5pct_reference_count": 47,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.17293839258825164,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.03111111111111111,
+      "positive_top_5pct_reference_count": 47,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.12731773361096538,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.03125,
+      "positive_top_5pct_reference_count": 47,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.05244669329772553,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 47,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": -0.025405921733956886,
+      "walking_budget_m": 1000
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.024211582101610188,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.024752475247524754,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.05383658533180762,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.07,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.023347185410943765,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": -0.011153391132067507,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "dependent_bus_relations",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 116,
+      "spearman": 0.039109643032863614,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "dependent_connections",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.024752475247524754,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 185,
+      "spearman": 0.07792148030016825,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "length_m",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.07,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": 0.13604283168702014,
+      "walking_budget_m": 2000
+    },
+    {
+      "benchmark": "junction_edge_betweenness",
+      "eligible_streets": 1684,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "positive_top_5pct_jaccard": 0.0,
+      "positive_top_5pct_reference_count": 22,
+      "positive_top_5pct_variant_count": 85,
+      "spearman": -0.009841188725500912,
+      "walking_budget_m": 2000
+    }
+  ],
+  "builder_source_lf_sha256": "3adb218811166803a48895dfab704099b469c3ceb092fffb23ba3114e52bd774",
+  "connected_candidate_groups": 236,
+  "evidence_version": "paper-claims-v1",
+  "input_sha256": {
+    "research/reports/m4-pairs-exhaustive-2026-11-01/summary.json": "0a44ba5f9bc9f2251b837e606a65142e91ef3335e74ce74bd9768cc2a48cb2a2",
+    "research/reports/sensitivity-2026-11-01/all-pair-mechanisms.csv.gz": "19e0d2adb4b6c4da6923292a80fe3b56717ed20d25c789b0f2482f124d117a79",
+    "research/reports/sensitivity-2026-11-01/variants/baseline/single-effects.csv.gz": "8a4c64c2a065e621f72e32d3bcb60c4febb91ce413b6bc661d54b19c91820999",
+    "research/reports/sensitivity-2026-11-01/variants/baseline/summary.json": "1ea89b780aa13bde0c8cb6aad8dcf5026abb373fbc237a556c73d648dba6729e",
+    "research/reports/sensitivity-2026-11-01/variants/connector-250m/single-effects.csv.gz": "ec71c92d35651b2c11065952d8cecd5324aa0f3f5654b926ebfbd1c5547af53b",
+    "research/reports/sensitivity-2026-11-01/variants/connector-250m/summary.json": "f42af6f542f2875a13bdaac4e2e9c86f2b8ccc5509c303667343dcb0eee56613",
+    "research/reports/sensitivity-2026-11-01/variants/connector-25m/single-effects.csv.gz": "78974cc364bb23e4fd10a583cf61f1eb72fad4b36df6efaa3b063749991c426f",
+    "research/reports/sensitivity-2026-11-01/variants/connector-25m/summary.json": "c09b04e2b1cbf3637a284974c80f14efc59ac9f4fdeba79d9d7213a8150318ad",
+    "research/reports/sensitivity-2026-11-01/variants/connector-50m/single-effects.csv.gz": "38e16e4c4962b59d1b932a43b9fa4b2848feae4bfbaea45b206544a009a34deb",
+    "research/reports/sensitivity-2026-11-01/variants/connector-50m/summary.json": "45a349ff3921407800ada25300f2f334a080cb83ee83ffa572a00a6b670a8935",
+    "research/reports/sensitivity-2026-11-01/variants/failure-whole-route/single-effects.csv.gz": "d8e87f67e3da9f69606c73b696fbb9fb90dc851a3172c2ae97739b188fa06f37",
+    "research/reports/sensitivity-2026-11-01/variants/failure-whole-route/summary.json": "21a2305e60d7707a40d31bcfe7ae8c907f470b95f9838ff08eec3823358c5bbf",
+    "research/reports/sensitivity-2026-11-01/variants/routes-derived-order/single-effects.csv.gz": "9c22224643192db8a4d784314c2353ea0b4298a5b278276e8b3784066655871e",
+    "research/reports/sensitivity-2026-11-01/variants/routes-derived-order/summary.json": "277c4a6fd755c808752747d846c7ae8a63e4b0f3d46249304532f24a66940c32",
+    "research/reports/sensitivity-2026-11-01/variants/routes-semantic-extension/single-effects.csv.gz": "1005a917178cd72b6d492209b3a53acac9bcee31535c7b2ff93910f6be5cd5f1",
+    "research/reports/sensitivity-2026-11-01/variants/routes-semantic-extension/summary.json": "59b3ad3b74ad079b69dcb213630b6e2895d45b6226a1dab4630daf22b0ac9986",
+    "research/reports/sensitivity-2026-11-01/variants/targets-emergency-tag/single-effects.csv.gz": "38f4dcd57a621c5e63658198933138a8a7d4189ff33c08db9aa250538633a2f4",
+    "research/reports/sensitivity-2026-11-01/variants/targets-emergency-tag/summary.json": "fc239d045c69b2a0bd348095520026f97ae7d36f8f6833335d64991562591b2f",
+    "research/reports/sensitivity-2026-11-01/variants/targets-human-inside/single-effects.csv.gz": "05333d8b2d510158a336fcb1da496d09094a030b4afd1ab5f8d6c5364b792dce",
+    "research/reports/sensitivity-2026-11-01/variants/targets-human-inside/summary.json": "b9f39ee14e8cb5b87eb7a683c689a92b7e693cf51ae97bbdc780ae76ad569487",
+    "research/reports/structural-2026-11-02/building-reachable-target-groups.csv.gz": "b8dd2f5ed1f0761e8f6a5266bf14296d67554e4bef339e263ca1b0e67fb41ee5",
+    "research/reports/structural-2026-11-02/descriptive-summary.json": "d3d7b54e152cd6fbc95586b100c06c04e89a1708cc8820b87b55b1e437e1844d",
+    "research/reports/structural-2026-11-02/route-structure-summary.json": "2fff5af4c6c480273ef9d668053e139bb71ff99d33662acf1bb430510ba4e997",
+    "research/reports/structural-2026-11-02/single-benchmark-rank-comparisons.csv.gz": "4a722a8b5093cbfaf88dcd5925e25e6949fef85b09840a698a915b76abd0d53e"
+  },
+  "mechanism_signature_rows_reconciled": 510066,
+  "observed_relations": {
+    "bus": 11,
+    "rail": 14
+  },
+  "reference_setting": {
+    "all_original_buildings": 65677,
+    "max_line_changes": 1,
+    "walking_budget_m": 1000
+  },
+  "reference_target_group_counts": {
+    "bus": {
+      "at_least_two": 13528,
+      "one": 12832,
+      "zero": 39317
+    },
+    "bus_metro": {
+      "at_least_two": 18404,
+      "one": 10701,
+      "zero": 36572
+    },
+    "walk": {
+      "at_least_two": 11522,
+      "one": 13773,
+      "zero": 40382
+    }
+  },
+  "scope": "Retrospective manuscript evidence selection from frozen published results; no new network simulation or external analytical records.",
+  "selected_variant_full_grids": [
+    {
+      "settings": [
+        {
+          "bus": {
+            "baseline_accessible": 8566,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 361,
+            "maximum_single_loss": 232,
+            "minimum_interaction": -210,
+            "negative_interaction_pairs": 61390,
+            "positive_interaction_pairs": 1177,
+            "positive_loss_units": 879,
+            "zero_interaction_pairs": 1354519
+          },
+          "bus_metro": {
+            "baseline_accessible": 9213,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 359,
+            "maximum_single_loss": 230,
+            "minimum_interaction": -208,
+            "negative_interaction_pairs": 61390,
+            "positive_interaction_pairs": 1177,
+            "positive_loss_units": 879,
+            "zero_interaction_pairs": 1354519
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26356,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 437,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 49731,
+            "positive_interaction_pairs": 13952,
+            "positive_loss_units": 735,
+            "zero_interaction_pairs": 1353403
+          },
+          "bus_metro": {
+            "baseline_accessible": 28886,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 370,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 37281,
+            "positive_interaction_pairs": 14514,
+            "positive_loss_units": 604,
+            "zero_interaction_pairs": 1365291
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 45921,
+            "maximum_interaction": 15,
+            "maximum_joint_loss": 198,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 10819,
+            "positive_interaction_pairs": 16259,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1390008
+          },
+          "bus_metro": {
+            "baseline_accessible": 50296,
+            "maximum_interaction": 6,
+            "maximum_joint_loss": 182,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 5593,
+            "positive_interaction_pairs": 2813,
+            "positive_loss_units": 201,
+            "zero_interaction_pairs": 1408680
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 8595,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 387,
+            "maximum_single_loss": 251,
+            "minimum_interaction": -229,
+            "negative_interaction_pairs": 63211,
+            "positive_interaction_pairs": 1544,
+            "positive_loss_units": 929,
+            "zero_interaction_pairs": 1352331
+          },
+          "bus_metro": {
+            "baseline_accessible": 9321,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 383,
+            "maximum_single_loss": 249,
+            "minimum_interaction": -227,
+            "negative_interaction_pairs": 62958,
+            "positive_interaction_pairs": 2095,
+            "positive_loss_units": 924,
+            "zero_interaction_pairs": 1352033
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26360,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 439,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 51443,
+            "positive_interaction_pairs": 15719,
+            "positive_loss_units": 757,
+            "zero_interaction_pairs": 1349924
+          },
+          "bus_metro": {
+            "baseline_accessible": 29105,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 351,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 47356,
+            "positive_interaction_pairs": 11439,
+            "positive_loss_units": 667,
+            "zero_interaction_pairs": 1358291
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 45921,
+            "maximum_interaction": 33,
+            "maximum_joint_loss": 193,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 6800,
+            "positive_interaction_pairs": 21754,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1388532
+          },
+          "bus_metro": {
+            "baseline_accessible": 50539,
+            "maximum_interaction": 27,
+            "maximum_joint_loss": 182,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 9495,
+            "positive_interaction_pairs": 3906,
+            "positive_loss_units": 299,
+            "zero_interaction_pairs": 1403685
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 8595,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 387,
+            "maximum_single_loss": 251,
+            "minimum_interaction": -229,
+            "negative_interaction_pairs": 63211,
+            "positive_interaction_pairs": 1544,
+            "positive_loss_units": 929,
+            "zero_interaction_pairs": 1352331
+          },
+          "bus_metro": {
+            "baseline_accessible": 9323,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 383,
+            "maximum_single_loss": 249,
+            "minimum_interaction": -227,
+            "negative_interaction_pairs": 62958,
+            "positive_interaction_pairs": 2095,
+            "positive_loss_units": 924,
+            "zero_interaction_pairs": 1352033
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26360,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 439,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 49567,
+            "positive_interaction_pairs": 14819,
+            "positive_loss_units": 757,
+            "zero_interaction_pairs": 1352700
+          },
+          "bus_metro": {
+            "baseline_accessible": 29115,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 351,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 46804,
+            "positive_interaction_pairs": 11787,
+            "positive_loss_units": 667,
+            "zero_interaction_pairs": 1358495
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 45921,
+            "maximum_interaction": 28,
+            "maximum_joint_loss": 193,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 6800,
+            "positive_interaction_pairs": 21135,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1389151
+          },
+          "bus_metro": {
+            "baseline_accessible": 50539,
+            "maximum_interaction": 27,
+            "maximum_joint_loss": 182,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 9495,
+            "positive_interaction_pairs": 3906,
+            "positive_loss_units": 299,
+            "zero_interaction_pairs": 1403685
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 2000
+        }
+      ],
+      "variant": "baseline"
+    },
+    {
+      "settings": [
+        {
+          "bus": {
+            "baseline_accessible": 4061,
+            "maximum_interaction": 3,
+            "maximum_joint_loss": 157,
+            "maximum_single_loss": 118,
+            "minimum_interaction": -118,
+            "negative_interaction_pairs": 25718,
+            "positive_interaction_pairs": 60,
+            "positive_loss_units": 538,
+            "zero_interaction_pairs": 1391308
+          },
+          "bus_metro": {
+            "baseline_accessible": 4426,
+            "maximum_interaction": 3,
+            "maximum_joint_loss": 157,
+            "maximum_single_loss": 118,
+            "minimum_interaction": -118,
+            "negative_interaction_pairs": 25718,
+            "positive_interaction_pairs": 60,
+            "positive_loss_units": 538,
+            "zero_interaction_pairs": 1391308
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 15095,
+            "maximum_interaction": 181,
+            "maximum_joint_loss": 556,
+            "maximum_single_loss": 359,
+            "minimum_interaction": -359,
+            "negative_interaction_pairs": 28992,
+            "positive_interaction_pairs": 9847,
+            "positive_loss_units": 623,
+            "zero_interaction_pairs": 1378247
+          },
+          "bus_metro": {
+            "baseline_accessible": 18246,
+            "maximum_interaction": 70,
+            "maximum_joint_loss": 214,
+            "maximum_single_loss": 166,
+            "minimum_interaction": -166,
+            "negative_interaction_pairs": 28513,
+            "positive_interaction_pairs": 10102,
+            "positive_loss_units": 613,
+            "zero_interaction_pairs": 1378471
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 29027,
+            "maximum_interaction": 33,
+            "maximum_joint_loss": 427,
+            "maximum_single_loss": 351,
+            "minimum_interaction": -326,
+            "negative_interaction_pairs": 20340,
+            "positive_interaction_pairs": 12645,
+            "positive_loss_units": 580,
+            "zero_interaction_pairs": 1384101
+          },
+          "bus_metro": {
+            "baseline_accessible": 34677,
+            "maximum_interaction": 33,
+            "maximum_joint_loss": 114,
+            "maximum_single_loss": 76,
+            "minimum_interaction": -76,
+            "negative_interaction_pairs": 15091,
+            "positive_interaction_pairs": 8993,
+            "positive_loss_units": 370,
+            "zero_interaction_pairs": 1393002
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 4072,
+            "maximum_interaction": 3,
+            "maximum_joint_loss": 168,
+            "maximum_single_loss": 128,
+            "minimum_interaction": -128,
+            "negative_interaction_pairs": 35169,
+            "positive_interaction_pairs": 282,
+            "positive_loss_units": 612,
+            "zero_interaction_pairs": 1381635
+          },
+          "bus_metro": {
+            "baseline_accessible": 4567,
+            "maximum_interaction": 3,
+            "maximum_joint_loss": 176,
+            "maximum_single_loss": 128,
+            "minimum_interaction": -128,
+            "negative_interaction_pairs": 35872,
+            "positive_interaction_pairs": 60,
+            "positive_loss_units": 650,
+            "zero_interaction_pairs": 1381154
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 58,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 15142,
+            "maximum_interaction": 185,
+            "maximum_joint_loss": 557,
+            "maximum_single_loss": 360,
+            "minimum_interaction": -358,
+            "negative_interaction_pairs": 35314,
+            "positive_interaction_pairs": 10027,
+            "positive_loss_units": 601,
+            "zero_interaction_pairs": 1371745
+          },
+          "bus_metro": {
+            "baseline_accessible": 18589,
+            "maximum_interaction": 63,
+            "maximum_joint_loss": 249,
+            "maximum_single_loss": 166,
+            "minimum_interaction": -166,
+            "negative_interaction_pairs": 33680,
+            "positive_interaction_pairs": 13594,
+            "positive_loss_units": 613,
+            "zero_interaction_pairs": 1369812
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 74,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 29035,
+            "maximum_interaction": 43,
+            "maximum_joint_loss": 431,
+            "maximum_single_loss": 355,
+            "minimum_interaction": -330,
+            "negative_interaction_pairs": 14538,
+            "positive_interaction_pairs": 17035,
+            "positive_loss_units": 530,
+            "zero_interaction_pairs": 1385513
+          },
+          "bus_metro": {
+            "baseline_accessible": 34906,
+            "maximum_interaction": 43,
+            "maximum_joint_loss": 112,
+            "maximum_single_loss": 76,
+            "minimum_interaction": -76,
+            "negative_interaction_pairs": 7529,
+            "positive_interaction_pairs": 11756,
+            "positive_loss_units": 338,
+            "zero_interaction_pairs": 1397801
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 47,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 4072,
+            "maximum_interaction": 3,
+            "maximum_joint_loss": 168,
+            "maximum_single_loss": 128,
+            "minimum_interaction": -128,
+            "negative_interaction_pairs": 35169,
+            "positive_interaction_pairs": 282,
+            "positive_loss_units": 612,
+            "zero_interaction_pairs": 1381635
+          },
+          "bus_metro": {
+            "baseline_accessible": 4640,
+            "maximum_interaction": 3,
+            "maximum_joint_loss": 223,
+            "maximum_single_loss": 183,
+            "minimum_interaction": -183,
+            "negative_interaction_pairs": 37472,
+            "positive_interaction_pairs": 60,
+            "positive_loss_units": 703,
+            "zero_interaction_pairs": 1379554
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 148,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 15142,
+            "maximum_interaction": 185,
+            "maximum_joint_loss": 557,
+            "maximum_single_loss": 360,
+            "minimum_interaction": -358,
+            "negative_interaction_pairs": 35209,
+            "positive_interaction_pairs": 10107,
+            "positive_loss_units": 601,
+            "zero_interaction_pairs": 1371770
+          },
+          "bus_metro": {
+            "baseline_accessible": 18719,
+            "maximum_interaction": 63,
+            "maximum_joint_loss": 252,
+            "maximum_single_loss": 166,
+            "minimum_interaction": -166,
+            "negative_interaction_pairs": 34309,
+            "positive_interaction_pairs": 14677,
+            "positive_loss_units": 613,
+            "zero_interaction_pairs": 1368100
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 79,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 29035,
+            "maximum_interaction": 43,
+            "maximum_joint_loss": 431,
+            "maximum_single_loss": 355,
+            "minimum_interaction": -330,
+            "negative_interaction_pairs": 14724,
+            "positive_interaction_pairs": 16891,
+            "positive_loss_units": 530,
+            "zero_interaction_pairs": 1385471
+          },
+          "bus_metro": {
+            "baseline_accessible": 34931,
+            "maximum_interaction": 43,
+            "maximum_joint_loss": 112,
+            "maximum_single_loss": 76,
+            "minimum_interaction": -76,
+            "negative_interaction_pairs": 9121,
+            "positive_interaction_pairs": 11864,
+            "positive_loss_units": 375,
+            "zero_interaction_pairs": 1396101
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 52,
+          "walking_budget_m": 2000
+        }
+      ],
+      "variant": "connector-25m"
+    },
+    {
+      "settings": [
+        {
+          "bus": {
+            "baseline_accessible": 7543,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 371,
+            "maximum_single_loss": 243,
+            "minimum_interaction": -210,
+            "negative_interaction_pairs": 61390,
+            "positive_interaction_pairs": 1177,
+            "positive_loss_units": 879,
+            "zero_interaction_pairs": 1354519
+          },
+          "bus_metro": {
+            "baseline_accessible": 8204,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 369,
+            "maximum_single_loss": 241,
+            "minimum_interaction": -208,
+            "negative_interaction_pairs": 61390,
+            "positive_interaction_pairs": 1177,
+            "positive_loss_units": 879,
+            "zero_interaction_pairs": 1354519
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 24212,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 433,
+            "maximum_single_loss": 221,
+            "minimum_interaction": -221,
+            "negative_interaction_pairs": 49731,
+            "positive_interaction_pairs": 13952,
+            "positive_loss_units": 735,
+            "zero_interaction_pairs": 1353403
+          },
+          "bus_metro": {
+            "baseline_accessible": 27107,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 365,
+            "maximum_single_loss": 217,
+            "minimum_interaction": -217,
+            "negative_interaction_pairs": 37281,
+            "positive_interaction_pairs": 14514,
+            "positive_loss_units": 604,
+            "zero_interaction_pairs": 1365291
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 41062,
+            "maximum_interaction": 15,
+            "maximum_joint_loss": 157,
+            "maximum_single_loss": 125,
+            "minimum_interaction": -125,
+            "negative_interaction_pairs": 10819,
+            "positive_interaction_pairs": 16259,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1390008
+          },
+          "bus_metro": {
+            "baseline_accessible": 46438,
+            "maximum_interaction": 6,
+            "maximum_joint_loss": 156,
+            "maximum_single_loss": 125,
+            "minimum_interaction": -125,
+            "negative_interaction_pairs": 5268,
+            "positive_interaction_pairs": 3281,
+            "positive_loss_units": 175,
+            "zero_interaction_pairs": 1408537
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 7587,
+            "maximum_interaction": 45,
+            "maximum_joint_loss": 412,
+            "maximum_single_loss": 275,
+            "minimum_interaction": -242,
+            "negative_interaction_pairs": 63211,
+            "positive_interaction_pairs": 1544,
+            "positive_loss_units": 929,
+            "zero_interaction_pairs": 1352331
+          },
+          "bus_metro": {
+            "baseline_accessible": 8324,
+            "maximum_interaction": 45,
+            "maximum_joint_loss": 408,
+            "maximum_single_loss": 273,
+            "minimum_interaction": -240,
+            "negative_interaction_pairs": 62958,
+            "positive_interaction_pairs": 2095,
+            "positive_loss_units": 924,
+            "zero_interaction_pairs": 1352033
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 24216,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 435,
+            "maximum_single_loss": 221,
+            "minimum_interaction": -221,
+            "negative_interaction_pairs": 51443,
+            "positive_interaction_pairs": 15263,
+            "positive_loss_units": 757,
+            "zero_interaction_pairs": 1350380
+          },
+          "bus_metro": {
+            "baseline_accessible": 27303,
+            "maximum_interaction": 40,
+            "maximum_joint_loss": 346,
+            "maximum_single_loss": 217,
+            "minimum_interaction": -217,
+            "negative_interaction_pairs": 47478,
+            "positive_interaction_pairs": 11439,
+            "positive_loss_units": 667,
+            "zero_interaction_pairs": 1358169
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 41062,
+            "maximum_interaction": 28,
+            "maximum_joint_loss": 154,
+            "maximum_single_loss": 125,
+            "minimum_interaction": -125,
+            "negative_interaction_pairs": 6572,
+            "positive_interaction_pairs": 21023,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1389491
+          },
+          "bus_metro": {
+            "baseline_accessible": 46658,
+            "maximum_interaction": 28,
+            "maximum_joint_loss": 154,
+            "maximum_single_loss": 125,
+            "minimum_interaction": -125,
+            "negative_interaction_pairs": 9170,
+            "positive_interaction_pairs": 3926,
+            "positive_loss_units": 273,
+            "zero_interaction_pairs": 1403990
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 7587,
+            "maximum_interaction": 45,
+            "maximum_joint_loss": 412,
+            "maximum_single_loss": 275,
+            "minimum_interaction": -242,
+            "negative_interaction_pairs": 63211,
+            "positive_interaction_pairs": 1544,
+            "positive_loss_units": 929,
+            "zero_interaction_pairs": 1352331
+          },
+          "bus_metro": {
+            "baseline_accessible": 8325,
+            "maximum_interaction": 40,
+            "maximum_joint_loss": 408,
+            "maximum_single_loss": 273,
+            "minimum_interaction": -240,
+            "negative_interaction_pairs": 62958,
+            "positive_interaction_pairs": 2095,
+            "positive_loss_units": 924,
+            "zero_interaction_pairs": 1352033
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 24216,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 435,
+            "maximum_single_loss": 221,
+            "minimum_interaction": -221,
+            "negative_interaction_pairs": 49567,
+            "positive_interaction_pairs": 14819,
+            "positive_loss_units": 757,
+            "zero_interaction_pairs": 1352700
+          },
+          "bus_metro": {
+            "baseline_accessible": 27312,
+            "maximum_interaction": 40,
+            "maximum_joint_loss": 346,
+            "maximum_single_loss": 217,
+            "minimum_interaction": -217,
+            "negative_interaction_pairs": 47070,
+            "positive_interaction_pairs": 11787,
+            "positive_loss_units": 667,
+            "zero_interaction_pairs": 1358229
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 41062,
+            "maximum_interaction": 28,
+            "maximum_joint_loss": 154,
+            "maximum_single_loss": 125,
+            "minimum_interaction": -125,
+            "negative_interaction_pairs": 6530,
+            "positive_interaction_pairs": 20687,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1389869
+          },
+          "bus_metro": {
+            "baseline_accessible": 46658,
+            "maximum_interaction": 28,
+            "maximum_joint_loss": 154,
+            "maximum_single_loss": 125,
+            "minimum_interaction": -125,
+            "negative_interaction_pairs": 9170,
+            "positive_interaction_pairs": 3926,
+            "positive_loss_units": 273,
+            "zero_interaction_pairs": 1403990
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 2000
+        }
+      ],
+      "variant": "connector-50m"
+    },
+    {
+      "settings": [
+        {
+          "bus": {
+            "baseline_accessible": 8625,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 361,
+            "maximum_single_loss": 232,
+            "minimum_interaction": -210,
+            "negative_interaction_pairs": 61390,
+            "positive_interaction_pairs": 1177,
+            "positive_loss_units": 879,
+            "zero_interaction_pairs": 1354519
+          },
+          "bus_metro": {
+            "baseline_accessible": 9274,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 359,
+            "maximum_single_loss": 230,
+            "minimum_interaction": -208,
+            "negative_interaction_pairs": 61390,
+            "positive_interaction_pairs": 1177,
+            "positive_loss_units": 879,
+            "zero_interaction_pairs": 1354519
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26682,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 437,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 49731,
+            "positive_interaction_pairs": 13952,
+            "positive_loss_units": 735,
+            "zero_interaction_pairs": 1353403
+          },
+          "bus_metro": {
+            "baseline_accessible": 29232,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 370,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 37281,
+            "positive_interaction_pairs": 14514,
+            "positive_loss_units": 604,
+            "zero_interaction_pairs": 1365291
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 46591,
+            "maximum_interaction": 15,
+            "maximum_joint_loss": 212,
+            "maximum_single_loss": 163,
+            "minimum_interaction": -163,
+            "negative_interaction_pairs": 10819,
+            "positive_interaction_pairs": 16259,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1390008
+          },
+          "bus_metro": {
+            "baseline_accessible": 51026,
+            "maximum_interaction": 6,
+            "maximum_joint_loss": 192,
+            "maximum_single_loss": 163,
+            "minimum_interaction": -163,
+            "negative_interaction_pairs": 5593,
+            "positive_interaction_pairs": 2813,
+            "positive_loss_units": 201,
+            "zero_interaction_pairs": 1408680
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 8654,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 387,
+            "maximum_single_loss": 251,
+            "minimum_interaction": -229,
+            "negative_interaction_pairs": 63211,
+            "positive_interaction_pairs": 1544,
+            "positive_loss_units": 929,
+            "zero_interaction_pairs": 1352331
+          },
+          "bus_metro": {
+            "baseline_accessible": 9382,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 383,
+            "maximum_single_loss": 249,
+            "minimum_interaction": -227,
+            "negative_interaction_pairs": 62958,
+            "positive_interaction_pairs": 2095,
+            "positive_loss_units": 924,
+            "zero_interaction_pairs": 1352033
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26686,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 439,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 51443,
+            "positive_interaction_pairs": 15719,
+            "positive_loss_units": 757,
+            "zero_interaction_pairs": 1349924
+          },
+          "bus_metro": {
+            "baseline_accessible": 29461,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 351,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 47356,
+            "positive_interaction_pairs": 11439,
+            "positive_loss_units": 667,
+            "zero_interaction_pairs": 1358291
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 46591,
+            "maximum_interaction": 34,
+            "maximum_joint_loss": 207,
+            "maximum_single_loss": 163,
+            "minimum_interaction": -163,
+            "negative_interaction_pairs": 6842,
+            "positive_interaction_pairs": 22216,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1388028
+          },
+          "bus_metro": {
+            "baseline_accessible": 51285,
+            "maximum_interaction": 27,
+            "maximum_joint_loss": 192,
+            "maximum_single_loss": 163,
+            "minimum_interaction": -163,
+            "negative_interaction_pairs": 9495,
+            "positive_interaction_pairs": 3906,
+            "positive_loss_units": 299,
+            "zero_interaction_pairs": 1403685
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 8654,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 387,
+            "maximum_single_loss": 251,
+            "minimum_interaction": -229,
+            "negative_interaction_pairs": 63211,
+            "positive_interaction_pairs": 1544,
+            "positive_loss_units": 929,
+            "zero_interaction_pairs": 1352331
+          },
+          "bus_metro": {
+            "baseline_accessible": 9384,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 383,
+            "maximum_single_loss": 249,
+            "minimum_interaction": -227,
+            "negative_interaction_pairs": 62958,
+            "positive_interaction_pairs": 2095,
+            "positive_loss_units": 924,
+            "zero_interaction_pairs": 1352033
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26686,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 439,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 49567,
+            "positive_interaction_pairs": 14819,
+            "positive_loss_units": 757,
+            "zero_interaction_pairs": 1352700
+          },
+          "bus_metro": {
+            "baseline_accessible": 29471,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 351,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 46804,
+            "positive_interaction_pairs": 11787,
+            "positive_loss_units": 667,
+            "zero_interaction_pairs": 1358495
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 46591,
+            "maximum_interaction": 28,
+            "maximum_joint_loss": 207,
+            "maximum_single_loss": 163,
+            "minimum_interaction": -163,
+            "negative_interaction_pairs": 6800,
+            "positive_interaction_pairs": 21093,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1389193
+          },
+          "bus_metro": {
+            "baseline_accessible": 51285,
+            "maximum_interaction": 27,
+            "maximum_joint_loss": 192,
+            "maximum_single_loss": 163,
+            "minimum_interaction": -163,
+            "negative_interaction_pairs": 9495,
+            "positive_interaction_pairs": 3906,
+            "positive_loss_units": 299,
+            "zero_interaction_pairs": 1403685
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 2000
+        }
+      ],
+      "variant": "connector-250m"
+    },
+    {
+      "settings": [
+        {
+          "bus": {
+            "baseline_accessible": 8566,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 449,
+            "maximum_single_loss": 292,
+            "minimum_interaction": -292,
+            "negative_interaction_pairs": 138932,
+            "positive_interaction_pairs": 77935,
+            "positive_loss_units": 1337,
+            "zero_interaction_pairs": 1200219
+          },
+          "bus_metro": {
+            "baseline_accessible": 9213,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 436,
+            "maximum_single_loss": 290,
+            "minimum_interaction": -290,
+            "negative_interaction_pairs": 138932,
+            "positive_interaction_pairs": 77935,
+            "positive_loss_units": 1337,
+            "zero_interaction_pairs": 1200219
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26356,
+            "maximum_interaction": 198,
+            "maximum_joint_loss": 646,
+            "maximum_single_loss": 422,
+            "minimum_interaction": -422,
+            "negative_interaction_pairs": 138932,
+            "positive_interaction_pairs": 120780,
+            "positive_loss_units": 1337,
+            "zero_interaction_pairs": 1157374
+          },
+          "bus_metro": {
+            "baseline_accessible": 28886,
+            "maximum_interaction": 44,
+            "maximum_joint_loss": 426,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 115496,
+            "positive_interaction_pairs": 120780,
+            "positive_loss_units": 1120,
+            "zero_interaction_pairs": 1180810
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 45921,
+            "maximum_interaction": 22,
+            "maximum_joint_loss": 203,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 88982,
+            "positive_interaction_pairs": 80897,
+            "positive_loss_units": 900,
+            "zero_interaction_pairs": 1247207
+          },
+          "bus_metro": {
+            "baseline_accessible": 50296,
+            "maximum_interaction": 18,
+            "maximum_joint_loss": 200,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 72511,
+            "positive_interaction_pairs": 62879,
+            "positive_loss_units": 718,
+            "zero_interaction_pairs": 1281696
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 8595,
+            "maximum_interaction": 4,
+            "maximum_joint_loss": 477,
+            "maximum_single_loss": 313,
+            "minimum_interaction": -313,
+            "negative_interaction_pairs": 159362,
+            "positive_interaction_pairs": 57505,
+            "positive_loss_units": 1337,
+            "zero_interaction_pairs": 1200219
+          },
+          "bus_metro": {
+            "baseline_accessible": 9321,
+            "maximum_interaction": 5,
+            "maximum_joint_loss": 463,
+            "maximum_single_loss": 311,
+            "minimum_interaction": -311,
+            "negative_interaction_pairs": 158966,
+            "positive_interaction_pairs": 57901,
+            "positive_loss_units": 1337,
+            "zero_interaction_pairs": 1200219
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 209,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26360,
+            "maximum_interaction": 196,
+            "maximum_joint_loss": 648,
+            "maximum_single_loss": 424,
+            "minimum_interaction": -424,
+            "negative_interaction_pairs": 138932,
+            "positive_interaction_pairs": 120780,
+            "positive_loss_units": 1337,
+            "zero_interaction_pairs": 1157374
+          },
+          "bus_metro": {
+            "baseline_accessible": 29105,
+            "maximum_interaction": 38,
+            "maximum_joint_loss": 427,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 136919,
+            "positive_interaction_pairs": 120780,
+            "positive_loss_units": 1315,
+            "zero_interaction_pairs": 1159387
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 209,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 45921,
+            "maximum_interaction": 22,
+            "maximum_joint_loss": 203,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 88982,
+            "positive_interaction_pairs": 80897,
+            "positive_loss_units": 900,
+            "zero_interaction_pairs": 1247207
+          },
+          "bus_metro": {
+            "baseline_accessible": 50539,
+            "maximum_interaction": 18,
+            "maximum_joint_loss": 200,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 94247,
+            "positive_interaction_pairs": 62879,
+            "positive_loss_units": 927,
+            "zero_interaction_pairs": 1259960
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 209,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 8595,
+            "maximum_interaction": 4,
+            "maximum_joint_loss": 477,
+            "maximum_single_loss": 313,
+            "minimum_interaction": -313,
+            "negative_interaction_pairs": 159362,
+            "positive_interaction_pairs": 57505,
+            "positive_loss_units": 1337,
+            "zero_interaction_pairs": 1200219
+          },
+          "bus_metro": {
+            "baseline_accessible": 9323,
+            "maximum_interaction": 5,
+            "maximum_joint_loss": 463,
+            "maximum_single_loss": 311,
+            "minimum_interaction": -311,
+            "negative_interaction_pairs": 158966,
+            "positive_interaction_pairs": 57901,
+            "positive_loss_units": 1337,
+            "zero_interaction_pairs": 1200219
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 209,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26360,
+            "maximum_interaction": 196,
+            "maximum_joint_loss": 648,
+            "maximum_single_loss": 424,
+            "minimum_interaction": -424,
+            "negative_interaction_pairs": 138932,
+            "positive_interaction_pairs": 120780,
+            "positive_loss_units": 1337,
+            "zero_interaction_pairs": 1157374
+          },
+          "bus_metro": {
+            "baseline_accessible": 29115,
+            "maximum_interaction": 38,
+            "maximum_joint_loss": 427,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 136919,
+            "positive_interaction_pairs": 120780,
+            "positive_loss_units": 1315,
+            "zero_interaction_pairs": 1159387
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 209,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 45921,
+            "maximum_interaction": 22,
+            "maximum_joint_loss": 203,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 88982,
+            "positive_interaction_pairs": 80897,
+            "positive_loss_units": 900,
+            "zero_interaction_pairs": 1247207
+          },
+          "bus_metro": {
+            "baseline_accessible": 50539,
+            "maximum_interaction": 18,
+            "maximum_joint_loss": 200,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 94247,
+            "positive_interaction_pairs": 62879,
+            "positive_loss_units": 927,
+            "zero_interaction_pairs": 1259960
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 209,
+          "walking_budget_m": 2000
+        }
+      ],
+      "variant": "failure-whole-route"
+    },
+    {
+      "settings": [
+        {
+          "bus": {
+            "baseline_accessible": 1743,
+            "maximum_interaction": 0,
+            "maximum_joint_loss": 219,
+            "maximum_single_loss": 198,
+            "minimum_interaction": -188,
+            "negative_interaction_pairs": 29903,
+            "positive_interaction_pairs": 0,
+            "positive_loss_units": 484,
+            "zero_interaction_pairs": 1387183
+          },
+          "bus_metro": {
+            "baseline_accessible": 1866,
+            "maximum_interaction": 0,
+            "maximum_joint_loss": 219,
+            "maximum_single_loss": 198,
+            "minimum_interaction": -188,
+            "negative_interaction_pairs": 29903,
+            "positive_interaction_pairs": 0,
+            "positive_loss_units": 484,
+            "zero_interaction_pairs": 1387183
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 8760,
+            "maximum_interaction": 44,
+            "maximum_joint_loss": 904,
+            "maximum_single_loss": 594,
+            "minimum_interaction": -408,
+            "negative_interaction_pairs": 53381,
+            "positive_interaction_pairs": 13995,
+            "positive_loss_units": 746,
+            "zero_interaction_pairs": 1349710
+          },
+          "bus_metro": {
+            "baseline_accessible": 11078,
+            "maximum_interaction": 44,
+            "maximum_joint_loss": 853,
+            "maximum_single_loss": 572,
+            "minimum_interaction": -386,
+            "negative_interaction_pairs": 51521,
+            "positive_interaction_pairs": 13945,
+            "positive_loss_units": 682,
+            "zero_interaction_pairs": 1351620
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 23586,
+            "maximum_interaction": 162,
+            "maximum_joint_loss": 2064,
+            "maximum_single_loss": 1619,
+            "minimum_interaction": -1505,
+            "negative_interaction_pairs": 44169,
+            "positive_interaction_pairs": 10958,
+            "positive_loss_units": 579,
+            "zero_interaction_pairs": 1361959
+          },
+          "bus_metro": {
+            "baseline_accessible": 32895,
+            "maximum_interaction": 162,
+            "maximum_joint_loss": 278,
+            "maximum_single_loss": 167,
+            "minimum_interaction": -167,
+            "negative_interaction_pairs": 42675,
+            "positive_interaction_pairs": 9926,
+            "positive_loss_units": 516,
+            "zero_interaction_pairs": 1364485
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 1751,
+            "maximum_interaction": 0,
+            "maximum_joint_loss": 227,
+            "maximum_single_loss": 206,
+            "minimum_interaction": -196,
+            "negative_interaction_pairs": 32493,
+            "positive_interaction_pairs": 0,
+            "positive_loss_units": 519,
+            "zero_interaction_pairs": 1384593
+          },
+          "bus_metro": {
+            "baseline_accessible": 2078,
+            "maximum_interaction": 0,
+            "maximum_joint_loss": 227,
+            "maximum_single_loss": 206,
+            "minimum_interaction": -196,
+            "negative_interaction_pairs": 32493,
+            "positive_interaction_pairs": 0,
+            "positive_loss_units": 519,
+            "zero_interaction_pairs": 1384593
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 8774,
+            "maximum_interaction": 43,
+            "maximum_joint_loss": 912,
+            "maximum_single_loss": 596,
+            "minimum_interaction": -410,
+            "negative_interaction_pairs": 70385,
+            "positive_interaction_pairs": 16139,
+            "positive_loss_units": 868,
+            "zero_interaction_pairs": 1330562
+          },
+          "bus_metro": {
+            "baseline_accessible": 13684,
+            "maximum_interaction": 75,
+            "maximum_joint_loss": 868,
+            "maximum_single_loss": 586,
+            "minimum_interaction": -421,
+            "negative_interaction_pairs": 59665,
+            "positive_interaction_pairs": 15788,
+            "positive_loss_units": 793,
+            "zero_interaction_pairs": 1341633
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 47,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 23589,
+            "maximum_interaction": 659,
+            "maximum_joint_loss": 1782,
+            "maximum_single_loss": 1381,
+            "minimum_interaction": -1104,
+            "negative_interaction_pairs": 27531,
+            "positive_interaction_pairs": 27181,
+            "positive_loss_units": 584,
+            "zero_interaction_pairs": 1362374
+          },
+          "bus_metro": {
+            "baseline_accessible": 35601,
+            "maximum_interaction": 150,
+            "maximum_joint_loss": 409,
+            "maximum_single_loss": 269,
+            "minimum_interaction": -237,
+            "negative_interaction_pairs": 27056,
+            "positive_interaction_pairs": 21476,
+            "positive_loss_units": 481,
+            "zero_interaction_pairs": 1368554
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 41,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 1751,
+            "maximum_interaction": 0,
+            "maximum_joint_loss": 227,
+            "maximum_single_loss": 206,
+            "minimum_interaction": -196,
+            "negative_interaction_pairs": 32493,
+            "positive_interaction_pairs": 0,
+            "positive_loss_units": 519,
+            "zero_interaction_pairs": 1384593
+          },
+          "bus_metro": {
+            "baseline_accessible": 2258,
+            "maximum_interaction": 0,
+            "maximum_joint_loss": 226,
+            "maximum_single_loss": 205,
+            "minimum_interaction": -195,
+            "negative_interaction_pairs": 35653,
+            "positive_interaction_pairs": 0,
+            "positive_loss_units": 599,
+            "zero_interaction_pairs": 1381433
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 80,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 8774,
+            "maximum_interaction": 43,
+            "maximum_joint_loss": 912,
+            "maximum_single_loss": 596,
+            "minimum_interaction": -410,
+            "negative_interaction_pairs": 70237,
+            "positive_interaction_pairs": 16287,
+            "positive_loss_units": 868,
+            "zero_interaction_pairs": 1330562
+          },
+          "bus_metro": {
+            "baseline_accessible": 15119,
+            "maximum_interaction": 74,
+            "maximum_joint_loss": 673,
+            "maximum_single_loss": 421,
+            "minimum_interaction": -273,
+            "negative_interaction_pairs": 49675,
+            "positive_interaction_pairs": 14941,
+            "positive_loss_units": 733,
+            "zero_interaction_pairs": 1352470
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 42,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 23589,
+            "maximum_interaction": 342,
+            "maximum_joint_loss": 1782,
+            "maximum_single_loss": 1381,
+            "minimum_interaction": -1104,
+            "negative_interaction_pairs": 28879,
+            "positive_interaction_pairs": 25406,
+            "positive_loss_units": 584,
+            "zero_interaction_pairs": 1362801
+          },
+          "bus_metro": {
+            "baseline_accessible": 36919,
+            "maximum_interaction": 150,
+            "maximum_joint_loss": 224,
+            "maximum_single_loss": 132,
+            "minimum_interaction": -132,
+            "negative_interaction_pairs": 26416,
+            "positive_interaction_pairs": 16805,
+            "positive_loss_units": 441,
+            "zero_interaction_pairs": 1373865
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        }
+      ],
+      "variant": "targets-emergency-tag"
+    },
+    {
+      "settings": [
+        {
+          "bus": {
+            "baseline_accessible": 8566,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 361,
+            "maximum_single_loss": 232,
+            "minimum_interaction": -210,
+            "negative_interaction_pairs": 61390,
+            "positive_interaction_pairs": 1177,
+            "positive_loss_units": 879,
+            "zero_interaction_pairs": 1354519
+          },
+          "bus_metro": {
+            "baseline_accessible": 9213,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 359,
+            "maximum_single_loss": 230,
+            "minimum_interaction": -208,
+            "negative_interaction_pairs": 61390,
+            "positive_interaction_pairs": 1177,
+            "positive_loss_units": 879,
+            "zero_interaction_pairs": 1354519
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26352,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 437,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 49731,
+            "positive_interaction_pairs": 13952,
+            "positive_loss_units": 735,
+            "zero_interaction_pairs": 1353403
+          },
+          "bus_metro": {
+            "baseline_accessible": 28882,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 370,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 37281,
+            "positive_interaction_pairs": 14514,
+            "positive_loss_units": 604,
+            "zero_interaction_pairs": 1365291
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 45685,
+            "maximum_interaction": 15,
+            "maximum_joint_loss": 76,
+            "maximum_single_loss": 45,
+            "minimum_interaction": -45,
+            "negative_interaction_pairs": 10224,
+            "positive_interaction_pairs": 16259,
+            "positive_loss_units": 266,
+            "zero_interaction_pairs": 1390603
+          },
+          "bus_metro": {
+            "baseline_accessible": 50060,
+            "maximum_interaction": 6,
+            "maximum_joint_loss": 34,
+            "maximum_single_loss": 29,
+            "minimum_interaction": -29,
+            "negative_interaction_pairs": 4998,
+            "positive_interaction_pairs": 2813,
+            "positive_loss_units": 166,
+            "zero_interaction_pairs": 1409275
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 8595,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 387,
+            "maximum_single_loss": 251,
+            "minimum_interaction": -229,
+            "negative_interaction_pairs": 63211,
+            "positive_interaction_pairs": 1544,
+            "positive_loss_units": 929,
+            "zero_interaction_pairs": 1352331
+          },
+          "bus_metro": {
+            "baseline_accessible": 9321,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 383,
+            "maximum_single_loss": 249,
+            "minimum_interaction": -227,
+            "negative_interaction_pairs": 62958,
+            "positive_interaction_pairs": 2095,
+            "positive_loss_units": 924,
+            "zero_interaction_pairs": 1352033
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26356,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 439,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 51443,
+            "positive_interaction_pairs": 15719,
+            "positive_loss_units": 757,
+            "zero_interaction_pairs": 1349924
+          },
+          "bus_metro": {
+            "baseline_accessible": 29101,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 351,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 47356,
+            "positive_interaction_pairs": 11439,
+            "positive_loss_units": 667,
+            "zero_interaction_pairs": 1358291
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 45685,
+            "maximum_interaction": 33,
+            "maximum_joint_loss": 69,
+            "maximum_single_loss": 40,
+            "minimum_interaction": -40,
+            "negative_interaction_pairs": 6205,
+            "positive_interaction_pairs": 21754,
+            "positive_loss_units": 266,
+            "zero_interaction_pairs": 1389127
+          },
+          "bus_metro": {
+            "baseline_accessible": 50303,
+            "maximum_interaction": 27,
+            "maximum_joint_loss": 34,
+            "maximum_single_loss": 29,
+            "minimum_interaction": -16,
+            "negative_interaction_pairs": 8900,
+            "positive_interaction_pairs": 3906,
+            "positive_loss_units": 264,
+            "zero_interaction_pairs": 1404280
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 8595,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 387,
+            "maximum_single_loss": 251,
+            "minimum_interaction": -229,
+            "negative_interaction_pairs": 63211,
+            "positive_interaction_pairs": 1544,
+            "positive_loss_units": 929,
+            "zero_interaction_pairs": 1352331
+          },
+          "bus_metro": {
+            "baseline_accessible": 9323,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 383,
+            "maximum_single_loss": 249,
+            "minimum_interaction": -227,
+            "negative_interaction_pairs": 62958,
+            "positive_interaction_pairs": 2095,
+            "positive_loss_units": 924,
+            "zero_interaction_pairs": 1352033
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 26356,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 439,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 49567,
+            "positive_interaction_pairs": 14819,
+            "positive_loss_units": 757,
+            "zero_interaction_pairs": 1352700
+          },
+          "bus_metro": {
+            "baseline_accessible": 29111,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 351,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 46804,
+            "positive_interaction_pairs": 11787,
+            "positive_loss_units": 667,
+            "zero_interaction_pairs": 1358495
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 45685,
+            "maximum_interaction": 28,
+            "maximum_joint_loss": 69,
+            "maximum_single_loss": 40,
+            "minimum_interaction": -40,
+            "negative_interaction_pairs": 6205,
+            "positive_interaction_pairs": 21135,
+            "positive_loss_units": 266,
+            "zero_interaction_pairs": 1389746
+          },
+          "bus_metro": {
+            "baseline_accessible": 50303,
+            "maximum_interaction": 27,
+            "maximum_joint_loss": 34,
+            "maximum_single_loss": 29,
+            "minimum_interaction": -16,
+            "negative_interaction_pairs": 8900,
+            "positive_interaction_pairs": 3906,
+            "positive_loss_units": 264,
+            "zero_interaction_pairs": 1404280
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 2000
+        }
+      ],
+      "variant": "targets-human-inside"
+    },
+    {
+      "settings": [
+        {
+          "bus": {
+            "baseline_accessible": 9025,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 361,
+            "maximum_single_loss": 232,
+            "minimum_interaction": -210,
+            "negative_interaction_pairs": 65350,
+            "positive_interaction_pairs": 1609,
+            "positive_loss_units": 927,
+            "zero_interaction_pairs": 1350127
+          },
+          "bus_metro": {
+            "baseline_accessible": 9663,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 359,
+            "maximum_single_loss": 230,
+            "minimum_interaction": -208,
+            "negative_interaction_pairs": 65350,
+            "positive_interaction_pairs": 1609,
+            "positive_loss_units": 927,
+            "zero_interaction_pairs": 1350127
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 27778,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 437,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 49627,
+            "positive_interaction_pairs": 15319,
+            "positive_loss_units": 732,
+            "zero_interaction_pairs": 1352140
+          },
+          "bus_metro": {
+            "baseline_accessible": 30298,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 370,
+            "maximum_single_loss": 219,
+            "minimum_interaction": -219,
+            "negative_interaction_pairs": 37071,
+            "positive_interaction_pairs": 15116,
+            "positive_loss_units": 583,
+            "zero_interaction_pairs": 1364899
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 46606,
+            "maximum_interaction": 15,
+            "maximum_joint_loss": 198,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 10819,
+            "positive_interaction_pairs": 16259,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1390008
+          },
+          "bus_metro": {
+            "baseline_accessible": 50994,
+            "maximum_interaction": 6,
+            "maximum_joint_loss": 182,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 5593,
+            "positive_interaction_pairs": 2813,
+            "positive_loss_units": 201,
+            "zero_interaction_pairs": 1408680
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 9063,
+            "maximum_interaction": 23,
+            "maximum_joint_loss": 387,
+            "maximum_single_loss": 251,
+            "minimum_interaction": -229,
+            "negative_interaction_pairs": 79113,
+            "positive_interaction_pairs": 2601,
+            "positive_loss_units": 990,
+            "zero_interaction_pairs": 1335372
+          },
+          "bus_metro": {
+            "baseline_accessible": 9824,
+            "maximum_interaction": 24,
+            "maximum_joint_loss": 383,
+            "maximum_single_loss": 249,
+            "minimum_interaction": -227,
+            "negative_interaction_pairs": 73327,
+            "positive_interaction_pairs": 1942,
+            "positive_loss_units": 985,
+            "zero_interaction_pairs": 1341817
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 27781,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 438,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 47495,
+            "positive_interaction_pairs": 19711,
+            "positive_loss_units": 737,
+            "zero_interaction_pairs": 1349880
+          },
+          "bus_metro": {
+            "baseline_accessible": 30604,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 344,
+            "maximum_single_loss": 212,
+            "minimum_interaction": -212,
+            "negative_interaction_pairs": 34800,
+            "positive_interaction_pairs": 8391,
+            "positive_loss_units": 569,
+            "zero_interaction_pairs": 1373895
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 46606,
+            "maximum_interaction": 33,
+            "maximum_joint_loss": 193,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 6800,
+            "positive_interaction_pairs": 25039,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1385247
+          },
+          "bus_metro": {
+            "baseline_accessible": 51297,
+            "maximum_interaction": 27,
+            "maximum_joint_loss": 169,
+            "maximum_single_loss": 140,
+            "minimum_interaction": -140,
+            "negative_interaction_pairs": 4742,
+            "positive_interaction_pairs": 2926,
+            "positive_loss_units": 201,
+            "zero_interaction_pairs": 1409418
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 9064,
+            "maximum_interaction": 22,
+            "maximum_joint_loss": 387,
+            "maximum_single_loss": 251,
+            "minimum_interaction": -229,
+            "negative_interaction_pairs": 92672,
+            "positive_interaction_pairs": 1391,
+            "positive_loss_units": 990,
+            "zero_interaction_pairs": 1323023
+          },
+          "bus_metro": {
+            "baseline_accessible": 9865,
+            "maximum_interaction": 23,
+            "maximum_joint_loss": 383,
+            "maximum_single_loss": 249,
+            "minimum_interaction": -227,
+            "negative_interaction_pairs": 88096,
+            "positive_interaction_pairs": 1942,
+            "positive_loss_units": 985,
+            "zero_interaction_pairs": 1327048
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 27782,
+            "maximum_interaction": 192,
+            "maximum_joint_loss": 438,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -224,
+            "negative_interaction_pairs": 67412,
+            "positive_interaction_pairs": 20878,
+            "positive_loss_units": 814,
+            "zero_interaction_pairs": 1328796
+          },
+          "bus_metro": {
+            "baseline_accessible": 30669,
+            "maximum_interaction": 41,
+            "maximum_joint_loss": 344,
+            "maximum_single_loss": 212,
+            "minimum_interaction": -212,
+            "negative_interaction_pairs": 55545,
+            "positive_interaction_pairs": 10344,
+            "positive_loss_units": 674,
+            "zero_interaction_pairs": 1351197
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 46606,
+            "maximum_interaction": 28,
+            "maximum_joint_loss": 192,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 6530,
+            "positive_interaction_pairs": 30673,
+            "positive_loss_units": 301,
+            "zero_interaction_pairs": 1379883
+          },
+          "bus_metro": {
+            "baseline_accessible": 51347,
+            "maximum_interaction": 27,
+            "maximum_joint_loss": 168,
+            "maximum_single_loss": 139,
+            "minimum_interaction": -139,
+            "negative_interaction_pairs": 4742,
+            "positive_interaction_pairs": 2926,
+            "positive_loss_units": 201,
+            "zero_interaction_pairs": 1409418
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        }
+      ],
+      "variant": "routes-semantic-extension"
+    },
+    {
+      "settings": [
+        {
+          "bus": {
+            "baseline_accessible": 11028,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 353,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -202,
+            "negative_interaction_pairs": 61529,
+            "positive_interaction_pairs": 1398,
+            "positive_loss_units": 899,
+            "zero_interaction_pairs": 1354159
+          },
+          "bus_metro": {
+            "baseline_accessible": 11493,
+            "maximum_interaction": 7,
+            "maximum_joint_loss": 353,
+            "maximum_single_loss": 224,
+            "minimum_interaction": -202,
+            "negative_interaction_pairs": 61529,
+            "positive_interaction_pairs": 1398,
+            "positive_loss_units": 899,
+            "zero_interaction_pairs": 1354159
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 30505,
+            "maximum_interaction": 45,
+            "maximum_joint_loss": 445,
+            "maximum_single_loss": 228,
+            "minimum_interaction": -228,
+            "negative_interaction_pairs": 49718,
+            "positive_interaction_pairs": 13762,
+            "positive_loss_units": 712,
+            "zero_interaction_pairs": 1353606
+          },
+          "bus_metro": {
+            "baseline_accessible": 32032,
+            "maximum_interaction": 15,
+            "maximum_joint_loss": 421,
+            "maximum_single_loss": 223,
+            "minimum_interaction": -223,
+            "negative_interaction_pairs": 37501,
+            "positive_interaction_pairs": 14491,
+            "positive_loss_units": 599,
+            "zero_interaction_pairs": 1365094
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 49351,
+            "maximum_interaction": 9,
+            "maximum_joint_loss": 276,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 8192,
+            "positive_interaction_pairs": 7083,
+            "positive_loss_units": 224,
+            "zero_interaction_pairs": 1401811
+          },
+          "bus_metro": {
+            "baseline_accessible": 51810,
+            "maximum_interaction": 6,
+            "maximum_joint_loss": 217,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 3044,
+            "positive_interaction_pairs": 1833,
+            "positive_loss_units": 137,
+            "zero_interaction_pairs": 1412209
+          },
+          "max_line_changes": 0,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 11640,
+            "maximum_interaction": 24,
+            "maximum_joint_loss": 560,
+            "maximum_single_loss": 312,
+            "minimum_interaction": -312,
+            "negative_interaction_pairs": 68966,
+            "positive_interaction_pairs": 12946,
+            "positive_loss_units": 1030,
+            "zero_interaction_pairs": 1335174
+          },
+          "bus_metro": {
+            "baseline_accessible": 12165,
+            "maximum_interaction": 24,
+            "maximum_joint_loss": 542,
+            "maximum_single_loss": 310,
+            "minimum_interaction": -310,
+            "negative_interaction_pairs": 68713,
+            "positive_interaction_pairs": 13497,
+            "positive_loss_units": 1025,
+            "zero_interaction_pairs": 1334876
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 98,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 30927,
+            "maximum_interaction": 212,
+            "maximum_joint_loss": 398,
+            "maximum_single_loss": 229,
+            "minimum_interaction": -229,
+            "negative_interaction_pairs": 50295,
+            "positive_interaction_pairs": 20869,
+            "positive_loss_units": 707,
+            "zero_interaction_pairs": 1345922
+          },
+          "bus_metro": {
+            "baseline_accessible": 32712,
+            "maximum_interaction": 155,
+            "maximum_joint_loss": 285,
+            "maximum_single_loss": 157,
+            "minimum_interaction": -157,
+            "negative_interaction_pairs": 47739,
+            "positive_interaction_pairs": 18401,
+            "positive_loss_units": 655,
+            "zero_interaction_pairs": 1350946
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 49725,
+            "maximum_interaction": 39,
+            "maximum_joint_loss": 301,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 17907,
+            "positive_interaction_pairs": 17179,
+            "positive_loss_units": 414,
+            "zero_interaction_pairs": 1382000
+          },
+          "bus_metro": {
+            "baseline_accessible": 52649,
+            "maximum_interaction": 27,
+            "maximum_joint_loss": 182,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 8427,
+            "positive_interaction_pairs": 7297,
+            "positive_loss_units": 248,
+            "zero_interaction_pairs": 1401362
+          },
+          "max_line_changes": 1,
+          "units_with_higher_absolute_loss_with_metro": 0,
+          "walking_budget_m": 2000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 11779,
+            "maximum_interaction": 25,
+            "maximum_joint_loss": 655,
+            "maximum_single_loss": 338,
+            "minimum_interaction": -338,
+            "negative_interaction_pairs": 79433,
+            "positive_interaction_pairs": 7840,
+            "positive_loss_units": 1112,
+            "zero_interaction_pairs": 1329813
+          },
+          "bus_metro": {
+            "baseline_accessible": 12376,
+            "maximum_interaction": 24,
+            "maximum_joint_loss": 681,
+            "maximum_single_loss": 348,
+            "minimum_interaction": -348,
+            "negative_interaction_pairs": 79183,
+            "positive_interaction_pairs": 21544,
+            "positive_loss_units": 1107,
+            "zero_interaction_pairs": 1316359
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 113,
+          "walking_budget_m": 500
+        },
+        {
+          "bus": {
+            "baseline_accessible": 31059,
+            "maximum_interaction": 264,
+            "maximum_joint_loss": 379,
+            "maximum_single_loss": 233,
+            "minimum_interaction": -232,
+            "negative_interaction_pairs": 67998,
+            "positive_interaction_pairs": 25952,
+            "positive_loss_units": 846,
+            "zero_interaction_pairs": 1323136
+          },
+          "bus_metro": {
+            "baseline_accessible": 32936,
+            "maximum_interaction": 199,
+            "maximum_joint_loss": 328,
+            "maximum_single_loss": 200,
+            "minimum_interaction": -199,
+            "negative_interaction_pairs": 67800,
+            "positive_interaction_pairs": 21879,
+            "positive_loss_units": 813,
+            "zero_interaction_pairs": 1327407
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 111,
+          "walking_budget_m": 1000
+        },
+        {
+          "bus": {
+            "baseline_accessible": 49745,
+            "maximum_interaction": 39,
+            "maximum_joint_loss": 301,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 17907,
+            "positive_interaction_pairs": 21420,
+            "positive_loss_units": 414,
+            "zero_interaction_pairs": 1377759
+          },
+          "bus_metro": {
+            "baseline_accessible": 52751,
+            "maximum_interaction": 27,
+            "maximum_joint_loss": 234,
+            "maximum_single_loss": 153,
+            "minimum_interaction": -153,
+            "negative_interaction_pairs": 8520,
+            "positive_interaction_pairs": 7204,
+            "positive_loss_units": 248,
+            "zero_interaction_pairs": 1401362
+          },
+          "max_line_changes": 2,
+          "units_with_higher_absolute_loss_with_metro": 111,
+          "walking_budget_m": 2000
+        }
+      ],
+      "variant": "routes-derived-order"
+    }
+  ],
+  "selection_date": "2026-11-03",
+  "signature_identity_strata": [
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "negative_C": 9263,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 500,
+      "zero_C": 7026
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "negative_C": 52127,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 5203,
+      "positive_C": 1177,
+      "stratum": "different_signatures",
+      "walking_budget_m": 500,
+      "zero_C": 1347493
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "negative_C": 8202,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 1000,
+      "zero_C": 8087
+    },
+    {
+      "balanced_nonzero": 1157,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "negative_C": 41529,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 19708,
+      "positive_C": 13952,
+      "stratum": "different_signatures",
+      "walking_budget_m": 1000,
+      "zero_C": 1345316
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "negative_C": 2331,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 2000,
+      "zero_C": 13958
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 0,
+      "mode": "bus",
+      "negative_C": 8488,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 16517,
+      "positive_C": 16259,
+      "stratum": "different_signatures",
+      "walking_budget_m": 2000,
+      "zero_C": 1376050
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "negative_C": 10012,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 500,
+      "zero_C": 6277
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "negative_C": 53199,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 5687,
+      "positive_C": 1544,
+      "stratum": "different_signatures",
+      "walking_budget_m": 500,
+      "zero_C": 1346054
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "negative_C": 8357,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 1000,
+      "zero_C": 7932
+    },
+    {
+      "balanced_nonzero": 1229,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "negative_C": 43086,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 26012,
+      "positive_C": 15719,
+      "stratum": "different_signatures",
+      "walking_budget_m": 1000,
+      "zero_C": 1341992
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "negative_C": 2331,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 2000,
+      "zero_C": 13958
+    },
+    {
+      "balanced_nonzero": 42,
+      "max_line_changes": 1,
+      "mode": "bus",
+      "negative_C": 4469,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 22742,
+      "positive_C": 21754,
+      "stratum": "different_signatures",
+      "walking_budget_m": 2000,
+      "zero_C": 1374574
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "negative_C": 10012,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 500,
+      "zero_C": 6277
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "negative_C": 53199,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 5713,
+      "positive_C": 1544,
+      "stratum": "different_signatures",
+      "walking_budget_m": 500,
+      "zero_C": 1346054
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "negative_C": 8357,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 1000,
+      "zero_C": 7932
+    },
+    {
+      "balanced_nonzero": 3105,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "negative_C": 41210,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 25580,
+      "positive_C": 14819,
+      "stratum": "different_signatures",
+      "walking_budget_m": 1000,
+      "zero_C": 1344768
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "negative_C": 2331,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 2000,
+      "zero_C": 13958
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 2,
+      "mode": "bus",
+      "negative_C": 4469,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 22081,
+      "positive_C": 21135,
+      "stratum": "different_signatures",
+      "walking_budget_m": 2000,
+      "zero_C": 1375193
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "negative_C": 9263,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 500,
+      "zero_C": 7026
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "negative_C": 52127,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 5161,
+      "positive_C": 1177,
+      "stratum": "different_signatures",
+      "walking_budget_m": 500,
+      "zero_C": 1347493
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "negative_C": 7420,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 1000,
+      "zero_C": 8869
+    },
+    {
+      "balanced_nonzero": 605,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "negative_C": 29861,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 18957,
+      "positive_C": 14514,
+      "stratum": "different_signatures",
+      "walking_budget_m": 1000,
+      "zero_C": 1356422
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "negative_C": 965,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 2000,
+      "zero_C": 15324
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 0,
+      "mode": "bus_metro",
+      "negative_C": 4628,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 2813,
+      "positive_C": 2813,
+      "stratum": "different_signatures",
+      "walking_budget_m": 2000,
+      "zero_C": 1393356
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "negative_C": 10002,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 500,
+      "zero_C": 6287
+    },
+    {
+      "balanced_nonzero": 2,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "negative_C": 52956,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 5900,
+      "positive_C": 2095,
+      "stratum": "different_signatures",
+      "walking_budget_m": 500,
+      "zero_C": 1345746
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "negative_C": 7945,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 1000,
+      "zero_C": 8344
+    },
+    {
+      "balanced_nonzero": 2023,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "negative_C": 39411,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 19946,
+      "positive_C": 11439,
+      "stratum": "different_signatures",
+      "walking_budget_m": 1000,
+      "zero_C": 1349947
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "negative_C": 4320,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 2000,
+      "zero_C": 11969
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 1,
+      "mode": "bus_metro",
+      "negative_C": 5175,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 3906,
+      "positive_C": 3906,
+      "stratum": "different_signatures",
+      "walking_budget_m": 2000,
+      "zero_C": 1391716
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "negative_C": 10002,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 500,
+      "zero_C": 6287
+    },
+    {
+      "balanced_nonzero": 2,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "negative_C": 52956,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 5926,
+      "positive_C": 2095,
+      "stratum": "different_signatures",
+      "walking_budget_m": 500,
+      "zero_C": 1345746
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "negative_C": 7945,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 1000,
+      "zero_C": 8344
+    },
+    {
+      "balanced_nonzero": 1327,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "negative_C": 38859,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 19454,
+      "positive_C": 11787,
+      "stratum": "different_signatures",
+      "walking_budget_m": 1000,
+      "zero_C": 1350151
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "negative_C": 4320,
+      "pairs": 16289,
+      "pairs_with_joint_only_losses": 0,
+      "positive_C": 0,
+      "stratum": "same_signature",
+      "walking_budget_m": 2000,
+      "zero_C": 11969
+    },
+    {
+      "balanced_nonzero": 0,
+      "max_line_changes": 2,
+      "mode": "bus_metro",
+      "negative_C": 5175,
+      "pairs": 1400797,
+      "pairs_with_joint_only_losses": 3906,
+      "positive_C": 3906,
+      "stratum": "different_signatures",
+      "walking_budget_m": 2000,
+      "zero_C": 1391716
+    }
+  ],
+  "status": "passed"
+}

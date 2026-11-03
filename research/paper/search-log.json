@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-03",
+  "timezone": "Asia/Tehran",
+  "method": "Purposive narrative search and backward/exact-title follow-up; no exhaustive database count or PRISMA claim.",
+  "discovery_service": "Web search followed by primary publisher, author, institutional or arXiv/PMC text; primary-source-only substantive comparisons.",
+  "selected_executed_queries": [
+    "Stress-testing road networks and access to medical care",
+    "multilayer public transport robustness interdependent road bus healthcare accessibility disruption",
+    "road bus network interdependency robustness street segment transit accessibility disruption",
+    "transport network vulnerability simultaneous link failures non additive interaction accessibility",
+    "Understanding the vulnerability of multimodal public transportation networks",
+    "Critical multi-link disruption identification for public transport networks",
+    "Robustness evaluation of bus-subway composite network considering accessibility",
+    "Identification of critical combination of vulnerable links Wang Liu",
+    "road bus interdependent robustness network street",
+    "Measuring accessibility to public services and infrastructure criticality for disasters risk management",
+    "Incorporating geographic interdependencies Boura Ferguson 2024 doi",
+    "Shenyang bus network layered load redistribution robustness",
+    "Quantifying bus route service disruptions 2023 doi",
+    "healthcare accessibility bus metro road closure disruption network robustness hospital routes",
+    "transport network link failures superadditive subadditive interaction critical combinations",
+    "public transport hypergraph robustness route dependencies road failure",
+    "accessibility hospital simultaneous disruptions network",
+    "Contrasting Resilience Diagnostics in Route-Preserving Multimodal Transit Hypergraphs",
+    "Liao van Wee 2017 accessibility robustness travel options shared infrastructure doi",
+    "Transport network criticality metrics: a comparative analysis authors",
+    "Robustness Assessment of Public Transport Networks in Various Graph Representations arxiv",
+    "Integrating network science and public transport accessibility analysis for comparative assessment",
+    "Measuring the impacts of disruptions on public transit accessibility and reliability 2024",
+    "Accessibility derivative second routes",
+    "Accessibility derivative Liu Miller 2025 pages",
+    "Catastrophic cascade of failures in interdependent networks Buldyrev Parshani nature08932",
+    "Multilayer networks Kivela Arenas Barthelemy Gleeson Moreno Porter 2014"
+  ],
+  "inclusion": "Direct methodological overlap or necessary modeling/endpoint context; publication or inspected preprint publicly available by 2026-11-03.",
+  "exclusion": "Unrelated clinical multimodal learning, unverified source claims, and external records proposed for analytical enrichment.",
+  "counts": {
+    "retained_records": 21,
+    "transport_network_scope_records": 20,
+    "geographic_context_only_records": 1
+  },
+  "access_limitations": "Several publisher/PMC endpoints returned 403, 429 or browser challenges. Only inspected primary indexed sections or abstracts support those comparisons; unobserved features are unknown, not absent.",
+  "version_policy": "Schuster detailed observations use supplied arXiv v1, with 2024 journal metadata. Two arXiv records remain labeled preprints. Issue years and online-first dates are distinguished.",
+  "not_done": [
+    "No subscription database exhaustive export",
+    "No formal systematic-review risk-of-bias instrument",
+    "No reimplementation or numerical benchmarking of external studies",
+    "No claim that an earlier identical study does not exist"
+  ],
+  "data_boundary": "Literature records are manuscript context. No cited-study dataset, boundary, API output, timetable, population or clinical data is joined to the frozen analytical model."
+}
